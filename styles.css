@@ -1,5 +1,6 @@
 a {
     text-decoration: none;
+    color: black;
 }
 
 body, html {
@@ -8,3 +9,7 @@ body, html {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.card {
+    background-color: aqua;
+    border-radius: 10px;
+}
