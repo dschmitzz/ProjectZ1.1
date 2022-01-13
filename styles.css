@@ -19,6 +19,7 @@ body, html {
     width: 100px;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .cards {
