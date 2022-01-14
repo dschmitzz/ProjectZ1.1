@@ -1,0 +1,11 @@
+* {
+    color: white;
+}
+
+body, html {
+    background-color: black;
+}
+
+.header {
+    background-color: rgb(42, 62, 128);
+}
