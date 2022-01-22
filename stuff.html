@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='css/styles.css'>
+    <script>
+      
+      function getStylesheet() {
+            var currentTime = new Date().getHours();
+            if (0 <= currentTime && currentTime < 7 || 18 <= currentTime && currentTime < 24) {
+             document.write("<link rel='stylesheet' href='theme-dark.css' type='text/css'>");
+            }
+            else {
+             document.write("<link rel='stylesheet' href='theme-light.css' type='text/css'>");
+            }
+      }
+      
+      getStylesheet();
+    
+      </script>
+  </head>
+  <body>
+    <div class='header'>
+      <h2>[Site Name]</h2>
+      <input type='text' placeholder="Search...">
+      <a href="#">Donate</a>
+      <p>Brandon</p>
+    </div>
+  </body>
+</html>

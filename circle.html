@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Practice</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <p>Welcome to my crappy website!</p>
+        <p>Please select circle:</p>
+        <style type="text/css" media="screen">
+            .outer {background-color: lightgrey;}
+            .outer > * {
+                display: inline-block;
+                background-color: lightgreen;
+            }
+            .one {width:80px; height:80px;}
+            .two {width:80px; height:80px;}
+            .three {width:80px; height:100px;}
+        </style>
+        <div class="outer">
+            <div class="one">Some text that will wrap</div>
+            <div class="two">hello</div>
+            <div class="three">world</div>
+        </div>
+        <span class="dot"></span>
+        <div class="triangle-up"></div>
+        <div class="square"></div>
+    </body>
+</html>

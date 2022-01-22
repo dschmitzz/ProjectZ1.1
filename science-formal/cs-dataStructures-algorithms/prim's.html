@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prim's Algorithm</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Prim's Algorithm</h1>
+    <p>Time complexity: O((|V| + |E|)log(|V|))</p>
+    <p>Pseudocode:
+    <pre><code>
+Algorithm Prim(G, s) {
+    initialize VisitedSet, VS
+    initialize PriorityQueue, PQ
+    for each edge(s, v) in G, PQ.enqueue(edge(s, v)){
+        mark s as visited in VS
+        while PQ is not empty and VS is not full {
+            edge(u, w) &lt-- PQ.dequeue()
+            if w is not visited in VS {
+                mark w as visited in VS
+                add edge(u, w) to MST
+                for each edge(w, x) such that x is not visited {
+                    PQ.enqueue(edge(w, x))
+                }
+            }
+        }
+    } 
+}
+    </code></pre></p>
+</body>
+</html>

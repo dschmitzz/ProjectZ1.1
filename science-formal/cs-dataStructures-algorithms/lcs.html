@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longest Common Subsequence</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <h1>Longest Common Subsequence</h1>
+    <p>Time complexity: O(mn), where m and n are the lengths of the two strings we are getting the LCS of</p>
+    <p>Algorithm:</p>
+    <pre><code>
+Create an n + 1 by m + 1 array (L)
+Fill row 0 and column 0 with 0s
+For each cell L[i][j], where i &lt-- 1, n and j &lt-- 1, m:
+    If string1 at i equals string2 at j
+    L[i][j] &lt-- 1 + L[i - 1][j - 1] (above-left diagonal value)
+L[i][j] &lt-- max(L[i - 1][j], L[i][j - 1]) (above value, left value)
+Or if above and left values are the same, then take some from the left    
+    </code></pre>
+</body>
+</html>
