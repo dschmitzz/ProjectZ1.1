@@ -18,8 +18,6 @@ a:hover {
 body, html {
     width: 100%;
     height: 100vh;
-    margin: 0;
-    padding-top: 0;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
 }
@@ -53,6 +51,22 @@ h2 {
     font-size: 25px;
 }
 
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
 .card {
     display: flex;
     background-color: rgba(191, 255, 255, .5);
@@ -81,6 +95,10 @@ h2 {
     outline: 1px solid black;
     display: flex;
     justify-content: center;
+}
+
+.desktop-only {
+    display: none;
 }
 
 .dot {
@@ -144,7 +162,11 @@ h2 {
 }
 
 @media screen and (min-width: 600px) {
-    h2 {
-        size: 400px;
+    * {
+        text-align: left;
+    }
+
+    .mobile-only {
+        display: none;
     }
 }
