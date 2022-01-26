@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 * {
-    margin: 0;
+    margin: auto;
 }
 
 a {
@@ -22,17 +22,18 @@ a:hover {
 body, html {
     height: 100vh;
     font-family: 'Quicksand', sans-serif;
-    margin: 0;
+    margin: auto;
     padding: 0;
     text-align: center;
     width: 100%;
 }
 
 button {
-    font-size: 16px;
-    border-radius:8px;
     background-color: rgb(98, 197, 89);
+    border-radius:8px;
     color: white;
+    cursor: pointer;
+    font-size: 16px;
     outline: none;
     size:30px;
 }
@@ -115,14 +116,6 @@ h6 {
     width: 50px;
 }
 
-.header {
-    align-items: center;
-    display: flex;
-    height: 80px;
-    justify-content: space-around;
-    width: 100%;
-}
-
 .mastery {
     float: right;
     width: 55%
@@ -174,7 +167,21 @@ h6 {
         display: flex;
     }
 
+    .header {
+        align-items: center;
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        width: 100%;
+        box-shadow: 30px;
+    }
+
     .mobile-only {
         display: none;
+    }
+
+    .top-menu {
+        display: flex;
+        justify-content: space-around;
     }
 }
