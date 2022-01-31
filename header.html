@@ -1,15 +1,28 @@
 <html>
-    <div class='header desktop-only'>
-        <div class='site-content'>
-            [Menu]
+    <head>
+        <script type='text/javascript' src='js/index.js'></script>
+    </head>
+    <div class='header'>
+        <div>
+            <div id="sidenav" class="sidenav">
+              <a href='#'></a>
+              <a href='/index.html'>Dashboard</a>
+              <a href="/skills.html">Skills</a>
+              <!-- <a href="/areas.html">Areas of study</a> -->
+              <!-- <a href="/suggestions.html">Suggestions</a> -->
+              <a href="/about.html">About</a>
+            </div>
+          
+            <!-- Use any element to open the sidenav -->
+            <span id='menu' onclick="openNav()">&#9776;</span>
         </div>
-        <a href='index.html'>
-            <img class='logo' src='imgs/sl-logo.PNG' style='height:50px' alt='logo here'>
+        <a href='/index.html'>
+            <img class='logo' src='/imgs/sl-logo.PNG' style='height:50px' alt='logo here'>
         </a>
-        <div class='top-menu'>
+        <div class='top-menu' class='desktop-only'>
             <!-- <a href='donate.html'>Donate</a> -->
             <!-- <a href='signin.html'>Sign in</a> -->
-            <a href='about.html'>About</a>
+            <a href='about.html' class='desktop-only'></a>
         </div>
     </div>
 </html>
