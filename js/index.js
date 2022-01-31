@@ -32,3 +32,37 @@ function includeHTML() {
         }
     }
 }
+
+function openNav() {
+    if (document.getElementById('sidenav').style.width != "200px") {
+        document.getElementById("sidenav").style.width = "200px";
+    } else {
+        document.getElementById("sidenav").style.width = "0";
+    }
+}
+  
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+}
+
+function closeShoutout() {
+    document.getElementById('shoutout').remove();
+}
+
+function search() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
