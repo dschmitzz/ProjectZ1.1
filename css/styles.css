@@ -49,10 +49,14 @@ button:hover {
     transition: .5s ease all;
 }
 
+fieldset > div {
+    display: flex;
+    flex-direction: row;
+}
+
 iframe {
     height: 360px;
     min-width: 350px;
-    /* outline: none; */
     width: 30%;
 }
 
@@ -64,6 +68,10 @@ input {
     width: 160px;
     border: none;
     padding-left: 10px;
+}
+
+input[type=email] {
+    font-size: 12px;
 }
 
 h1 {
@@ -92,6 +100,31 @@ h6 {
     font-size: 18px;
 }
 
+ol {
+    background-color:rgb(186, 226, 252);
+    border-radius: 10px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    padding-left: 30px;
+}
+
+pre {
+    background-color:rgb(198, 255, 203);
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+    padding-top: 0;
+}
+
+pre > code {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .break {
     flex-basis: 100%;
     height: 0;
@@ -105,6 +138,7 @@ h6 {
     height: 120px;
     justify-content: center;
     margin: 20px;
+    text-align: center;
     transition: .8s ease all;
     width: 120px;
 }

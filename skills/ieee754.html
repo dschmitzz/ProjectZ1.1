@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE-754 Floating Point</title>
+	<link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type='text/javascript' src='/js/index.js'></script>
+</head>
+<body>
+    <div id='header' include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <h1>IEEE-754 Floating Point</h1>
+    <p>The IEEE-754 standard defines a 32-bit floating point number as 1 sign bit, 8 exponent bits, and a 23-bit mantissa.</p>
+    <p>The decimal number is equal to (sign)<sup>-1</sup>&times;2<sup>exponent - 127</sup>&times;1.mantissa</p>
+    
+    <ol>Converting decimal &rightarrow; IEEE (e.g. 3.75)
+        <li>Convert the truncated <a href='/skills/base-conversions.html'>decimal to binary</a> (e.g. 3.75 &RightArrow;3=11<sub>2</sub>)</li>
+        <li>Convert the decimal portion to binary (e.g. .75=.11<sub>2</sub>)</li>
+        <li>Write the whole binary number in the form of truncated.fraction (e.g. 3.75 = 11.11<sub>2</sub>)</li>
+        <li>Move the decimal point left until there is exactly one 1 left of the decimal. (e.g. 11.11&rightarrow;1.111, 1 shift)</li>
+        <li>The original number in scientific notation is the new number * 2<sup>#shifts</sup> (e.g. 3.75<sub>10</sub> = [1.111&times;2<sup>1</sup>]<sub>2</sub>)</li>
+        <li>Choose the sign bit: 0 if nonnegative, 1 if negative (e.g. 1.111&times;2<sup>1</sup> = 0 xxxxxxxx xxxxxxxxxxxxxxxxxxxxxxx)</li>
+        <li>Get exponent bits and convert to 8-bit binary: exponent = #shifts + 127 (e.g. exponent = 127 + 1 = 128 = 1000 0000<sub>2</sub>)</li>
+        <li>Get mantissa bits: take the portion after the decimal of scientific notation to 23 bits (e.g. .111&rightarrow;1110000000000000000000)</li>
+        <li>Combine the sign bit, exponent bits, and mantissa (e.g. 0 10000000 1110000000000000000000)</li>
+    </ol>
+    <ol>Converting IEEE &rightarrow; decimal
+        <li>just do it lol</li>
+    </ol>
+    <div id='footer' include-html='/footer.html' src='/js/index.js'></div>
+</body>
+</html>
