@@ -19,7 +19,6 @@
         
           // Get today's date and time
           var now = new Date().getTime();
-            
           // Find the distance between now and the count down date
           var distance = countDownDate - now;
             
@@ -49,11 +48,16 @@
           // Output the result in an element with id="demo"
           document.getElementById("demo").innerHTML = hpref + hours + ":" + mpref
           + minutes + ":" + spref + seconds;
-            
+
           // If the count down is over, write some text 
-          if (distance < 0) {
+          if (distance > 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
+            document.getElementById('challenge').innerHTML = "<h4 id='prompt'>Challenge of the day <span id='date'>2/2/2022</span>!<br> No help, no spoilers, no retakes!<br> Are you ready?</h4><button id='start-btn' onclick='countdown()'>Begin</button><div class='challenge-header'>" + 
+            "<span id='countdown'></span>" + 
+            "<h3 id='question'></h3>" + 
+            "<div id='answer'></div>" + 
+            "<div id='submit'></div>" + 
+            "</div>";
           }
         }, 1000);
         </script>
