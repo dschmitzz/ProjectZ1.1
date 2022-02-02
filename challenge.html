@@ -28,10 +28,27 @@
           var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
           var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          var spref, mpref, hpref
+          if (seconds < 10) {
+            spref = '0';
+          } else {
+            spref = '';
+          }
+          if (minutes < 10) {
+            mpref = '0';
+          } else {
+            mpref = '';
+          }
+          if (hours < 10) {
+            hpref = '0';
+          } else {
+            hpref = '';
+          }
             
           // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = hours + ":"
-          + minutes + ":" + seconds;
+          document.getElementById("demo").innerHTML = hpref + hours + ":" + mpref
+          + minutes + ":" + spref + seconds;
             
           // If the count down is over, write some text 
           if (distance < 0) {
