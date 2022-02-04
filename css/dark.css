@@ -6,6 +6,11 @@ body, html {
     background-color: rgb(35,35,35);
 }
 
+h1 {
+    background-color: rgba(0, 255, 255, 0.849);
+    /* color:rgb(121, 121, 121); */
+}
+
 table, td, th {
     background-color: rgb(44, 116, 116);
 }
@@ -20,6 +25,15 @@ ol, ul {
     color: white;
 }
 
+.card:hover {
+    background-color:rgba(255, 255, 255, 0.164);
+    color:white;
+}
+
+.cards:hover {
+    border-color:white;
+}
+
 .cards-label {
     background-color:rgb(96, 197, 146);
 }
@@ -30,6 +44,10 @@ ol, ul {
 
 .header {
     background-color: rgb(42, 62, 128);
+}
+
+.humanities {
+    background-color:rgb(121, 18, 121,.5);
 }
 
 .natsci {
