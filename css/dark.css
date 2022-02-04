@@ -15,15 +15,29 @@ ol, ul {
 }
 
 .card {
-    background-color:rgb(44, 116, 116);
+    background-color:rgba(97, 159, 241, 0.8);
+    border: 2px solid rgb(182, 182, 182);
+    color: white;
 }
 
 .cards-label {
     background-color:rgb(96, 197, 146);
 }
 
+.formsci {
+    background-color: rgb(32, 72, 184,.7);
+}
+
 .header {
     background-color: rgb(42, 62, 128);
+}
+
+.natsci {
+    background-color:rgba(0, 168, 168, 0.6);
+}
+
+.socsci {
+    background-color:rgba(209, 179, 6, 0.8);
 }
 
 #challenge {
