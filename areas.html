@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-Frame-Options" content="deny">
+  <title>Home</title>
+  <link rel='icon' href='/imgs/sl-logo.PNG'>
+  <link rel='stylesheet' href='/css/styles.css'>
+  <script type=text/javascript src='/js/index.js'></script>
+</head>
+<body>
+  <div id='header' include-html='/header.html' src='/js/index.js'></div>
+  <script>includeHTML();</script>
+  
+  <div class='content'>
+    <br>
+    <h1>Areas of Study</h1>
+    <p class='cards-label' id='u'>Mathematics</p>
+    <div class='cards formsci' id='u'>
+      <a class='card'>Discrete Mathematics</a>
+      <div class='card'>Differential Calculus</div>
+      <div class='card'>Integral Calculus</div>
+      <div class='card'>Linear Algebra</div>
+      <div class='card'>Multivariable Calculus</div>
+      <div class='card'>Differential Equations</div>
+      <div class='card'>Combinatorics</div>
+      <div class='card'>Probability & Statistics</div>
+    </div> 
+    <p class='cards-label' id='u'>Computer Science</p>
+    <div class='cards formsci' id='u'>
+      <a class='card' href='topics/computer-org.html'>Computer Organization & Structure</a>
+      <div class='card'>Systems & Networks</div>
+      <div class='card'>Data Structures & Algorithms</div>
+      <div class='card'>Web Development</div>
+      <div class='card'>Python</div>
+      <div class='card'>Java</div>
+      <div class='card'>C</div>
+    </div>
+    <p class='cards-label' id='u'>Natural Science</p>
+    <div class='cards natsci' id='u'>
+      <div class='card'>Classical Mechanics</div>
+      <a class='card' href='topics/emag.html'>Electricity & Magnetism</a>
+      <div class='card'>Quantum Mechanics</div>
+      <div class='card'>Chemistry</div>
+      <div class='card'>Genetics</div>
+      <div class='card'>Evolution</div>
+      <div class='card'>Astronomy</div>
+    </div>
+    <p class='cards-label' id='u'>Social Science</p>
+    <div class='cards socsci' id='u'>
+      <div class='card'>Psychology</div>
+      <div class='card'>Economics</div>
+      <div class='card'>Politics</div>
+      <div class='card'>Sociology</div>
+    </div>
+    <p class='cards-label'>Humanities</p>
+    <div class='cards humanities'>
+      <a class='card' id='u'>English Language</a>
+      <a class='card' href='topics/music-theory.html'>Music Theory</a>
+      <a class='card' id='u'>Visual Arts</a>
+      <a class='card' id='u'>Philosophy</a>
+      <a class='card' id='u'>Religion</a>
+    </div>
+  </div>
+  <div id='footer' include-html='/footer.html' src='js/index.js'></div>
+</body>
+</html>

@@ -10,6 +10,18 @@ table, td, th {
     background-color: rgb(44, 116, 116);
 }
 
+ol, ul {
+    background-color: rgb(85, 133, 204);
+}
+
+.card {
+    background-color:rgb(44, 116, 116);
+}
+
+.cards-label {
+    background-color:rgb(96, 197, 146);
+}
+
 .header {
     background-color: rgb(42, 62, 128);
 }
