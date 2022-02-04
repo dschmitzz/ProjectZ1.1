@@ -1,11 +1,11 @@
 var taken = false;
 part = 1;
 times = [10, 20, 30, 40, 50, 60, 75, 90, 105, 120];
-questions = ["What's 2 + 3?",
-"What is 2/3 to 2 decimal places?", 
-"What is (2/3)<sup>3/2</sup> to 3 decimal places?",
-"What is 3log<sub>2</sub>2?",]
-answers = [5, .67, .544, 3]
+questions = ["What's 2 + 4?",
+"What is 2/4 to 2 decimal places?",
+"What is (2/4)<sup>4/2</sup> to 2 decimal places?",
+"What is 4log<sub>2</sub>2?"];
+answers = [6,.5,.25,4];
 today = new Date();
 
 function countdown() {
@@ -62,22 +62,25 @@ function end(status) {
     switch (status) {
         case 'wrong': 
             // document.getElementById('challenge').innerHTML = 'Sorry, that&apos;s incorrect. <br><br>' + corrections[part - 1] + '<br><br>You made it to Part ' + Part + '!';
-            document.getElementById('challenge').innerHTML = 'Sorry, that&apos;s incorrect.';
+            document.getElementById('challenge').innerHTML = 'Sorry, that&apos;s incorrect.<br>' + "You made it to part " + part + '!';
             break;
         case 'time': 
             //document.getElementById('challenge').innerHTML = "Time's up! <br><br>" + corrections[part - 1] + "<br><br>You made it to part " + Part + '!';
-            document.getElementById('challenge').innerHTML = "Time's up!";
+            document.getElementById('challenge').innerHTML = "Time's up!<br>" + "You made it to part " + part + '!';
             break;
         case 'win':document.getElementById('challenge').innerHTML = 'Congratulations! You completed all parts of the challenge.';
             break;
         default: 
             document.getElementById('challenge').innerHTML = 'Challenge over :/';
     }
-    document.getElementById('challenge').innerHTML += "<div><button onclick='results()'>Results</button></div>";
+    // document.getElementById('challenge').innerHTML += "<div><button onclick='results()'>Results</button></div>";
     taken = true;
 }
 
 function results() {
+    if (part > questions.length) {
+        part = questions.length;     
+    }
     challenge = document.getElementById('challenge');
     challenge.innerHTML = 'You made it to Part ' + part + '!';
     // challenge.innerHTML += '<p>Time remaining: ' + timeleft + ' seconds </p>';
@@ -90,6 +93,11 @@ window.addEventListener('keyup', function(event) {
     }
 });  
 
+// questions = ["What's 2 + 3?",
+// "What is 2/3 to 2 decimal places?", 
+// "What is (2/3)<sup>3/2</sup> to 3 decimal places?",
+// "What is 3log<sub>2</sub>2?"];
+// answers = [5, .67, .544, 3];
 
 // questions = ["What's 2 + 2?", 
 // 'What is 2<sup>5</sup>?', 

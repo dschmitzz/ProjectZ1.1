@@ -1,6 +1,14 @@
 <html>
     <head>
         <script type='text/javascript' src='js/index.js'></script>
+        <script>
+            window.addEventListener('mouseup', function(e) {
+                var x = document.querySelector('#sidenav');
+                if (event.target != document.querySelector("#sidenav")) {
+                    x.style.display = "none";
+                }
+            });
+        </script>
     </head>
     <div class='header'>
         <div>
@@ -22,9 +30,9 @@
         </a>
         <div class='top-menu' class='desktop-only'>
             <!-- <a href='donate.html'>Donate</a> -->
-            <a href='signup.html' style='position:absolute;right:50px;top:30px;' class='u'>Sign up</a>
+            <a href='signup.html' style='position:absolute;right:50px;top:30px;' id='u'>Sign up</a>
             <a href='about.html' class='desktop-only'></a>
         </div>
     </div>
-</html>
 <hr>
+</html>
