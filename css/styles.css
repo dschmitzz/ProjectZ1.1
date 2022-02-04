@@ -2,14 +2,16 @@
 /* AND SO THAT THE USER CAN ADJUST THIS IN SETTINGS */
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap');
 
-#u {display: none;}
+/* #u {display: none;} */
 
 * {
     margin: auto;
 }
 
-button, h1, h3, h4, input, p, #challenge {
+button, h3, h4, input, p, #challenge {
     margin: 8px 15px;
 }
 
@@ -28,7 +30,7 @@ a:hover {
 body, html{
     height: 100vh;
     font-family: 'Quicksand', sans-serif;
-    margin: auto;
+    /* margin: auto; */
     text-align: center;
     width: 100%;
 }
@@ -63,13 +65,14 @@ iframe {
 }
 
 input {
-    font-size: 20px;
+    border: 2px solid rgb(131, 131, 131);
     color: black;
     border-radius: 8px;
+    font-size: 20px;
     height: 25px;
-    width: 160px;
-    border: none;
     padding-left: 10px;
+    text-align: center;
+    width: 160px;
 }
 
 input[type=email] {
@@ -77,10 +80,20 @@ input[type=email] {
 }
 
 h1 {
-    font-size: 36px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: rgb(230, 17, 81,.5);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.329);
+    border-top: 3px solid rgba(0, 0, 0, 0.329);
+    /* border-radius: 10px; */
+    color:rgb(32, 32, 32);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Ubuntu', sans-serif;  */
     font-weight: bold;
-    margin: 30px 0 30px 40px;
+    letter-spacing: .15rem;
+    padding: 10px 0;
+    text-align: center;
+    transform: translate(0, -2px);
+    width: 100%;
 }
 
 h2 {
@@ -108,7 +121,6 @@ ol, ul {
     border-radius: 10px;
     display: block;
     margin: 10px;
-    max-width: 50%;
     padding: 10px;
     padding-left: 30px;
 }
@@ -129,9 +141,14 @@ pre > code {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+table {
+    background-color: rgb(105, 211, 141,.5);
+    border: none;
+    margin: 10px;
+}
+
 table, th, td {
-    background-color: azure;
-    border: 1px solid black;
+    border: 3px solid rgb(223, 223, 223);
     border-collapse: collapse;
     text-align: center;
 }
@@ -141,7 +158,18 @@ td > img {
 }
 
 th, td {
+    font-weight: 500;
     padding: 2px 7px;
+}
+
+th {
+    background-color: rgba(105, 211, 141, 1);
+    /* font-size: 30px; */
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
 }
 
 .break {
@@ -152,24 +180,27 @@ th, td {
 .card {
     align-items: center;
     background-color: rgba(191, 255, 255, .5);
-    border: 1px solid rgb(109, 109, 109);
+    border: 2px solid rgb(151, 151, 151);
     border-radius: 10px;
     display: flex;
-    height: 120px;
+    font-size: 12px;
+    height: 80px;
     justify-content: center;
-    margin: 20px;
+    margin: 13px;
+    padding: 5px;
     text-align: center;
     transition: .8s ease all;
-    width: 120px;
+    width: 80px;
 }
 
 .card:hover {
-    background-color:rgb(119, 178, 255, .6);
-    color: white;
+    background-color:rgba(255, 255, 255, 0.781);
+    /* border-color: rgb(77, 77, 77); */
+    color: black;
     transition: .7s ease all;
 }
 
-.cards {
+.cards, .process {
     border: 2px solid rgb(150,150,150);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(151, 151, 151, .3);
@@ -177,9 +208,16 @@ th, td {
     flex-direction: row;
     flex-wrap: wrap;
     font-weight: 600;
-    justify-content: flex-start;
-    margin-bottom: 30px;
+    justify-content: space-around;
+    /* margin-bottom: 15px; */
     padding-top: 20px;
+    transition: .5s ease all;
+}
+
+.cards:hover {
+    border-color: rgb(83, 83, 83);
+    /* border: 3px solid rgb(150,150,150); */
+    transition: .5s ease all;
 }
 
 .cards-label {
@@ -190,7 +228,7 @@ th, td {
     padding: 5px;
     text-align:center;
     /* transform: scale(1.2) rotate(180deg) translateX(25px); */
-    transform: scale(1.3) translateY(20px);
+    transform: scale(1.1) translateY(24px);
     /* writing-mode: vertical-lr; */
 }
 
@@ -236,7 +274,7 @@ th, td {
 }
 
 .humanities {
-    background-color: rgb(121, 18, 121,.5);
+    background-color: rgba(170, 103, 214, 0.5);
 }
 
 .logo {
@@ -259,12 +297,25 @@ th, td {
     background-color: rgb(109, 214, 109, .5);
 }
 
+.pcontent {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 /* .practice {
     float: left;
     margin: 0;
     padding: 0;
     width: 40%;
 } */
+
+.process {
+    align-items: center;
+    background-color: rgba(106, 180, 245, 0.5);
+    /* text-align: center; */
+    flex-direction: column;
+    padding-top:30px;
+}
 
 .row {
     background-color: rgba(98, 207, 98, .5);
@@ -357,7 +408,8 @@ th, td {
 
 #countdown {
     align-items: center;
-    background-color:antiquewhite;
+    background-color: rgb(213, 236, 252);
+    border: 3px solid rgb(97, 179, 255,.6);
     border-radius: 50%;
     display: none;
     font-size: 30px;
@@ -369,10 +421,6 @@ th, td {
 
 #footer {
     margin-top: 40px;
-}
-
-#header {
-    margin-bottom: 5px;
 }
 
 #info {
