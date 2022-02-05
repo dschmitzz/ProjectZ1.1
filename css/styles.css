@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap');
 
-#u {display: none;}
+#u {display: none;} 
 
 * {
     margin: auto;
@@ -60,6 +60,7 @@ fieldset > div {
 
 iframe {
     height: 360px;
+    margin-top: 20px;
     min-width: 350px;
     width: 30%;
 }
@@ -85,10 +86,11 @@ h1 {
     border-top: 3px solid rgba(0, 0, 0, 0.329);
     /* border-radius: 10px; */
     color:rgb(32, 32, 32);
+    /* color:rgb(235, 235, 235); */
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
     /* font-family: 'Ubuntu', sans-serif;  */
-    font-weight: bold;
+    font-weight: 300;
     letter-spacing: .15rem;
     padding: 10px 0;
     text-align: center;
@@ -184,13 +186,13 @@ ul {
     border-radius: 10px;
     display: flex;
     font-size: 12px;
-    height: 80px;
+    height: 85px;
     justify-content: center;
     margin: 13px;
     padding: 5px;
     text-align: center;
     transition: .8s ease all;
-    width: 80px;
+    width: 85px;
 }
 
 .card:hover {
@@ -198,6 +200,10 @@ ul {
     /* border-color: rgb(77, 77, 77); */
     color: black;
     transition: .7s ease all;
+}
+
+.cards {
+    max-width: 100%;
 }
 
 .cards, .process {
