@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poisson Distribution</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+</head>
+<body onload="writeOutline('probstats')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">   
+            <!-- <button id="practice-btn" style="width:100%;border-radius: 0; margin:0" class="' + domain + '">Practice &nearr;</button> -->
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        
+        <div class='content'>
+            <h1>Poisson Distribution</h1>
+            <div class="process">
+                <p class="process-label">Poisson Process</p>
+                <p>Poisson process: Consists of small intervals &Delta;t. As &Delta;t tends to 0,</p>
+                <p>1. The probability of more than one event in the subinterval tends to 0.</p>
+                <p>2. The probability of one event in the subinterval tends to &lambda;&Delta;t.</p>
+                <p>3. Events within subintervals are independent of those in other subintervals.</p>
+            </div>
+            <div class='definition'>
+                <div class="process" id="p1">
+                    <p class="process-label" onclick="loadExample('ex1','p1')">Poisson Distribution</p>
+                    <p>Random variable X: # of events in a Poisson process</p>
+                    <p>Given 0 &lt; &lambda; and T as the length, </p>
+                    <p class="addendum">probability mass function: f(x) = e<sup>-&lambda;T</sup>(&lambda;T)<sup>x</sup>/x!</p>
+                    <p class="addendum">x = 0, 1, 2, ...</p>
+                </div>
+                <div class="process example" id="ex1">
+                    <!-- <p class="process-label">Example</p> -->
+                    <p>Shaq's free throw percentage <i>p</i> is 0.527 (he makes 52.7% of free throws).</p>
+                </div>
+            </div>
+            <div class="process">
+                <p class="process-label">Poisson Mean & Variance</p>
+                <p>Given a Poisson random variable X over interval of length T with parameter &lambda;:</p>
+                <p>mean, &mu; = E(X) = &lambda;T</p>
+                <p>variance, &sigma;<sup>2</sup> = V(X) = &lambda;T</p>
+            </div>
+        </div>
+    </div>
+            
+    <div style="width:95%" include-html='/footer-nm.html' src='/js/index.js'></div>
+</body>
+</html>

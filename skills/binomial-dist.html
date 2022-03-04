@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binomial Distribution</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+</head>
+<body onload="writeOutline('probstats')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">   
+            <!-- <button id="practice-btn" style="width:100%;border-radius: 0; margin:0" class="' + domain + '">Practice &nearr;</button> -->
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        
+        <div class='content'>
+            <h1>Binomial Distribution</h1>
+            <div class='definition'>
+                <div class="process" id="p1">
+                    <p class="process-label" onclick="loadExample('ex1','p1')">Binomial Distribution</p>
+                    <p>Conduct a series of <i>n</i> Bernoulli trials (those resulting in either success or failure, independent of each other, with constant probability p of success, 0 &lt; p &lt; 1).</p>
+                    <p>Random variable X = # of successes after <i>n</i> trials</p>
+                    <p>probability mass function: f(x) = C(n, x)p<sup>x</sup>(1 - p)<sup>n-x</sup><br>x = 0, 1, ..., n</p>
+                </div>
+                <div class="process example" id="ex1">
+                    <!-- <p class="process-label">Example</p> -->
+                    <p>Shaq's free throw percentage <i>p</i> is 0.527 (he makes 52.7% of free throws).</p>
+                </div>
+            </div>
+            <div class="process">
+                <p class="process-label">Binomial Mean & Variance</p>
+                <p>Given a binomial random variable X with probability <i>p</i> of success and <i>n</i> trials:</p>
+                <p>mean, &mu; = E(X) = np</p>
+                <p>variance, &sigma;<sup>2</sup> = V(X) = np(1 - p)</p>
+            </div>
+        </div>
+    </div>
+            
+    <div style="width:95%" include-html='/footer-nm.html' src='/js/index.js'></div>
+</body>
+</html>
