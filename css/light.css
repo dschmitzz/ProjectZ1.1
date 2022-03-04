@@ -3,9 +3,23 @@ a {
     transition: .5s ease all;
 }
 
+a:hover {
+    color: rgb(35, 163, 163);
+    transition: .5s ease all;
+}
+
 body, html {
     background-color: rgb(230, 230, 230);
+    /* background-color:blue; */
     color: rgb(49, 49, 49);
+}
+
+h1 {
+    z-index: 0;
+}
+
+h3:hover {
+    background-color: black;
 }
 
 .sidenav {
@@ -17,9 +31,19 @@ body, html {
     color: black;
 }
 
+.tab {
+    /* background-color: rgb(158, 215, 248); */
+    z-index: 420;
+}
+
 #menu:hover {
     color: rgb(255, 255, 255);
     transition: .3s;
+}
+
+#practice-btn {
+    border-top:1px solid black;
+    border-bottom: 1px solid black; 
 }
 
 #sidenav > a:hover {
@@ -28,9 +52,5 @@ body, html {
 }
 
 @media screen and (min-width: 600px) {
-
-    .header {
-        background-color: rgb(88, 218, 218);
-    }
 
 }

@@ -6,18 +6,30 @@ body, html {
     background-color: rgb(35,35,35);
 }
 
+button:hover {
+    background-color: rgb(59, 161, 105);
+}
+
 h1 {
-    background-color: rgba(75, 189, 189, 0.781);
+    /* background-color: rgba(75, 189, 189, 0.781); */
     border-color:rgb(202, 202, 202);
     color:rgb(214, 213, 213);
 }
 
-table, td, th {
+table, td {
     background-color: rgb(44, 116, 116);
+}
+
+th {
+    background-color: rgb(35, 97, 92);
 }
 
 ol, ul {
     background-color: rgb(85, 133, 204);
+}
+
+.bitVector > div {
+    color: red;
 }
 
 .card {
@@ -36,15 +48,19 @@ ol, ul {
 }
 
 .cards-label {
-    background-color:rgb(96, 197, 146);
+    background-color:rgb(30, 128, 79);
+    border: 3px solid rgb(111, 173, 147);
 }
 
 .formsci {
     background-color: rgb(32, 72, 184,.7);
+    background-color: rgba(12, 66, 148, 0.651);
 }
 
 .header {
     background-color: rgb(42, 62, 128);
+    background-color: rgb(19, 41, 49);
+    background-color: rgb(31, 31, 31);
 }
 
 .humanities {
@@ -55,8 +71,21 @@ ol, ul {
     background-color:rgba(0, 168, 168, 0.6);
 }
 
+.process-label {
+    background-color: rgb(28, 172, 136);
+}
+
 .socsci {
     background-color:rgba(209, 179, 6, 0.8);
+}
+
+.socsci > .card:hover {
+    background-color: rgba(40, 40, 40, 0.129);
+}
+
+.tab {
+    border: 1px solid rgb(143, 143, 143);
+    border-left: none;
 }
 
 #challenge {
@@ -65,4 +94,14 @@ ol, ul {
 
 #countdown {
     background-color:rgb(124, 133, 255);
+}
+
+#hide > h3:hover {
+    background: none;
+    transition: .3s ease all;
+}
+
+#hide > h5, #practice-btn {
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
 }
