@@ -56,7 +56,7 @@ physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units~ Significant Figur
 probstats = 'formsci~ Probability & Statistics|probstats.html~ '
     + '.Discrete Distributions~ '
     // + 'Probability Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ '
-    + 'Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ '//Poisson Distribution|poisson-dist.html~ '
+    + 'Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
     // + '.Continuous Distributions~ Probabiity Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ Continuous Uniform Distribution~ Normal Distribution~ Normal Approximation~ Exponential Distribution~ '
     // + '.Joint Distributions~ 8~ 8~ 8~ 8~ 8~'
     ;
