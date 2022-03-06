@@ -9,6 +9,8 @@
     <link rel='stylesheet' href='/css/styles.css'>
     <script type=text/javascript src='/js/index.js'></script>
     <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body onload="writeOutline('probstats', 'Hypergeometric Distribution')">
     <div include-html='/header.html' src='/js/index.js'></div>
@@ -24,15 +26,15 @@
             <h1>Hypergeometric Distribution</h1>
                 <div class="process" id="p1">
                     <p class="process-label" onclick="loadExample('ex1','p1')">Hypergeometric Distribution</p>
-                    <p>Random variable X: x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub> all have equal probability within range <i>n</i>.</p>
-                    <p>probability mass function: f(x) = C(K, x)C(N-K, n-x) / C(N, n)</p>
-                    <p class="addendum">x = max(0, n + K - N) to min(K, n)</p>
+                    <p>Random variable \(X\): \(x_1, x_2, ..., x_n\) all have equal probability within range \(n\).</p>
+                    <p>probability mass function: \(P(X=x) = f(x) = {\left( \begin{array}{c} K \\ x \end{array} \right)\left( \begin{array}{c} N-K \\ n-x \end{array} \right) \over \left( \begin{array}{c} N \\ n \end{array} \right)}\)</p>
+                    <p class="addendum">\(x\) = max\(\{0, n+K-N\}\) to min\(\{K, n\}\)</p>
                 </div>
             <div class="process">
                 <p class="process-label">Hypergeometric Mean & Variance</p>
-                <p>Given a hypergeometric random variable X for of consecutive integers a, a + 1, a + 2, ..., b, on range a &leq; b</p>
-                <p>mean, &mu; = E(X) = np</p>
-                <p>variance, &sigma;<sup>2</sup> = V(X) = np(1 - p)[(N - n)/(N - 1)]</p>
+                <p>Given a hypergeometric random variable \(X\) for of consecutive integers \(a, a + 1, a + 2, ..., b\) on range \(a \leq b\)</p>
+                <p>mean, \(\mu = E(X) = np\)</p>
+                <p>variance, \(\sigma^2 = V(X) = np(1 - p){N - n \over N - 1}\)</p>
             </div>
         </div>
     </div>
