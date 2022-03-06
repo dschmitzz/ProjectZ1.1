@@ -14,48 +14,51 @@
   <div id='header' include-html='/header.html' src='/js/index.js'></div>
   <script>includeHTML();</script>
   <h1>Areas of Study</h1>
-  <div class='content' style="margin-top:20px;display:flex;flex-flow: rcolumn wrap;align-items:flex-start">
-      <div class="process formsci" style="padding-bottom:0">
+  <div class='content' style="margin-top:30px;display:flex;flex-flow: row wrap; gap:50px;align-items:flex-start">
+    <div class="col">
+      <div class="process formsci">
         <p class='process-label'>Mathematics</p>
-        <div class='cards' style="margin-bottom:0">
-          <a class='card' href='discrete-math.html' id="u">Discrete Mathematics</a>
+        <div class='cards'>
+          <a class='card' href='topics/discrete-math.html' id="u">Discrete Mathematics</a>
           <a class="card" id="u">Number Theory</a>
           <a class="card" id="u">Algebra</a>
           <a class="card" id="u">Geometry</a>
           <a class='card' id="u">Calculus</a>
           <a class='card' id="u">Linear Algebra</a>
-          <a class='card' href='diffeq.html' id="u">Differential Equations</a>
-          <a class='card' href='combinatorics.html'>Combinatorics</a>
-          <a class='card' href='probstats.html'>Probability & Statistics</a>
+          <a class='card' href='topics/diffeq.html' id="u">Differential Equations</a>
+          <a class='card' href='topics/combinatorics.html' id="u">Combinatorics</a>
+          <a class='card' href='topics/probstats.html'>Probability & Statistics</a>
         </div>
       </div> 
-      <div class="process formsci" id="">
+      <div class="process formsci">
         <p class='process-label' id='u'>Computer Science</p>
         <div class='cards' id='u'>
-          <a class='card' href='computer-org.html'>Computer Organization & Structure</a>
-          <a class='card' id="u">Systems & Networks</a>
-          <a class='card' href='data-structures-algorithms.html' id="u">Data Structures & Algorithms</a>
-          <a class='card' href='webdev.html'>Web Development</a>
-          <a class='card' id="u">Python</a>
-          <a class='card' id="u">Java</a>
-          <a class='card' href="c.html" id="u">C</a>
-          <a class="card" id="u">C++</a>
-          <a class="card" id="u">C#</a>
+          <a class='card' href='topics/computer-org.html'>Computer Organization & Structure</a>
+          <a class='card'>Systems & Networks</a>
+          <a class='card' href='topics/data-structures-algorithms.html'>Data Structures & Algorithms</a>
+          <a class='card' href='topics/webdev.html'>Web Development</a>
+          <a class='card'>Python</a>
+          <a class='card'>Java</a>
+          <a class='card' href="topics/c.html">C</a>
+          <a class="card">C++</a>
+          <a class="card">C#</a>
         </div>
       </div>
+    </div>
+    <div class="col">
       <div class="process natsci">
-        <p class='process-label' id="">Natural Science</p>
-        <div class='cards' id="">
-          <a class='card' href='phys-classical.html'>Classical Physics</a>
+        <p class='process-label' id="u">Natural Science</p>
+        <div class='cards' id="u">
+          <a class='card' href='topics/phys-classical.html'>Classical Physics</a>
           <a class='card' id='u'>Modern Physics</a>
           <a class="card" id="u">Classical Mechanics</a>
           <a class="card" id="u">Quantum Mechanics</a>
-          <a class="card" id="u">Cosmology</a>
-          <a class='card' href='chemistry.html' id="u">Chemistry</a>
-          <a class="card" id="u">Organic Chemistry</a>
+          <a class="card">Cosmology</a>
+          <a class='card' href='topics/chemistry.html'>Chemistry</a>
+          <a class="card">Organic Chemistry</a>
           <a class='card' id='u'>Biology</a>
           <a class='card' id='u'>Astronomy</a>
-          <a class="card" id="u">Earth Science</a>
+          <a class="card">Earth Science</a>
         </div>
       </div>
       <div class="process socsci">
@@ -71,12 +74,13 @@
         <p class='process-label' id="u">Humanities</p>
         <div class='cards' id="u">
           <a class='card' id='u'>English Language</a>
-          <a class='card' href='music-theory.html'>Music Theory</a>
+          <a class='card' href='topics/music-theory.html'>Music Theory</a>
           <a class='card' id='u'>Visual Arts</a>
           <a class='card' id='u'>Philosophy</a>
           <a class='card' id='u'>Religion</a>
         </div>
       </div>
+    </div>
   </div>
   <div id='footer' include-html='/footer.html' src='js/index.js'></div>
 </body>
