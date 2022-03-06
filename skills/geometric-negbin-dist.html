@@ -9,6 +9,8 @@
     <link rel='stylesheet' href='/css/styles.css'>
     <script type=text/javascript src='/js/index.js'></script>
     <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body onload="writeOutline('probstats', 'Geometric & Negative Binomial Distributions')">
     <div include-html='/header.html' src='/js/index.js'></div>
@@ -22,42 +24,44 @@
         
         <div class='content'>
             <h1>Geometric & Negative Binomial Distributions</h1>
-            <div class='definition'>
+            <!-- <div class='definition'> -->
                 <div class="process" id="p1">
                     <p class="process-label" onclick="loadExample('ex1','p1')">Geometric Distribution</p>
-                    <p>Conduct a series of Bernoulli trials (those resulting in either success or failure, independent of each other, with constant probability p of success, 0 &lt; p &lt; 1).</p>
-                    <p>Random variable X = # of trials until the first success</p>
-                    <p>probability mass function: f(x) = (1 - p)<sup>x-p</sup>p<br>x = r, r+1, r+2, ...</p>
+                    <p>Conduct a series of Bernoulli trials (those resulting in either success or failure, independent of each other, with constant probability \(p\) of success, \(0 \lt p \lt 1\)).</p>
+                    <p>Random variable \(X\) = # of trials until the first success</p>
+                    <p>probability mass function: \(P(X=x) = f(x) = (1 - p)^{x-p}p\)</p>
+                    <p>\(x = r, r+1, r+2, ...\)</p>
                 </div>
-                <div class="process example" id="ex1">
-                    <!-- <p class="process-label">Example</p> -->
+                <!-- <div class="process example" id="ex1">
+                    <p class="process-label">Example</p>
                     <p>Shaq's free throw percentage <i>p</i> is 0.527 (he makes 52.7% of free throws).</p>
-                </div>
-            </div>
-            <div class="definition">
+                </div> -->
+            <!-- </div>
+            <div class="definition"> -->
                 <div class="process">
                     <p class="process-label">Geometric Mean & Variance</p>
-                    <p>Given a geometric random variable X with probability p of success:</p>
-                    <p>mean, &mu; = E(X) = 1/p</p>
-                    <p>variance, &sigma;<sup>2</sup> = V(X) = (1 - p)/p<sup>2</sup></p>
+                    <p>Given a geometric random variable \(X\) with probability \(p\) of success:</p>
+                    <p>mean, \(\mu = E(X) = {1 \over p}\)</p>
+                    <p>variance, \(\sigma^2 = V(X) = {1 - p \over p^2}\)</p>
                 </div>
-            </div>
-            <div class="definition">
+            <!-- </div>
+            <div class="definition"> -->
                 <div class="process">
                     <p class="process-label">Negative Binomial Distribution</p>
-                    <p>Conduct a series of Bernoulli trials (those resulting in either success or failure, independent of each other, with constant probability p of success, 0 &lt; p &lt; 1).</p>
-                    <p>Random variable X = # of trials until <i>r</i> successes occur</p>
-                    <p>probability mass function: f(x) = C(x - 1, r - 1)(1 - p)<sup>x-r</sup>p<sup>r</sup></p>
+                    <p>Conduct a series of Bernoulli trials (those resulting in either success or failure, independent of each other, with constant probability \(p\) of success, \(0 \lt p \lt 1\)).</p>
+                    <p>Random variable \(X\) = # of trials until \(r\) successes occur</p>
+                    <p>probability mass function: \(P(X = x) = f(x) = \left( \begin{array}{c} x-1 \\ r-1 \end{array} \right)(1 - p)^{x-r}p^r\)</p>
                 </div>
-            </div>
-            <div class="definition">
+            <!-- </div>
+            <div class="definition"> -->
                 <div class="process bottom">
                     <p class="process-label">Negative Binomial Mean & Variance</p>
                     <p>Given a negative binomial random variable X with probability p of success and <i>r</i> successes:</p>
-                    <p>mean, &mu; = E(X) = r/p</p>
-                    <p>variance, &sigma;<sup>2</sup> = V(X) = r(1 - p)/p<sup>2</sup></p>
+                    <p>mean, \(\mu = E(X) = {r \over p}\)</p>
+                    <p>variance, \(\sigma^2 = V(X) = {r(1 - p) \over p^2}\)</p>
+                    <p>Note that all geometric formulas are just negative binomial formulas plugging in 1 for \(r\), as expected!</p>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
             
