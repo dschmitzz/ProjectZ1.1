@@ -12,8 +12,8 @@ chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units~ Significant Figures~ Sc
 combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum & Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ '//Binomial Theorem|binomial-thm.html~ Prime Numbers|prime-numbers.html~ '
     // + '.Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
     // + '.Set Theory~ Sets & Subsets|sets-subsets.html~ Venn Diagrams|venn-diagrams.html~ Axioms of Probability|axioms-of-probability.html~ Conditional Probability|conditional-probability.html~ Independence|independence.html~ '
-    // + '.Math Induction~ Mathematical Induction|math-induction.html~ Recursion|recursion.html~ Division Algorithm|division-algo.html~ Euclidean Algorithm (gcd)|gcd.html~ Fundamental Theorem of Arithmetic'
-    // + '.Inclusion/Exclusion~ '
+    //+ '.Math Induction~ Mathematical Induction|math-induction.html~ Recursion|recursion.html~ Division Algorithm|division-algo.html~ Euclidean Algorithm (gcd)|gcd.html~ Fundamental Theorem of Arithmetic'
+    + '.Inclusion/Exclusion~ Principle of Inclusion/Exclusion~ ' //Derangements
     // + '.Generating Functions~ '
     // + '.Recurrence Relations~ '
     ;
@@ -56,7 +56,7 @@ physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units~ Significant Figur
 probstats = 'formsci~ Probability & Statistics|probstats.html~ '
     + '.Discrete Distributions~ '
     // + 'Probability Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ '
-    + 'Discrete Uniform Distribution|discrete-uniform-dist.html~ '//Binomial Distribution|binomial-dist.html~ Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
+    + 'Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ '//Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
     // + '.Continuous Distributions~ Probabiity Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ Continuous Uniform Distribution~ Normal Distribution~ Normal Approximation~ Exponential Distribution~ '
     // + '.Joint Distributions~ 8~ 8~ 8~ 8~ 8~'
     ;
