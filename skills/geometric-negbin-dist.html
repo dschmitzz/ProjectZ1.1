@@ -10,7 +10,7 @@
     <script type=text/javascript src='/js/index.js'></script>
     <script type="text/javascript" src="/js/outlines.js"></script>
 </head>
-<body onload="writeOutline('probstats')">
+<body onload="writeOutline('probstats', 'Geometric & Negative Binomial Distributions')">
     <div include-html='/header.html' src='/js/index.js'></div>
     <script>includeHTML();</script>
     <div class="content-container">
@@ -34,23 +34,29 @@
                     <p>Shaq's free throw percentage <i>p</i> is 0.527 (he makes 52.7% of free throws).</p>
                 </div>
             </div>
-            <div class="process">
-                <p class="process-label">Geometric Mean & Variance</p>
-                <p>Given a geometric random variable X with probability p of success:</p>
-                <p>mean, &mu; = E(X) = 1/p</p>
-                <p>variance, &sigma;<sup>2</sup> = V(X) = (1 - p)/p<sup>2</sup></p>
+            <div class="definition">
+                <div class="process">
+                    <p class="process-label">Geometric Mean & Variance</p>
+                    <p>Given a geometric random variable X with probability p of success:</p>
+                    <p>mean, &mu; = E(X) = 1/p</p>
+                    <p>variance, &sigma;<sup>2</sup> = V(X) = (1 - p)/p<sup>2</sup></p>
+                </div>
             </div>
-            <div class="process">
-                <p class="process-label">Negative Binomial Distribution</p>
-                <p>Conduct a series of Bernoulli trials (those resulting in either success or failure, independent of each other, with constant probability p of success, 0 &lt; p &lt; 1).</p>
-                <p>Random variable X = # of trials until <i>r</i> successes occur</p>
-                <p>probability mass function: f(x) = C(x - 1, r - 1)(1 - p)<sup>x-r</sup>p<sup>r</sup></p>
+            <div class="definition">
+                <div class="process">
+                    <p class="process-label">Negative Binomial Distribution</p>
+                    <p>Conduct a series of Bernoulli trials (those resulting in either success or failure, independent of each other, with constant probability p of success, 0 &lt; p &lt; 1).</p>
+                    <p>Random variable X = # of trials until <i>r</i> successes occur</p>
+                    <p>probability mass function: f(x) = C(x - 1, r - 1)(1 - p)<sup>x-r</sup>p<sup>r</sup></p>
+                </div>
             </div>
-            <div class="process bottom">
-                <p class="process-label">Negative Binomial Mean & Variance</p>
-                <p>Given a negative binomial random variable X with probability p of success and <i>r</i> successes:</p>
-                <p>mean, &mu; = E(X) = r/p</p>
-                <p>variance, &sigma;<sup>2</sup> = V(X) = r(1 - p)/p<sup>2</sup></p>
+            <div class="definition">
+                <div class="process bottom">
+                    <p class="process-label">Negative Binomial Mean & Variance</p>
+                    <p>Given a negative binomial random variable X with probability p of success and <i>r</i> successes:</p>
+                    <p>mean, &mu; = E(X) = r/p</p>
+                    <p>variance, &sigma;<sup>2</sup> = V(X) = r(1 - p)/p<sup>2</sup></p>
+                </div>
             </div>
         </div>
     </div>

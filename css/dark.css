@@ -33,13 +33,14 @@ ol, ul {
 }
 
 .card {
-    background-color:rgba(97, 159, 241, 0.8);
+    /* background-color:rgba(97, 159, 241, 0.8); */
+    background-color:rgba(78, 78, 78, 0.164);
     border: 2px solid rgb(182, 182, 182);
     color: white;
 }
 
 .card:hover {
-    background-color:rgba(255, 255, 255, 0.164);
+    background-color: none;
     color:white;
 }
 
@@ -75,6 +76,16 @@ ol, ul {
     background-color: rgb(28, 172, 136);
 }
 
+.sidenav {
+    transition: .4s;
+}
+
+.sidenav a:hover {
+    background-color: rgb(192, 192, 192);
+    color: black;
+    transition: .4s;
+}
+
 .socsci {
     background-color:rgba(209, 179, 6, 0.8);
 }
@@ -101,7 +112,18 @@ ol, ul {
     transition: .3s ease all;
 }
 
-#hide > h5, #practice-btn {
+#hide p:hover {
+    transition: .5s ease all;
+}
+
+#hide p:hover {
+    /* background-color: white;
+    color: black; */
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+#hide h5, #practice-btn {
     border-bottom: 1px solid white;
     border-top: 1px solid white;
 }

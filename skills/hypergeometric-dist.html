@@ -10,7 +10,7 @@
     <script type=text/javascript src='/js/index.js'></script>
     <script type="text/javascript" src="/js/outlines.js"></script>
 </head>
-<body onload="writeOutline('probstats')">
+<body onload="writeOutline('probstats', 'Hypergeometric Distribution')">
     <div include-html='/header.html' src='/js/index.js'></div>
     <script>includeHTML();</script>
     <div class="content-container">
@@ -22,18 +22,12 @@
         
         <div class='content'>
             <h1>Hypergeometric Distribution</h1>
-            <div class='definition'>
                 <div class="process" id="p1">
                     <p class="process-label" onclick="loadExample('ex1','p1')">Hypergeometric Distribution</p>
                     <p>Random variable X: x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub> all have equal probability within range <i>n</i>.</p>
                     <p>probability mass function: f(x) = C(K, x)C(N-K, n-x) / C(N, n)</p>
                     <p class="addendum">x = max(0, n + K - N) to min(K, n)</p>
                 </div>
-                <div class="process example" id="ex1">
-                    <!-- <p class="process-label">Example</p> -->
-                    <p>Shaq's free throw percentage <i>p</i> is 0.527 (he makes 52.7% of free throws).</p>
-                </div>
-            </div>
             <div class="process">
                 <p class="process-label">Hypergeometric Mean & Variance</p>
                 <p>Given a hypergeometric random variable X for of consecutive integers a, a + 1, a + 2, ..., b, on range a &leq; b</p>

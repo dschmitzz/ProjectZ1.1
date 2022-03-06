@@ -9,8 +9,10 @@
     <link rel='stylesheet' href='/css/styles.css'>
     <script type=text/javascript src='/js/index.js'></script>
     <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body onload="writeOutline('probstats')">
+<body onload="writeOutline('probstats', 'Discrete Uniform Distribution')">
     <div include-html='/header.html' src='/js/index.js'></div>
     <script>includeHTML();</script>
     <div class="content-container">
@@ -22,22 +24,22 @@
         
         <div class='content'>
             <h1>Discrete Uniform Distribution</h1>
-            <div class='definition'>
-                <div class="process" id="p1">
-                    <p class="process-label" onclick="loadExample('ex1','p1')">Discrete Uniform Distribution</p>
-                    <p>Random variable X: x<sub>1</sub>, x<sub>2</sub>, ..., x<sub>n</sub> all have equal probability within range <i>n</i>.</p>
-                    <p>probability mass function: f(x<sub>i</sub>) = 1/n</p>
-                </div>
-                <div class="process example" id="ex1">
-                    <!-- <p class="process-label">Example</p> -->
-                    <p>Shaq's free throw percentage <i>p</i> is 0.527 (he makes 52.7% of free throws).</p>
-                </div>
+            <!-- <div class='definition'> -->
+            <div class="process" id="p1">
+                <p class="process-label" onclick="loadExample('ex1','p1')">Discrete Uniform Distribution</p>
+                <p>Random variable \(X\): \(x_1, x_2, ..., x_n\) all have equal probability within range \(n\).</p>
+                <p>probability mass function: \(f(x_i) = {1 \over n}\)</p>
             </div>
+                <!-- <div class="process example" id="ex1"> -->
+                    <!-- <p class="process-label">Example</p> -->
+                    <!-- <p>Shaq's free throw percentage <i>p</i> is 0.527 (he makes 52.7% of free throws).</p> -->
+                <!-- </div> -->
+            <!-- </div> -->
             <div class="process">
                 <p class="process-label">Discrete Uniform Mean & Variance</p>
-                <p>Given a discrete uniform random variable X for of consecutive integers a, a + 1, a + 2, ..., b, on range a &leq; b</p>
-                <p>mean, &mu; = E(X) = (b + a)/2</p>
-                <p>variance, &sigma;<sup>2</sup> = V(X) = ((b - a + 1)<sup>2</sup> - 1)/12</p>
+                <p>Given a discrete uniform random variable \(X\) for of consecutive integers \(a, a+1, a+2, ..., b\) on range \(a \leq b\)</p>
+                <p>mean, \(\mu = E(X) = {b + a \over 2}\)</p>
+                <p>variance, \(\sigma^2\ = V(X) = {(b - a + 1)^2 - 1 \over 12}\)</p>
             </div>
         </div>
     </div>
