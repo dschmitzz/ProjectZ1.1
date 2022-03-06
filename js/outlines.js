@@ -13,7 +13,7 @@ combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum &
     // + '.Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
     // + '.Set Theory~ Sets & Subsets|sets-subsets.html~ Venn Diagrams|venn-diagrams.html~ Axioms of Probability|axioms-of-probability.html~ Conditional Probability|conditional-probability.html~ Independence|independence.html~ '
     //+ '.Math Induction~ Mathematical Induction|math-induction.html~ Recursion|recursion.html~ Division Algorithm|division-algo.html~ Euclidean Algorithm (gcd)|gcd.html~ Fundamental Theorem of Arithmetic'
-    + '.Inclusion/Exclusion~ Principle of Inclusion/Exclusion~ ' //Derangements
+    //+ '.Inclusion/Exclusion~ Principle of Inclusion/Exclusion~ ' //Derangements
     // + '.Generating Functions~ '
     // + '.Recurrence Relations~ '
     ;
