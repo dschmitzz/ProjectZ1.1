@@ -6,8 +6,10 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Combinatorics|combina
     //+ '.Computer Science~ Computer Organization & Structure|computer-org.html~ '//Web Development|webdev.html~ '
     + '.Natural Science~ Classical Physics|phys-classical.html~ '
     // + '.Social Science~ '
-    // + '.Humanities~ ';
+    // + '.Humanities~ '
+    ;
 
+calcDiff = 'formsci~ Differential Calculus~ .Fundamentals~ Trig Functions~ '
 chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units~ Significant Figures~ Scalars & Vectors';
 combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum & Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ '//Binomial Theorem|binomial-thm.html~ Prime Numbers|prime-numbers.html~ '
     // + '.Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
@@ -51,6 +53,7 @@ physClassical = 'natsci~ Classical Physics|phys-classical.html~ .Fundamentals~ S
     // + '.2D Dynamics~ Uniform Circular Motion~ Circular Orbits~ Nonuniform Circular Motion~ '
     // + '.Work & Kinetic Energy~ Springs~ Power~ '
     // + '.Interactions & Potential Energy~ ';
+    + '.Electric Charge & Force~ Electric Charge & Force|electric-charge-force.html~ '// 
     ;
 physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units~ Significant Figures~ Scalars & Vectors~ ';
 probstats = 'formsci~ Probability & Statistics|probstats.html~ '
