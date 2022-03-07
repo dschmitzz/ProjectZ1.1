@@ -54,7 +54,8 @@ physClassical = 'natsci~ Classical Physics|phys-classical.html~ .Fundamentals~ S
     // + '.2D Dynamics~ Uniform Circular Motion~ Circular Orbits~ Nonuniform Circular Motion~ '
     // + '.Work & Kinetic Energy~ Springs~ Power~ '
     // + '.Interactions & Potential Energy~ ';
-    + '.Electric Charge & Force~ Electric Charge & Force|electric-charge-force.html~ '// 
+    + '.Electric Field~ Electric Charge & Force|electric-charge-force.html~ '//
+    + '.Electric Field of Distributed Charges~ Uniformly Charged Thin Rod|uc-thin-rod.html~ Uniformly Charged Thin Ring|uc-thin-ring.html~ Uniformly Charged Disk|uc-disk.html~ ' // Charged Spherical Shell~ Charged Solid Sphere~ ' 
     ;
 physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units~ Significant Figures~ Scalars & Vectors~ ';
 probstats = 'formsci~ Probability & Statistics|probstats.html~ '
