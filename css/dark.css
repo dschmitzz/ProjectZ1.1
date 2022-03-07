@@ -40,7 +40,7 @@ ol, ul {
 }
 
 .card:hover {
-    background-color: none;
+    background-color: rgba(0, 0, 0, 0.363);
     color:white;
 }
 
@@ -70,6 +70,14 @@ ol, ul {
 
 .natsci {
     background-color:rgba(0, 168, 168, 0.6);
+}
+
+.process {
+    border-color: rgb(105, 105, 105);
+}
+
+.process:hover {
+    border-color: rgb(150,150,150);
 }
 
 .process-label {

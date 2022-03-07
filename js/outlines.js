@@ -1,16 +1,17 @@
 // function here to write the outline based on an array
 
-var topic = '';
+var topic;
 
 areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
     //+ '.Computer Science~ Computer Organization & Structure|computer-org.html~ '//Web Development|webdev.html~ '
-    + '.Natural Science~ Classical Physics|phys-classical.html~ '
+    + '.Natural Science~ Classical Physics|physClassical.html~ Chemistry|chemistry.html~ '
     // + '.Social Science~ '
     // + '.Humanities~ '
     ;
 
 calcDiff = 'formsci~ Differential Calculus~ .Fundamentals~ Trig Functions~ '
-chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units~ Significant Figures~ Scalars & Vectors';
+chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ '//Significant Figures~ Scalars & Vectors'
+;
 combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum & Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ '//Binomial Theorem|binomial-thm.html~ Prime Numbers|prime-numbers.html~ '
     // + '.Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
     // + '.Set Theory~ Sets & Subsets|sets-subsets.html~ Venn Diagrams|venn-diagrams.html~ Axioms of Probability|axioms-of-probability.html~ Conditional Probability|conditional-probability.html~ Independence|independence.html~ '
@@ -72,8 +73,14 @@ webdev = 'formsci~ Web Development|webdev.html~ '
     + '.PHP~ '
     + '.SQL~ '
     ;
+
 function checkTopic() {
     alert(topic);
+}
+
+function setTopic(current) {
+    sessionStorage.setItem('topic', current);
+    topic = current;
 }
 
 function topicSelector() {
@@ -95,43 +102,82 @@ function topicSelector() {
 }
 
 // gets the outline of an area in card form (if type == area) or as a left menu (if type is a skill)
-function writeOutline(input, type) {
-    topic = input;
-    topicSelector(topic);
+function writeOutline(type, name='') {
+    topic = sessionStorage.getItem('topic');
+    // alert('topics ' + topic + '!');  
+    let input = topic;
+    topicSelector();
     var domain = topic[0];
     var title = topic[1];
     title = title.split('|');
     menu = document.getElementById('skills');
     if (type == 'area') {
         document.getElementById('content').innerHTML += '<h1>' + title[0] + '</h1>';
+        menu.innerHTML += '<div id="hide"><h3 style="font-size:20px"><a href="/topics/areas.html">Areas of Study</a></h3></div>';
+        areas = areas.split('~ ');
+        // alert(topic);
+        // write the menu for type area
+
+        // write the left menu for an area page
+        for (i = 2; i < areas.length; i++) {
+            areaMod = areas[i];
+            // alert('areas[' + i + '] is: ' + areas[i]);
+            areaMod = areaMod.split('|');
+            if (areaMod[0] == '') {continue;}
+            if (areaMod[0][0] == '.') {
+                // alert(areaMod[0]);
+                document.getElementById('hide').innerHTML += '<h5 style="font-size:16px" class="' + domain +'">' + areaMod[0].substring(1,areaMod[0].length) + '</h5>';
+            } else {
+                document.getElementById('hide').innerHTML += '<p>' + (areaMod.length > 1 ? '<a href="/topics/' + areaMod[1] + '">' : '') + areaMod[0] + (areaMod.length > 1 ? '</a>' : '') + '</p>';
+                // highlight current area  
+                if (name == areaMod[0]) {
+                    var currentTime = new Date().getHours();
+                    if (7 <= currentTime && currentTime < 18) {
+                        document.querySelector('#hide :nth-child('+i+')').style = 'background-color:white';
+                    } else {
+                        document.querySelector('#hide :nth-child('+i+')').style = 'background-color:black';
+                    }
+                }
+            }
+        }
     }
     else {
-        menu.innerHTML += '<div id="hide"><h3 style="font-size:20px"><a href="/topics/'+title[1]+'">' + title[0] + '</a></h3></div>';
-        inner = document.getElementById('hide');
+        menu.innerHTML += '<div id="hide"><h3 style="font-size:20px"><a href="/topics/'+input+'.html">' + title[0] + '</a></h3></div>';
     }
-    
+
+    // write the left menu for a skill page or cards for an area page
     for (i = 2; i < topic.length; i++) {
+        // alert('areas is still ' + areas);
         mod = topic[i];
+        // alert('mod is ' + mod);
         mod = mod.split('|');
-        if (mod[0] == '') {
-            continue;
-        }
+        if (mod[0] == '') {continue;}
         if (mod[0][0] == '.') {
+            // write a topic h5 to the menu for a skill page
             if (type != 'area') {
                 document.getElementById('hide').innerHTML += '<h5 style="font-size:16px" class="' + domain +'">' + mod[0].substring(1,mod[0].length) + '</h5>';
-            } else {
+            }
+            // write the title of the process and topic h5 to the menu for an area page 
+            else {
                 document.getElementById('content').innerHTML += '<div class="process '+domain+'"> <p class="process-label">' + mod[0].substring(1,mod[0].length) + '</p><div class="cards" id="hscrollable"p></div></div>';
             }
+        // write a subtopic p to the left menu for a skill or area page
         } else if (type != 'area') {
-            if (input == 'areas') {
-                document.getElementById('hide').innerHTML += '<p>' + (mod.length > 1 ? '<a href="/topics/' + mod[1] + '">' : '') + mod[0] + (mod.length > 1 ? '</a>' : '') + '</p>';   
-            } else {
+            // write the subtopic for an area page
+            if (type == 'areas') {
+                document.getElementById('hide').innerHTML += '<p>' + (mod.length > 1 ? '<a href="/skills/' + mod[1] + '">' : '') + mod[0] + (mod.length > 1 ? '</a>' : '') + '</p>';   
+            } 
+            // write the topic for an 
+            else {
                 document.getElementById('hide').innerHTML += '<p>' + (mod.length > 1 ? '<a href="/skills/' + mod[1] + '">' : '') + mod[0] + (mod.length > 1 ? '</a>' : '') + '</p>';
             }
+        // write a card to the 
         } else if (topic != 'areas') {
             document.getElementById('content').lastChild.lastChild.innerHTML += '<a class="card"' + (mod.length > 1 ? ' href="/skills/' + mod[1] + '">' : '>') + mod[0] + '</a>';
         }
-        if (type == mod[0]) {
+        // alert(mod[0]);
+        if (name == mod[0]) {
+            // highlight current skill
             var currentTime = new Date().getHours();
             if (7 <= currentTime && currentTime < 18) {
                 document.querySelector('#hide :nth-child('+i+')').style = 'background-color:white';
@@ -140,5 +186,7 @@ function writeOutline(input, type) {
             }
         }
     }
+    topic = input;
+    // alert('dont worry topic is still ' + topic + '!');
 }
 

@@ -8,55 +8,23 @@
     <link rel='icon' href='/imgs/sl-logo.PNG'>
     <link rel='stylesheet' href='/css/styles.css'>
     <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
 </head>
-<body>
+<body  onload="setTopic('chemistry'); writeOutline('area', 'Chemistry')">
     <div id='header' include-html='/header.html' src='/js/index.js'></div>
     <script>includeHTML();</script>
-    <h1>Chemistry</h1>
-    <div class='content'>
-        <p class='cards-label'>Fundamentals</p>
-        <div class='cards natsci'>
-            <a class='card' href='/skills/si-units.html'>SI Units</a>
-            <a class='card' href='/skills/sig-figs.html' id='u'>Significant Figures</a>
-            <a class='card' id='u'>Periodic Table</a>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">
+
+            <span class='tab natsci' id="tab" onclick="openOutline()">&#x25c0;</span>
         </div>
-        <p class='cards-label' id='u'>Atomic Structure & Properties</p>
-        <div class='cards natsci' id='u'>
-            <a class='card'>Moles & Molar Mass</a>
-            <a class='card'>Mass Spectroscopy of Elements</a>
-            <a class="card">Elemental Composition of Pure Substances</a>
-            <a class='card'>Composition of Mixtures</a>
-            <a class='card'>Atomic Structure and Electron Configuration</a>
-            <a class='card'>Photoelectron Spectroscopy</a>
-            <a class='card'>Periodic Trends</a>
-            <a class='card'>Valence Electrons & Ionic Compounds</a>
+        <!-- get the function for writing the course outline in the skills menu -->
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        
+        <div class="content" id="content">
+
         </div>
-        <p class='cards-label' id='u'>Molecular & Ionic Compounds</p>
-        <div class='cards natsci' id='u'>
-            <a class='card'>Covalent Bonding</a>
-            <a class='card'>Ionic Bonding</a>
-            <a class='card'>Lewis Diagrams</a>
-        </div>
-        <p class='cards-label' id='u'>Intermolecular Forces</p>
-        <div class='cards natsci' id='u'>
-            <a class='card'>Hydrogen Bonding</a>
-            <a class='card'>Ion-induced Dipole Forces</a>
-            <a class='card'>Ion-dipole Forces</a>
-            <a class='card'>van der Waals Forces</a>
-        </div>
-        <p class='cards-label' id='u'>Chemical Reactions</p>
-        <div class='cards natsci' id='u'></div>
-        <p class='cards-label' id='u'>Kinetics</p>
-        <div class='cards natsci' id='u'></div>
-        <p class='cards-label' id='u'>Thermodynamics</p>
-        <div class='cards natsci' id='u'></div>
-        <p class='cards-label' id='u'>Equilibrium</p>
-        <div class='cards natsci' id='u'></div>
-        <p class='cards-label' id='u'>Acids & Bases</p>
-        <div class='cards natsci' id='u'></div>
-        <p class='cards-label' id='u'>Applications of Thermodynamics</p>
-        <div class='cards natsci' id='u'></div>
     </div>
-    <div id='footer' include-html='/footer.html' src='js/index.js'></div>    
+    <div id="footer" include-html='/footer.html' src='/js/index.js'></div>  
 </body>
 </html>
