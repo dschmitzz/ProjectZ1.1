@@ -3,12 +3,14 @@
 var topic;
 
 areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Precalculus|precalc.html~ Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
-    //+ '.Computer Science~ Computer Organization & Structure|computer-org.html~ '//Web Development|webdev.html~ '
+    + '.Computer Science~ '//Computer Organization & Structure|computer-org.html~ '//Web Development|webdev.html~ '
+    + 'C|c.html~ '
     + '.Natural Science~ Classical Physics|physClassical.html~ Chemistry|chemistry.html~ '
     // + '.Social Science~ '
     // + '.Humanities~ '
     ;
 
+c = 'formsci~ C~ .Fundamentals~ Hello World|c-hello-world.html~ '
 calcDiff = 'formsci~ Differential Calculus~ .Fundamentals~ Trig Functions~ '
 chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ '//Significant Figures~ Scalars & Vectors'
 ;
@@ -89,6 +91,7 @@ function setTopic(current) {
 function topicSelector() {
     switch (topic) {
         case 'areas': topic = areas; break;
+        case 'c': topic = c; break;
         case 'chemistry': topic = chemistry; break;
         case 'combinatorics': topic = combinatorics; break;
         case 'compOrgStr': topic = compOrgStr; break;

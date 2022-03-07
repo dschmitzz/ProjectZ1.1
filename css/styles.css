@@ -137,19 +137,20 @@ ol, ul {
 }
 
 pre {
-    background-color:rgb(198, 255, 203);
+    background-color:rgba(65, 242, 255, 0.425);
     border: 1px solid black;
     border-radius: 10px;
-    display: inline-block;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
-    margin: 10px;
+    margin: 5px;
+    margin-bottom:0;
     padding: 10px;
-    padding-top: 0;
+    /* padding-bottom:0; */
 }
 
 pre > code {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
 }
 
 table {
