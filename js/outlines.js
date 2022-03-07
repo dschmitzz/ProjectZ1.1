@@ -2,7 +2,7 @@
 
 var topic;
 
-areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
+areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Precalculus|precalc.html~ Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
     //+ '.Computer Science~ Computer Organization & Structure|computer-org.html~ '//Web Development|webdev.html~ '
     + '.Natural Science~ Classical Physics|physClassical.html~ Chemistry|chemistry.html~ '
     // + '.Social Science~ '
@@ -58,6 +58,8 @@ physClassical = 'natsci~ Classical Physics|phys-classical.html~ .Fundamentals~ S
     + '.Electric Field of Distributed Charges~ Uniformly Charged Thin Rod|uc-thin-rod.html~ Uniformly Charged Thin Ring|uc-thin-ring.html~ Uniformly Charged Disk|uc-disk.html~ ' // Charged Spherical Shell~ Charged Solid Sphere~ ' 
     ;
 physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units~ Significant Figures~ Scalars & Vectors~ ';
+precalc = 'formsci~ Precalculus|precalc.html~ .Basic Trigonometry~ Sine|sine.html~ Cosine|cosine.html~ Tangent|tangent.html~ Secant|secant.html~ Cosecant|cosecant.html~ Cotangent|cotangent.html~ '//Trig Functions|trig-functions.html~ '
+;
 probstats = 'formsci~ Probability & Statistics|probstats.html~ '
     + '.Discrete Distributions~ '
     // + 'Probability Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ '
@@ -95,6 +97,7 @@ function topicSelector() {
         case 'multi': topic = multi; break;
         case 'physClassical': topic = physClassical; break;
         case 'physModern': topic = physModern; break;
+        case 'precalc': topic = precalc; break;
         case 'probstats': topic = probstats; break;
         case 'webdev': topic = webdev; break;
         default: return;
