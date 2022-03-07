@@ -10,7 +10,7 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Precalculus|precalc.h
     // + '.Humanities~ '
     ;
 
-c = 'formsci~ C~ .Fundamentals~ Hello World|c-hello-world.html~ '
+c = 'formsci~ C|C.html~ .Fundamentals~ Hello World|c-hello-world.html~ '
 calcDiff = 'formsci~ Differential Calculus~ .Fundamentals~ Trig Functions~ '
 chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ '//Significant Figures~ Scalars & Vectors'
 ;
