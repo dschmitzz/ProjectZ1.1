@@ -3,7 +3,7 @@
     var topic;
 
     areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Precalculus|precalc.html~ Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
-        + '.Computer Science~ '//Computer Organization & Structure|computer-org.html~ '//Web Development|webdev.html~ '
+        + '.Computer Science~ '//Computer Architecture|compArch.html~ '// + 'Web Development|webdev.html~ '
         + 'C|C.html~ '
         + '.Natural Science~ Classical Physics|physClassical.html~ Chemistry|chemistry.html~ '
         // + '.Social Science~ '
@@ -11,6 +11,14 @@
         ;
 
     c = 'formsci~ C|C.html~ .Fundamentals~ Hello World|c-hello-world.html~ '
+        //+ '.Operators & Expressions'
+            // maybe condense these types into one page or at least group a few similar ones together
+        //+ '.Types, Memory & Storage~ Data Types|c-datatypes.html~ Memory Regions|c-memory-regions.html~ '// const|c-const.html~ extern|c-extern.html~ Strings in Memory|c-strings.html~ '
+        //+ '.Functions~ '
+        //+ '.Pointers & Arrays~ Pointers & Addresses|c-pointers-addresses.html~ '// 1D Arrays|c-1d-arrays.html~ Strings|c-strings.html~ '
+        //+ '.Structures~ typedef|c-typedef.html~ '
+        //+ '.Input & Output~ '
+        ;
     calcDiff = 'formsci~ Differential Calculus~ .Fundamentals~ Trig Functions~ '
     chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ '//Significant Figures~ Scalars & Vectors'
     ;
@@ -19,10 +27,10 @@
         // + '.Set Theory~ Sets & Subsets|sets-subsets.html~ Venn Diagrams|venn-diagrams.html~ Axioms of Probability|axioms-of-probability.html~ Conditional Probability|conditional-probability.html~ Independence|independence.html~ '
         //+ '.Math Induction~ Mathematical Induction|math-induction.html~ Recursion|recursion.html~ Division Algorithm|division-algo.html~ Euclidean Algorithm (gcd)|gcd.html~ Fundamental Theorem of Arithmetic'
         //+ '.Inclusion/Exclusion~ Principle of Inclusion/Exclusion~ ' //Derangements
-        // + '.Generating Functions~ '
+        //+ '.Generating Functions~ Partitions of Integers|int-partitions.html~ Exponential Generating Functions|exp-generating-fnc.html~ '
         // + '.Recurrence Relations~ '
         ;
-    compOrgStr = 'formsci~ Computer Organization & Structure|computer-org.html~ '//.Fundamentals~ Binary~ Integer Data Types~ 2\'s Complement~ Base Conversions~ Bitwise Arithmetic Operators~ Bitwise Logic Operators|bitwise-logic-ops.html~ IEEE-754 Floating Point|ieee754.html~ '
+    compArch = 'formsci~ Computer Architecture|compArch.html~ '//.Fundamentals~ Binary~ Integer Data Types~ 2\'s Complement~ Base Conversions~ Bitwise Arithmetic Operators~ Bitwise Logic Operators|bitwise-logic-ops.html~ IEEE-754 Floating Point|ieee754.html~ '
         // + '.Digital Logic Structures~ MOS Transistors~ Logic Gates~ Combinational Logic Circuits~ Latches~ Flip-flops~ Sequential Logic Circuits~ One-hot FSM~ Binary Encoding FSM~ '
         // + '.Von Neumann & LC-3~ Memory~ Von Neumann Model~ LC-3 ISA~ Operate Instructions~ Data Movement Instructions~ Control Instructions~ LC-3 Datapath~ '
         + '.LC-3 Assembly~ Instruction Syntax~ '//Pseudo-ops~ Loops & Conditionals~ '
@@ -68,7 +76,7 @@
         + 'Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
         + '.Continuous Distributions~ '//Probabiity Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ Continuous Uniform Distribution~ Normal Distribution~ Normal Approximation~ 
         + 'Exponential Distribution|exp-dist.html~ '
-        // + '.Joint Distributions~ 8~ 8~ 8~ 8~ 8~'
+        //+ '.Joint Distributions~ Joint Probability Distributions|joint-prob-dists.html~ '
         ;
     webdev = 'formsci~ Web Development|webdev.html~ '
         + '.HTML~ urmom~ '
@@ -92,10 +100,10 @@
     function topicSelector() {
         switch (topic) {
             case 'areas': topic = areas; break;
-            case 'c': topic = c; break;
+            case 'C': topic = c; break;
             case 'chemistry': topic = chemistry; break;
             case 'combinatorics': topic = combinatorics; break;
-            case 'compOrgStr': topic = compOrgStr; break;
+            case 'compArch': topic = compArch; break;
             case 'dataStrAlg': topic = dataStrAlg; break;
             case 'diffeq': topic = diffeq; break;
             case 'multi': topic = multi; break;
