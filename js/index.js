@@ -113,14 +113,20 @@ function getName(gender) {
     }
 }
 
-function loadExample(example, proc) {
+function loadex(example, proc) {
     var screenWidth = window.innerWidth;
+    // fix the look of the opening animation so it just fades in without starting below
     if (document.getElementById(example).style.display != 'block') {
-        document.getElementById(example).style.display = 'block';
-        if (screenWidth > 600) {
+        if (screenWidth > 1000) {
+            // alert('yeah');
             document.getElementById(proc).style.maxWidth = '45%';
             document.getElementById(example).style.maxWidth = '45%';
+        } else {
+            document.getElementById(example).style.maxWidth = '91%';
         }
+        setTimeout(event => {
+            document.getElementById(example).style.display = 'block';
+        }, 0);
         return;
     }
     document.getElementById(example).style.display = 'none';

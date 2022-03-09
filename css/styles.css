@@ -379,6 +379,15 @@ ul {
     background-color: rgba(189, 140, 223, 0.336);
 }
 
+.k {
+    background-color: rgba(202, 199, 199, 0.589);
+    border: 1px solid rgba(139, 139, 139, 0.767);
+    border-radius: 4px;
+    display: inline;
+    max-width: fit-content;
+    padding: 0 2px;
+}
+
 .logo {
     border-radius: 95%;
     display: none;
@@ -563,7 +572,7 @@ ul {
     right:-18px;
     top:0;
     transform:scale(1);
-    transform:translate(2px,80px);
+    transform:translate(2px,100px);
     width:15px;
     z-index:-1; 
 }

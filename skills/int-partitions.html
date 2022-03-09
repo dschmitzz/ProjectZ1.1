@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partitions of Integers</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body onload="writeOutline('probstats', 'Partitions of Integers')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">   
+            <!-- <button id="practice-btn" style="width:100%;border-radius: 0; margin:0" class="' + domain + '">Practice &nearr;</button> -->
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        
+        <div class='content'>
+            <h1>Partitions of Integers</h1>
+            <div class="definition">
+                <div class="process" id="p1">
+                    <p class="process-label" onclick="loadex('ex1','p1')">Partitions</p>
+                    <p>A partition of a positive integer is a combination of positive integers that add up to it.</p>
+                </div>
+                <div class="process example" id="ex1">
+                    <p>There are three partitions of 3: 3, 2 + 1, and 1 + 1 + 1.</p>
+                    <p>2 + 1 and 1 + 2 are not counted as separate partitions!</p>
+                </div>
+            </div>
+            <div class='definition'>
+                <div class="process" id="p2" onclick="loadex('ex2','p2')">
+                    <p class="process-label">Number of Partitions</p>
+                    <p>The number of partitions of a positive integer \(n\) is denoted by \(p(n)\).</p>
+                    <p>By convention, \(p(0)=1\).</p>
+                </div>
+                <div class="process example" id="ex2">
+                    <!-- <p class="process-label">Example</p> -->
+                    <p>To find the number of partitions of 5:</p>
+                    <p>\(5 = 4+1=3+2=3+1+1=2+2+1=\)\(2+1+1+1=1+1+1+1+1\) \(\Rightarrow p(5)=7 \)</p>
+                </div>
+            </div>
+            <!-- <div class='definition'> -->
+                <div class="process" id="p3">
+                    <p class="process-label">Generating Function for Number of Partitions</p>
+                    <p>For a positive integer \(n\), the generating function for the number of partitions is $$f(x)={1 \over 1+x}{1 \over 1+x^2}{1 \over 1+x^3}...{1 \over 1+x^n} = \prod_{i=1}^n {1 \over (1-x)^i}$$</p>
+                </div>
+                <!-- <div class="process example" id="ex3">
+                    <p class="process-label">Example</p>
+                    <p>To find the number of partitions of 5:</p>
+                    <p>\(5 = 4+1=3+2=3+1+1=2+2+1=\)\(2+1+1+1=1+1+1+1+1\) \(\Rightarrow p(5)=7 \)</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+            
+    <div style="width:95%" include-html='/footer-nm.html' src='/js/index.js'></div>
+</body>
+</html>
