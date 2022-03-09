@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pointers & Addresses</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body onload="writeOutline('C', 'Pointers & Addresses')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">   
+            <!-- <button id="practice-btn" style="width:100%;border-radius: 0; margin:0" class="' + domain + '">Practice &nearr;</button> -->
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        
+        <div class='content'>
+            <h1>Pointers & Addresses</h1>
+            <div class="definition">
+                <div class="process" onclick="loadExample('ex1')">
+                    <p class="process-label">Pointer</p>
+                    <p>A pointer contains a memory address and the type of data stored at that address.</p>
+                    <p>If <span class="k">x</span> is a variable, then <span class="k">*x</span> is a pointer to its address.</p>
+                    <p>Pointers to pointers can be written with <span class="k">**x</span>, and so on. Pointers beyond <span class="k">***x</span> are very rare.</p>
+                </div>
+                <div class="process example" id="ex1">
+                    <p class="process-label">Pointer Example</p>
+                    <p>char b = 98; // c stores the value 97 or 'b' in ASCII</p>
+                </div>
+            </div>
+            <div class="process">
+                <p class="process-label">Void Pointer</p>
+                <p>Void pointers contain only a memory address, not the type of data stored at the address.</p>
+            </div>
+        </div>
+    </div>
+            
+    <div style="width:95%" include-html='/footer-nm.html' src='/js/index.js'></div>
+</body>
+</html>

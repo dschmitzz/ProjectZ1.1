@@ -13,9 +13,10 @@
     c = 'formsci~ C|C.html~ .Fundamentals~ Hello World|c-hello-world.html~ '
         //+ '.Operators & Expressions'
             // maybe condense these types into one page or at least group a few similar ones together
-        //+ '.Types, Memory & Storage~ Data Types|c-datatypes.html~ Memory Regions|c-memory-regions.html~ '// const|c-const.html~ extern|c-extern.html~ Strings in Memory|c-strings.html~ '
+        + '.Types, Memory & Storage~ Data Types|c-datatypes.html~ '//Memory Regions|c-memory-regions.html~ '// const|c-const.html~ extern|c-extern.html~ Strings in Memory|c-strings.html~ '
         //+ '.Functions~ '
-        //+ '.Pointers & Arrays~ Pointers & Addresses|c-pointers-addresses.html~ '// 1D Arrays|c-1d-arrays.html~ Strings|c-strings.html~ '
+        + '.Pointers & Arrays~ Pointers & Addresses|c-pointers-addresses.html~ '//1D Arrays|c-1d-arrays.html~ 
+        + 'Strings|c-strings.html~ '
         //+ '.Structures~ typedef|c-typedef.html~ '
         //+ '.Input & Output~ '
         ;

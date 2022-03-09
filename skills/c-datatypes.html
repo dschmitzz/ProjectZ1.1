@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Types</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body onload="writeOutline('C', 'Data Types')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">   
+            <!-- <button id="practice-btn" style="width:100%;border-radius: 0; margin:0" class="' + domain + '">Practice &nearr;</button> -->
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        
+        <div class='content'>
+            <h1>Data Types</h1>
+            <!-- <div class="definition"> -->
+                <div class="process" onclick="loadExample('ex1')">
+                    <p class="process-label">Basic Data Types</p>
+                    <p>A <span class="k">char</span> stores 1 byte (8 bits).</p>
+                    <p>A <span class="k">short</span> typically stores 2 bytes (16 bits).</p>
+                    <p>An <span class="k">int</span> typically stores 4 bytes (32 bits).</p>
+                    <p>A <span class="k">boolean</span> (true or false) can be any size an <span class="k">int</span> can be.</p>
+                    <p>Sizes of shorts and ints will vary among different computer architectures. The function <span class="k">sizeof()</span> will return the correct size of any data type in a specific architecture, in bytes.</p>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+            
+    <div style="width:95%" include-html='/footer-nm.html' src='/js/index.js'></div>
+</body>
+</html>
