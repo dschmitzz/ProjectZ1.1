@@ -386,6 +386,7 @@ ul {
     display: inline;
     max-width: fit-content;
     padding: 0 2px;
+    transition: .6s ease all;
 }
 
 .logo {

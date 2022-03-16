@@ -2,6 +2,16 @@
     color: white;
 }
 
+a {
+    color:rgb(5, 182, 182);
+    transition: .5s ease all;
+}
+
+a:hover {
+    color:rgb(49, 245, 228);
+    transition: .5s ease all;
+}
+
 body, html {
     background-color: rgb(35,35,35);
 }
@@ -68,6 +78,11 @@ ol, ul {
     background-color:rgb(121, 18, 121,.5);
 }
 
+.k:hover {
+    background-color: black;
+    transition: .6s ease all;
+}
+
 .natsci {
     background-color:rgba(0, 168, 168, 0.6);
 }
@@ -96,7 +111,8 @@ ol, ul {
 }
 
 .socsci {
-    background-color:rgba(209, 179, 6, 0.8);
+    background-color:rgba(209, 179, 6, 0.521);
+    background-color:rgba(196, 177, 71, 0.692);
 }
 
 .socsci > .card:hover {

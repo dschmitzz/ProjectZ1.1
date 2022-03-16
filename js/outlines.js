@@ -2,12 +2,15 @@
 
     var topic;
 
-    areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Precalculus|precalc.html~ Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
-        + '.Computer Science~ '//Computer Architecture|compArch.html~ '// + 'Web Development|webdev.html~ '
-        + 'C|C.html~ '
-        + '.Natural Science~ Classical Physics|physClassical.html~ Chemistry|chemistry.html~ '
-        // + '.Social Science~ '
-        // + '.Humanities~ '
+    areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ '//Arithmetic|arithmetic.html~ Discrete Mathematics|discrete-math.html~ Algebra I|algebra1.html~ Algebra II|algebra2.html~ Euclidean Geometry|euc-geom.html Precalculus|precalc.html~ Differential Calculus|calc-diff.html~ Integral Calculus|calc-int.html~ Multivariable Calculus|calc-multi.html~ Differential Equations|diffeq.html~ Linear Algebra|linalg.html~ 
+        + 'Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
+        + '.Computer Science~ Computer Architecture|compArch.html~ '//Data Structures & Algorithms|data-structures-algorithms.html~ 
+        + 'C|C.html~ '//C++|c++.html~ C#|c#.html~ Java|java.html~ Python|python.html~ 
+        + 'Web Development|webdev.html~ '
+        + '.Natural Science~ '//Classical Mechanics|class-mech.html~ 
+        + 'Electricity & Magnetism|emag.html~ '//Modern Physics|mod-phys.html~ Quantum Mechanics|quantum-mech.html~ Cosmology|cosmology.html~ General Chemistry|chemistry.html~ Organic Chemistry|org-chem.html~ Biology|biology.html~ Earth Science|earth-sci.html~ '
+        //+ '.Social Science~ '
+        //+ '.Humanities~ Music Theory|music-theory.html '
         ;
 
     c = 'formsci~ C|C.html~ .Fundamentals~ Hello World|c-hello-world.html~ '
@@ -21,6 +24,11 @@
         //+ '.Input & Output~ '
         ;
     calcDiff = 'formsci~ Differential Calculus~ .Fundamentals~ Trig Functions~ '
+        + '.Techniques of Differentiation~ Constant & Power Rules|constant-power-rule.html~ Sum & Difference Rules|sum-diff-rule.html~ Chain Rule|chain-rule.html~ Trig Derivatives~ Logarithmic Derivatives~ Product Rule|product-rule.html~ Quotient Rule~ '
+    ;
+    calcInt = 'formsci~ Integral Calculus~ .Fundamentals~ '
+        + 'Techniques of Integration~ Constant & Power Rules~ '
+    ;
     chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ '//Significant Figures~ Scalars & Vectors'
     ;
     combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum & Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ '//Binomial Theorem|binomial-thm.html~ Prime Numbers|prime-numbers.html~ '
@@ -34,8 +42,8 @@
     compArch = 'formsci~ Computer Architecture|compArch.html~ '//.Fundamentals~ Binary~ Integer Data Types~ 2\'s Complement~ Base Conversions~ Bitwise Arithmetic Operators~ Bitwise Logic Operators|bitwise-logic-ops.html~ IEEE-754 Floating Point|ieee754.html~ '
         // + '.Digital Logic Structures~ MOS Transistors~ Logic Gates~ Combinational Logic Circuits~ Latches~ Flip-flops~ Sequential Logic Circuits~ One-hot FSM~ Binary Encoding FSM~ '
         // + '.Von Neumann & LC-3~ Memory~ Von Neumann Model~ LC-3 ISA~ Operate Instructions~ Data Movement Instructions~ Control Instructions~ LC-3 Datapath~ '
-        + '.LC-3 Assembly~ Instruction Syntax~ '//Pseudo-ops~ Loops & Conditionals~ '
-        // + '.Subroutines~ Call/Return~ JSR & JSRR~ Stack~ Recursion~ Queue~ '
+        + '.LC-3 Assembly~ Instruction Syntax~ Pseudo-ops|pseudo-ops.html~ Loops & Conditionals~ '
+        + '.Subroutines~ Call/Return~ JSR & JSRR~ The Stack|the-stack.html~ '//Recursion~ Queue~ '
         ;
     dataStrAlg = 'formsci~ Data Structures & Algorithms~ .Fundamentals~ Arrays~ Big-O~ Generics~ Recursion~ '
         + '.Simple Structures~ Stacks|stacks.html~ Queues~ Deques~ '
@@ -48,15 +56,8 @@
         + '.Dynamic Programming~ Longest Common Substring~ Floyd Warshall~ ';
     discreteMath = 'formsci~ Discrete Mathematics~ .Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
         + '.Set Theory~ Sets & Subsets~ Set Cardinality~ Set Operations~ ';
-    diffCalculus = 'formsci~ Differential Calculus~ .Fundamentals'
     diffeq = 'formsci~ Differential Equations~ .Fundamentals~ ';
-    intCalculus = 'formsci~ Integral Calculus~ .Fundamentals'
-    multi = 'formsci~ Multivariable Calculus~ .Fundamentals~ '
-        + '.Vector Functions~ '
-        + '.Partial Derivatives~ '
-        + '.Multiple Integrals~ '
-        + '.Greene & Stokes~ ';
-    physClassical = 'natsci~ Classical Physics|phys-classical.html~ .Fundamentals~ SI Units|si-units.html~ '//Significant Figures~ Scalars & Vectors~ '
+    emag = 'natsci~ Electricity & Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ '//Significant Figures~ Scalars & Vectors~ '
         // + '.Concepts of Motion~ Diagrams~ Modeling~ Position~ Velocity~ Linear Acceleration~ '
         // + '.1D Kinematics~ Uniform Motion~ Instantaneous Velocity~ Free Fall~ Inclined Planes~ '
         // + '.2D Kinematics~ Projectile Motion~ Relative Motion~ Uniform Circular Motion~ Centripetal Acceleration~ Nonuniform Circular Motion~ '
@@ -68,6 +69,11 @@
         + '.Electric Field~ Electric Charge & Force|electric-charge-force.html~ '//
         + '.Electric Field of Distributed Charges~ Uniformly Charged Thin Rod|uc-thin-rod.html~ Uniformly Charged Thin Ring|uc-thin-ring.html~ Uniformly Charged Disk|uc-disk.html~ ' // Charged Spherical Shell~ Charged Solid Sphere~ ' 
         ;
+    multi = 'formsci~ Multivariable Calculus~ .Fundamentals~ '
+        + '.Vector Functions~ '
+        + '.Partial Derivatives~ '
+        + '.Multiple Integrals~ '
+        + '.Greene & Stokes~ ';
     physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units~ Significant Figures~ Scalars & Vectors~ ';
     precalc = 'formsci~ Precalculus|precalc.html~ .Basic Trigonometry~ Sine|sine.html~ Cosine|cosine.html~ Tangent|tangent.html~ Secant|secant.html~ Cosecant|cosecant.html~ Cotangent|cotangent.html~ '//Trig Functions|trig-functions.html~ '
     ;
@@ -80,9 +86,10 @@
         //+ '.Joint Distributions~ Joint Probability Distributions|joint-prob-dists.html~ '
         ;
     webdev = 'formsci~ Web Development|webdev.html~ '
-        + '.HTML~ urmom~ '
+        + '.HTML~ '
         + '.CSS~ '
         + '.Javascript~ '
+        + '.JavaScript in the Browser~ Ajax|ajax.html~ 3rd Party Web APIs|js-web-apis.html~ '
         + '.jQuery~ '
         + '.Node.js~ '
         + '.PHP~ '
@@ -102,13 +109,16 @@
         switch (topic) {
             case 'areas': topic = areas; break;
             case 'C': topic = c; break;
+            case 'calc-diff': topic = calcDiff; break;
+            case 'calc-int': topic = calcInt; break;
+            case 'calc-multi': topic = multi; break;
             case 'chemistry': topic = chemistry; break;
             case 'combinatorics': topic = combinatorics; break;
             case 'compArch': topic = compArch; break;
             case 'dataStrAlg': topic = dataStrAlg; break;
             case 'diffeq': topic = diffeq; break;
+            case 'emag': topic = emag; break;
             case 'multi': topic = multi; break;
-            case 'physClassical': topic = physClassical; break;
             case 'physModern': topic = physModern; break;
             case 'precalc': topic = precalc; break;
             case 'probstats': topic = probstats; break;
