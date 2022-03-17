@@ -26,11 +26,11 @@
             <h1>Ajax</h1> 
                 <div class="process">
                     <p class="process-label">Ajax</p>
-                    <p></p>
+                    <p>Ajax (Asynchronous JavaScript and XML) is a set of techniques to send and retrieve data between server and client asynchronously and thereby avoid waiting time while the request is being processed.</p>
                 </div>
                 <div class="process">
                     <p class="process-label">XMLHttpRequest</p>
-                    <p></p>
+                    <p>The <span class="k">readystatechange</span> handler was the only handler defined in the first version of XMLHttpRequest. <span class="k">Load</span>, <span class="k">error</span>, <span class="k">abort</span>, and <span class="k">timeout</span> have replaced it in later versions to increase clarity and specificity.</p>
                 </div>
                 <div class="process">
                     <p class="process-label">XMLHttpRequest result handlers</p>
@@ -60,7 +60,12 @@
                 </div>
                 <div class="process">
                     <p class="process-label">Response Data</p>
-                    <p><span class="k">responseType</span></p>
+                    <p><span class="k">responseType</span> is set to tell the browser what response data format to expect.</p>
+                    <ul>
+                        <li>If <span class="k">responseType == "json"</span></li>
+                        <li>If <span class="k">responseType == "" or "text"</span></li>
+                        <li>If <span class="k">responseType == "document"</span>, the browser treates the response as an XML document.</li>
+                    </ul>
                 </div>
         </div>
     </div>

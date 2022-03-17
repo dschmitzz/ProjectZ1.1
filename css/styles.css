@@ -128,12 +128,14 @@ h6 {
 }
 
 ol, ul {
-    background-color:rgb(186, 226, 252);
-    border-radius: 10px;
+    /* background-color:rgb(186, 226, 252); */
+    /* border-radius: 10px; */
     display: block;
-    margin: 10px;
-    padding: 10px;
-    padding-left: 30px;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
 }
 
 pre {
@@ -194,7 +196,7 @@ ul {
     background-color: blue;
 }
 
-.bitVector>div:hover {
+.bitVector div:hover {
     cursor: pointer;
 }
 
@@ -384,8 +386,9 @@ ul {
     border: 1px solid rgba(139, 139, 139, 0.767);
     border-radius: 4px;
     display: inline;
+    line-height: 1.6;
     max-width: fit-content;
-    padding: 0 2px;
+    padding: 0 2px 2px 2px;
     transition: .6s ease all;
 }
 
@@ -656,12 +659,12 @@ ul {
     font-weight: 500;  
     height: fit-content;   
     padding-bottom: 8px;
-    transition: .2s;
+    transition: .4s;
 }
 
 #hide h3:hover {
-    background-color: rgb(231, 231, 231);
-    transition: .3s;
+    background-color: rgb(231, 231, 231, .4);
+    transition: .5s;
 }
 
 #hide h5 {

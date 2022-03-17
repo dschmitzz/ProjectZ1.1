@@ -16,11 +16,10 @@
     c = 'formsci~ C|C.html~ .Fundamentals~ Hello World|c-hello-world.html~ '
         //+ '.Operators & Expressions'
             // maybe condense these types into one page or at least group a few similar ones together
-        + '.Types, Memory & Storage~ Data Types|c-datatypes.html~ '//Memory Regions|c-memory-regions.html~ '// const|c-const.html~ extern|c-extern.html~ Strings in Memory|c-strings.html~ '
+        + '.Types, Memory & Storage~ Data Types|c-datatypes.html~ Scope|c-scope.html~ Memory Regions|c-memory-regions.html~ '// const|c-const.html~ extern|c-extern.html~ Strings in Memory|c-strings.html~ '
         //+ '.Functions~ '
-        + '.Pointers & Arrays~ Pointers & Addresses|c-pointers-addresses.html~ '//1D Arrays|c-1d-arrays.html~ 
-        + 'Strings|c-strings.html~ '
-        //+ '.Structures~ typedef|c-typedef.html~ '
+        + '.Pointers & Arrays~ Pointers & Addresses|c-pointers-addresses.html~ 1D Arrays|c-1d-arrays.html~ Strings|c-strings.html~ '
+        + '.Structures~ typedef|c-typedef.html~ '
         //+ '.Input & Output~ '
         ;
     calcDiff = 'formsci~ Differential Calculus~ .Fundamentals~ Trig Functions~ '
@@ -39,11 +38,11 @@
         + '.Generating Functions~ Partitions of Integers|int-partitions.html~ Exponential Generating Functions|exp-generating-fnc.html~ '
         // + '.Recurrence Relations~ '
         ;
-    compArch = 'formsci~ Computer Architecture|compArch.html~ '//.Fundamentals~ Binary~ Integer Data Types~ 2\'s Complement~ Base Conversions~ Bitwise Arithmetic Operators~ Bitwise Logic Operators|bitwise-logic-ops.html~ IEEE-754 Floating Point|ieee754.html~ '
-        // + '.Digital Logic Structures~ MOS Transistors~ Logic Gates~ Combinational Logic Circuits~ Latches~ Flip-flops~ Sequential Logic Circuits~ One-hot FSM~ Binary Encoding FSM~ '
-        // + '.Von Neumann & LC-3~ Memory~ Von Neumann Model~ LC-3 ISA~ Operate Instructions~ Data Movement Instructions~ Control Instructions~ LC-3 Datapath~ '
+    compArch = 'formsci~ Computer Architecture|compArch.html~ .Fundamentals~ Binary~ Integer Data Types~ Signed Integers~ Base Conversions~ Bitwise Arithmetic Operators~ Bitwise Logic Operators|bitwise-logic-ops.html~ Masking & Shifting~ IEEE-754 Floating Point|ieee754.html~ '
+        + '.Digital Logic Structures~ MOS Transistors~ Logic Gates~ Combinational Logic Circuits~ Latches~ Flip-flops~ Sequential Logic Circuits~ One-hot FSM~ Binary Encoding FSM~ '
+        + '.Von Neumann & LC-3~ Memory~ Von Neumann Model~ LC-3 ISA~ Operate Instructions~ Data Movement Instructions~ Control Instructions~ LC-3 Datapath~ '
         + '.LC-3 Assembly~ Instruction Syntax~ Pseudo-ops|pseudo-ops.html~ Loops & Conditionals~ '
-        + '.Subroutines~ Call/Return~ JSR & JSRR~ The Stack|the-stack.html~ '//Recursion~ Queue~ '
+        + '.Subroutines~ Call/Return~ JSR & JSRR~ The Stack|the-stack.html~ Recursion~ Queue~ '
         ;
     dataStrAlg = 'formsci~ Data Structures & Algorithms~ .Fundamentals~ Arrays~ Big-O~ Generics~ Recursion~ '
         + '.Simple Structures~ Stacks|stacks.html~ Queues~ Deques~ '
@@ -57,17 +56,11 @@
     discreteMath = 'formsci~ Discrete Mathematics~ .Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
         + '.Set Theory~ Sets & Subsets~ Set Cardinality~ Set Operations~ ';
     diffeq = 'formsci~ Differential Equations~ .Fundamentals~ ';
-    emag = 'natsci~ Electricity & Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ '//Significant Figures~ Scalars & Vectors~ '
-        // + '.Concepts of Motion~ Diagrams~ Modeling~ Position~ Velocity~ Linear Acceleration~ '
-        // + '.1D Kinematics~ Uniform Motion~ Instantaneous Velocity~ Free Fall~ Inclined Planes~ '
-        // + '.2D Kinematics~ Projectile Motion~ Relative Motion~ Uniform Circular Motion~ Centripetal Acceleration~ Nonuniform Circular Motion~ '
-        // + '.Force~ Fundamental Interactions~ Newton\'s First Law~ Newton\'s Second Law~ Newton\'s Third Law~ Ropes & Pulleys~ '
-        // + '.1D Dynamics~ Equilibrium Model~ Mass, Weight, Gravity~ Friction~ Drag~ '
-        // + '.2D Dynamics~ Uniform Circular Motion~ Circular Orbits~ Nonuniform Circular Motion~ '
-        // + '.Work & Kinetic Energy~ Springs~ Power~ '
-        // + '.Interactions & Potential Energy~ ';
+    emag = 'natsci~ Electricity & Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures~ Scalars & Vectors~ '
         + '.Electric Field~ Electric Charge & Force|electric-charge-force.html~ '//
-        + '.Electric Field of Distributed Charges~ Uniformly Charged Thin Rod|uc-thin-rod.html~ Uniformly Charged Thin Ring|uc-thin-ring.html~ Uniformly Charged Disk|uc-disk.html~ ' // Charged Spherical Shell~ Charged Solid Sphere~ ' 
+        + '.Electric Field of Distributed Charges~ Uniformly Charged Thin Rod|uc-thin-rod.html~ Uniformly Charged Thin Ring|uc-thin-ring.html~ Uniformly Charged Disk|uc-disk.html~ Charged Spherical Shell~ Charged Solid Sphere~ ' 
+        + '.Magnetic Force~ Moving Charge~ Current-Carrying Wire~ Electric & Magnetic Forces|electric-magnetic-forces.html~ '
+        + '.Flux & Faraday\'s Law~ Curly Electric Fields~ Faraday\'s Law~ Motional EMF~ Maxwell\'s Equations~ Superconductors~ '
         ;
     multi = 'formsci~ Multivariable Calculus~ .Fundamentals~ '
         + '.Vector Functions~ '
@@ -83,7 +76,8 @@
         + 'Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
         + '.Continuous Distributions~ '//Probabiity Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ Continuous Uniform Distribution~ Normal Distribution~ Normal Approximation~ 
         + 'Exponential Distribution|exp-dist.html~ '
-        //+ '.Joint Distributions~ Joint Probability Distributions|joint-prob-dists.html~ '
+        + '.Joint Distributions~ '//Joint Probability Distributions|joint-prob-dists.html~ '
+        + 'Conditional Distributions|conditional-dists.html~ Independence|independence.html'
         ;
     webdev = 'formsci~ Web Development|webdev.html~ '
         + '.HTML~ '
@@ -140,7 +134,7 @@
         menu = document.getElementById('skills');
         if (type == 'area') {
             document.getElementById('content').innerHTML += '<h1>' + title[0] + '</h1>';
-            menu.innerHTML += '<div id="hide"><h3 style="font-size:20px"><a href="/topics/areas.html">Areas of Study</a></h3></div>';
+            menu.innerHTML += '<div id="hide"><a href="/topics/areas.html"><h3 style="font-size:20px">Areas of Study</h3></a></div>';
             areas = areas.split('~ ');
             // alert(topic);
             // write the menu for type area
@@ -155,21 +149,21 @@
                     // alert(areaMod[0]);
                     document.getElementById('hide').innerHTML += '<h5 style="font-size:16px" class="' + domain +'">' + areaMod[0].substring(1,areaMod[0].length) + '</h5>';
                 } else {
-                    document.getElementById('hide').innerHTML += '<p>' + (areaMod.length > 1 ? '<a href="/topics/' + areaMod[1] + '">' : '') + areaMod[0] + (areaMod.length > 1 ? '</a>' : '') + '</p>';
+                    document.getElementById('hide').innerHTML += (areaMod.length > 1 ? '<a href="/topics/' + areaMod[1] + '">' : '') + '<p>' + areaMod[0] + '</p>' + (areaMod.length > 1 ? '</a>' : '');
                     // highlight current area  
                     if (name == areaMod[0]) {
                         var currentTime = new Date().getHours();
                         if (7 <= currentTime && currentTime < 18) {
-                            document.querySelector('#hide :nth-child('+i+')').style = 'background-color:white';
+                            document.querySelector('#hide :nth-child('+i+') p').style = 'background-color:white';
                         } else {
-                            document.querySelector('#hide :nth-child('+i+')').style = 'background-color:black';
+                            document.querySelector('#hide :nth-child('+i+') p').style = 'background-color:black';
                         }
                     }
                 }
             }
         }
         else {
-            menu.innerHTML += '<div id="hide"><h3 style="font-size:20px"><a href="/topics/'+input+'.html">' + title[0] + '</a></h3></div>';
+            menu.innerHTML += '<div id="hide"><a href="/topics/'+input+'.html"><h3 style="font-size:20px">' + title[0] + '</h3></a></div>';
         }
 
         // write the left menu for a skill page or cards for an area page
@@ -192,7 +186,7 @@
             } else if (type != 'area') {
                 // write the subtopic for an area page
                 if (type == 'areas') {
-                    document.getElementById('hide').innerHTML += '<p>' + (mod.length > 1 ? '<a href="/skills/' + mod[1] + '">' : '') + mod[0] + (mod.length > 1 ? '</a>' : '') + '</p>';   
+                    document.getElementById('hide').innerHTML += (mod.length > 1 ? '<a href="/skills/' + mod[1] + '">' : '') + '<p>' + mod[0] + '</p>' + (mod.length > 1 ? '</a>' : '');   
                 } 
                 // write the topic for an 
                 else {
@@ -207,9 +201,9 @@
                 // highlight current skill
                 var currentTime = new Date().getHours();
                 if (7 <= currentTime && currentTime < 18) {
-                    document.querySelector('#hide :nth-child('+i+')').style = 'background-color:white';
+                    document.querySelector('#hide :nth-child('+i+') p').style = 'background-color:white';
                 } else {
-                    document.querySelector('#hide :nth-child('+i+')').style = 'background-color:black';
+                    document.querySelector('#hide :nth-child('+i+') p').style = 'background-color:black';
                 }
             }
         }

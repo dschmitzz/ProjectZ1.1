@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Permutations</title>
+    <title>3rd Party Web APIs</title>
     <link rel='icon' href='/imgs/sl-logo.PNG'>
     <link rel='stylesheet' href='/css/styles.css'>
     <script type=text/javascript src='/js/index.js'></script>
@@ -12,7 +12,7 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body onload="writeOutline('areas', 'Permutations')">
+<body onload="writeOutline('areas', '3rd Party Web APIs')">
     <div include-html='/header.html' src='/js/index.js'></div>
     <script>includeHTML();</script>
     <div class="content-container">
@@ -22,22 +22,14 @@
         </div>
         <!-- get the function for writing the course outline in the skills menu -->
         <script type="text/javascript" src="/js/outlines.js"></script>
-        
-        <div class='content'>
-            <h1>Permutations</h1>
-                <div class="process">
-                    <p class="process-label">Permutation</p>
-                    <p>Given a collection of \(n\) distinct objects, an ordered arrangement of these objects is called a permutation of the collection.</p>
-                    <p>n permute r, \(_nP_r = P(n,r) = {n! \over (n-r)!}\)</p>
-                </div>
-                <div class="process">
-                    <p class="process-label">"Permutation" with repetition</p>
-                    <p>Given a set \(S\) within which repetition is allowed, an ordered arrangement of \(r\) elements is called an \(r\)-tuple. Suppose set \(S\) consists of \(n\) elements:</p>
-                    <p>number of \(r\)-tuples = \(n^r\)</p>
-                </div>
+        <div class="content">
+            <h1>3rd Party Web APIs</h1> 
+            <div class="process">
+                <p class="process-label">RESTful web API</p>
+                <p>A RESTful web API is a web API that takes in a URL specifying API paramaters and returns a JSON or XML doc with the data.</p> 
+            </div>
         </div>
     </div>
-            
-    <div id="footer" include-html='/footer-nm.html' src='/js/index.js'></div>
+    <div id="footer" include-html='/footer.html' src='/js/index.js'></div>  
 </body>
 </html>

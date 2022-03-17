@@ -1,14 +1,14 @@
 * {
-    color: white;
+    color: rgb(224, 224, 224);
 }
 
-a {
-    color:rgb(5, 182, 182);
+a p, a h3 {
+    color:rgb(212, 212, 212);
     transition: .5s ease all;
 }
 
-a:hover {
-    color:rgb(49, 245, 228);
+a p:hover, a h3:hover {
+    color:rgb(255, 255, 255);
     transition: .5s ease all;
 }
 
@@ -32,10 +32,6 @@ table, td {
 
 th {
     background-color: rgb(35, 97, 92);
-}
-
-ol, ul {
-    background-color: rgb(85, 133, 204);
 }
 
 .bitVector > div {
@@ -132,8 +128,8 @@ ol, ul {
     background-color:rgb(124, 133, 255);
 }
 
-#hide > h3:hover {
-    background: none;
+#hide h3:hover, #hide p:hover {
+    background-color: rgba(0, 0, 0, 0.493);
     transition: .3s ease all;
 }
 

@@ -9,40 +9,73 @@
     <link rel='stylesheet' href='/css/styles.css'>
     <script type='text/javascript' src='/js/index.js'></script>
 </head>
-<body>
+<body onload="writeOutline('areas', 'IEEE-754 Floating Point')">
     <div id='header' include-html='/header.html' src='/js/index.js'></div>
     <script>includeHTML();</script>
-    <h1>IEEE-754 Floating Point</h1>
-    <p>The IEEE-754 standard defines a 32-bit floating point number as 1 sign bit, 8 exponent bits, and a 23-bit mantissa.</p>
-    <p>The decimal number is equal to (-1)<sup>sign</sup>&times;2<sup>exponent - 127</sup>&times;1.mantissa</p>
+        <div class="content-container">
+            <div class="desktop-only skills" id="skills">
+                <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+                </div>
+                <!-- get the function for writing the course outline in the skills menu -->
+                <script type="text/javascript" src="/js/outlines.js"></script>
 
-    <ul>Converting decimal portion to binary
-        <li>Keep multiplying by 2 until you reach 1 or you use up 23 bits.</li>
-        <li>If the product &lt; 1, append a 0 bit.</li>
-        <li>If the product &GreaterEqual; 1, append a 1 bit and truncate.</li>
-        <li>(e.g. 23/64 &times; 2 = 23/32 <b>0</b></li>
-        <li>23/32 &times; 2 = 23/16 <b>1</b></li>
-        <li>7/16 &times; 2 = 7/8 <b>0</b></li>
-        <li>7/8 &times; 2 = 7/4 <b>1</b></li>
-        <li>3/4 &times; 2 = 3/2 <b>1</b></li>
-        <li>1/2 &times; 2 = 1 (terminate) <b>1</b></li>
-        <li>&rArr; 23/64 = .010111<sub>2</sub>)</li>
-    </ul>
-    
-    <ol>Converting decimal &rightarrow; IEEE (e.g. 3.75)
-        <li>Convert the truncated <a href='/skills/base-conversions.html'>decimal to binary</a> (e.g. 3.75 &RightArrow;3=11<sub>2</sub>)</li>
-        <li>Convert the decimal portion to binary (e.g. .75=.11<sub>2</sub>)</li>
-        <li>Write the whole binary number in the form of truncated.fraction (e.g. 3.75 = 11.11<sub>2</sub>)</li>
-        <li>Move the decimal point left until there is exactly one 1 left of the decimal. (e.g. 11.11&rightarrow;1.111, 1 shift)</li>
-        <li>The original number in scientific notation is the new number * 2<sup>#shifts</sup> (e.g. 3.75<sub>10</sub> = [1.111&times;2<sup>1</sup>]<sub>2</sub>)</li>
-        <li>Choose the sign bit: 0 if nonnegative, 1 if negative (e.g. 1.111&times;2<sup>1</sup> = 0 xxxxxxxx xxxxxxxxxxxxxxxxxxxxxxx)</li>
-        <li>Get exponent bits and convert to 8-bit binary: exponent = #shifts + 127 (e.g. exponent = 127 + 1 = 128 = 1000 0000<sub>2</sub>)</li>
-        <li>Get mantissa bits: take the portion after the decimal of scientific notation to 23 bits (e.g. .111&rightarrow;1110000000000000000000)</li>
-        <li>Combine the sign bit, exponent bits, and mantissa (e.g. 0 10000000 1110000000000000000000)</li>
-    </ol>
-    <ol>Converting IEEE &rightarrow; decimal
-        <li>just do it lol</li>
-    </ol>
+            <div class='content'>
+                <h1>IEEE-754 Floating Point</h1>
+                <p>The IEEE-754 standard defines a 32-bit floating point number as 1 sign bit, 8 exponent bits, and a 23-bit mantissa.</p>
+                <p>The decimal number is equal to (-1)<sup>sign</sup>&times;2<sup>exponent - 127</sup>&times;1.mantissa</p>
+                <table>
+                    <caption>Edge cases</caption>
+                    <tr>
+                        <th></th>
+                        <th>E == 0</th>
+                        <th>0 &lt; 255 &lt; E</th>
+                        <th>E == 255</th>
+                    </tr>
+                    <tr>
+                        <th>M == 0</th>
+                        <td>0</td>
+                        <td>Powers<br>of 2</td>
+                        <td><span style='transform:scale(3.5);'>&infin;</span></td>
+                    </tr>
+                    <tr>
+                        <th>M != 0</th>
+                        <td>Non-normalized<br>typically underflow</td>
+                        <td>Ordinary<br>old numbers</td>
+                        <td>Nan</td>
+                    </tr>
+                </table>
+                <p>So valid exponents can range from -126 to 127</p>
+                <p class='cards-label'>Converting decimal portion to binary</p>
+                <ul class='process'>
+                    <li>Keep multiplying by 2 until you reach 1 or you use up 23 bits.</li>
+                    <li>If the product &lt; 1, append a 0 bit.</li>
+                    <li>If the product &GreaterEqual; 1, append a 1 bit and truncate.</li>
+                    <li>(e.g. 23/64 &times; 2 = 23/32 <b>0</b></li>
+                    <li>23/32 &times; 2 = 23/16 <b>1</b></li>
+                    <li>7/16 &times; 2 = 7/8 <b>0</b></li>
+                    <li>7/8 &times; 2 = 7/4 <b>1</b></li>
+                    <li>3/4 &times; 2 = 3/2 <b>1</b></li>
+                    <li>1/2 &times; 2 = 1 (terminate) <b>1</b></li>
+                    <li>&rArr; 23/64 = .010111<sub>2</sub>)</li>
+                </ul>
+                
+                <p class='cards-label'>Converting decimal to IEEE</p>
+                <ol class='process'>
+                    <li>Convert the truncated <a href='/skills/base-conversions.html'>decimal to binary</a> (e.g. 3.75 &RightArrow;3=11<sub>2</sub>)</li>
+                    <li>Convert the decimal portion to binary (e.g. .75=.11<sub>2</sub>)</li>
+                    <li>Write the whole binary number in the form of truncated.fraction (e.g. 3.75 = 11.11<sub>2</sub>)</li>
+                    <li>Move the decimal point left until there is exactly one 1 left of the decimal. (e.g. 11.11&rightarrow;1.111, 1 shift)</li>
+                    <li>The original number in scientific notation is the new number * 2<sup>#shifts</sup> (e.g. 3.75<sub>10</sub> = [1.111&times;2<sup>1</sup>]<sub>2</sub>)</li>
+                    <li>Choose the sign bit: 0 if nonnegative, 1 if negative (e.g. 1.111&times;2<sup>1</sup> = 0 xxxxxxxx xxxxxxxxxxxxxxxxxxxxxxx)</li>
+                    <li>Get exponent bits and convert to 8-bit binary: exponent = #shifts + 127 (e.g. exponent = 127 + 1 = 128 = 1000 0000<sub>2</sub>)</li>
+                    <li>Get mantissa bits: take the portion after the decimal of scientific notation to 23 bits (e.g. .111&rightarrow;1110000000000000000000)</li>
+                    <li>Combine the sign bit, exponent bits, and mantissa (e.g. 0 10000000 1110000000000000000000)</li>
+                </ol>
+                <ol>Converting IEEE &rightarrow; decimal
+                    <li>just do it lol</li>
+                </ol>
+            </div>
+        </div>
     <div id='footer' include-html='/footer.html' src='/js/index.js'></div>
 </body>
 </html>

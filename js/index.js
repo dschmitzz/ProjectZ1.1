@@ -76,7 +76,7 @@ function openNav() {
 
 function openOutline() {
     if (document.getElementById('skills').style.width == '0px') { // open outline
-        document.getElementById('skills').style.width = '220px';
+        document.getElementById('skills').style.width = '240px';
         document.getElementById('tab').innerHTML = '&#x25c0'; // <--
         document.getElementById('hide').style.display = 'block';
         // document.getElementById('hide').style.width = '100%';
