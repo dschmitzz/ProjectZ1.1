@@ -33,10 +33,12 @@
     combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum & Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ '//Binomial Theorem|binomial-thm.html~ Prime Numbers|prime-numbers.html~ '
         // + '.Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
         // + '.Set Theory~ Sets & Subsets|sets-subsets.html~ Venn Diagrams|venn-diagrams.html~ Axioms of Probability|axioms-of-probability.html~ Conditional Probability|conditional-probability.html~ Independence|independence.html~ '
-        //+ '.Math Induction~ Mathematical Induction|math-induction.html~ Recursion|recursion.html~ Division Algorithm|division-algo.html~ Euclidean Algorithm (gcd)|gcd.html~ Fundamental Theorem of Arithmetic'
+        + '.Math Induction~ Mathematical Induction|math-induction.html~ Recursion|recursion.html~ Division Algorithm|division-algo.html~ Euclidean Algorithm (gcd)|gcd.html~ Fundamental Theorem of Arithmetic~ '
+        + '.Relations & Functions~ Cartesian Products & Relations|cartesian-products-relations.html~ Plain & One-to-one Functions~ Onto Functions~ Special Functions~ Pigeonhole Principle~ '
         //+ '.Inclusion/Exclusion~ Principle of Inclusion/Exclusion~ ' //Derangements
         + '.Generating Functions~ Partitions of Integers|int-partitions.html~ Exponential Generating Functions|exp-generating-fnc.html~ '
         // + '.Recurrence Relations~ '
+        + '.Introductory Graph Theory~ Graph Basics|graph-basics.html~ Subgraphs|subgraphs.html~ Complements & Isomorphism|complements-isomorphism.html~ Vertex Degree~ Planar Graphs~ Hamilton Paths & Cycles~ Graph Coloring & Chromatic Polynomials~ '
         ;
     compArch = 'formsci~ Computer Architecture|compArch.html~ .Fundamentals~ Binary~ Integer Data Types~ Signed Integers~ Base Conversions~ Bitwise Arithmetic Operators~ Bitwise Logic Operators|bitwise-logic-ops.html~ Masking & Shifting~ IEEE-754 Floating Point|ieee754.html~ '
         + '.Digital Logic Structures~ MOS Transistors~ Logic Gates~ Combinational Logic Circuits~ Latches~ Flip-flops~ Sequential Logic Circuits~ One-hot FSM~ Binary Encoding FSM~ '
@@ -57,10 +59,10 @@
         + '.Set Theory~ Sets & Subsets~ Set Cardinality~ Set Operations~ ';
     diffeq = 'formsci~ Differential Equations~ .Fundamentals~ ';
     emag = 'natsci~ Electricity & Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures~ Scalars & Vectors~ '
-        + '.Electric Field~ Electric Charge & Force|electric-charge-force.html~ '//
-        + '.Electric Field of Distributed Charges~ Uniformly Charged Thin Rod|uc-thin-rod.html~ Uniformly Charged Thin Ring|uc-thin-ring.html~ Uniformly Charged Disk|uc-disk.html~ Charged Spherical Shell~ Charged Solid Sphere~ ' 
+        + '.Electric Field~ Electric Charge & Force|electric-charge-force.html~ '
+        + '.Electric Field of Distributed Charges~ Rods|uc-thin-rod.html~ Rings|uc-thin-ring.html~ Disks|uc-disk.html~ Spherical Shells~ Solid Spheres~ ' 
         + '.Magnetic Force~ Moving Charge~ Current-Carrying Wire~ Electric & Magnetic Forces|electric-magnetic-forces.html~ '
-        + '.Flux & Faraday\'s Law~ Curly Electric Fields~ Faraday\'s Law~ Motional EMF~ Maxwell\'s Equations~ Superconductors~ '
+        + '.Flux & Faraday\'s Law~ Curly Electric Fields~ Faraday\'s Law|faradays-law.html~ Motional EMF~ Maxwell\'s Equations|faraday-maxwells-equations.html~ Superconductors~ '
         ;
     multi = 'formsci~ Multivariable Calculus~ .Fundamentals~ '
         + '.Vector Functions~ '
@@ -71,6 +73,7 @@
     precalc = 'formsci~ Precalculus|precalc.html~ .Basic Trigonometry~ Sine|sine.html~ Cosine|cosine.html~ Tangent|tangent.html~ Secant|secant.html~ Cosecant|cosecant.html~ Cotangent|cotangent.html~ '//Trig Functions|trig-functions.html~ '
     ;
     probstats = 'formsci~ Probability & Statistics|probstats.html~ '
+        + '.Probability~ Independence~ '
         + '.Discrete Distributions~ '
         // + 'Probability Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ '
         + 'Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
@@ -136,7 +139,6 @@
             document.getElementById('content').innerHTML += '<h1>' + title[0] + '</h1>';
             menu.innerHTML += '<div id="hide"><a href="/topics/areas.html"><h3 style="font-size:20px">Areas of Study</h3></a></div>';
             areas = areas.split('~ ');
-            // alert(topic);
             // write the menu for type area
 
             // write the left menu for an area page
@@ -153,7 +155,7 @@
                     // highlight current area  
                     if (name == areaMod[0]) {
                         var currentTime = new Date().getHours();
-                        if (7 <= currentTime && currentTime < 18) {
+                        if (7 <= currentTime && currentTime < 19) {
                             document.querySelector('#hide :nth-child('+i+') p').style = 'background-color:white';
                         } else {
                             document.querySelector('#hide :nth-child('+i+') p').style = 'background-color:black';
@@ -200,7 +202,7 @@
             if (name == mod[0]) {
                 // highlight current skill
                 var currentTime = new Date().getHours();
-                if (7 <= currentTime && currentTime < 18) {
+                if (7 <= currentTime && currentTime < 19) {
                     document.querySelector('#hide :nth-child('+i+') p').style = 'background-color:white';
                 } else {
                     document.querySelector('#hide :nth-child('+i+') p').style = 'background-color:black';
@@ -208,6 +210,5 @@
             }
         }
         topic = input;
-        // alert('dont worry topic is still ' + topic + '!');
     }
 

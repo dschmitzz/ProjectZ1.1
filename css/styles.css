@@ -67,7 +67,7 @@ iframe {
 }
 
 input {
-    border: 2px solid rgb(131, 131, 131);
+    border: 1px solid rgb(131, 131, 131);
     color: black;
     border-radius: 8px;
     font-size: 20px;
@@ -91,10 +91,10 @@ h1 {
     font-weight: 300;
     letter-spacing: .15rem;
     margin-bottom: 0;
-    padding: 15px 0 15px 26px;
+    padding: 15px 0 15px 27px;
     text-align: center;
     transform: translate(0, -1px);
-    width: -webkit-calc(100% - 26px);
+    width: -webkit-calc(100% - 27px);
     z-index: 0;
 }
 
@@ -138,9 +138,19 @@ ol, ul {
     text-align: left;
 }
 
+p input {
+    background: none;
+    border-radius: 2px;
+    height: 18px;
+    font-size: 16px;
+    padding: 0;
+    width: 90px;
+    max-width: fit-content;
+}
+
 pre {
-    background-color:rgba(65, 242, 255, 0.425);
-    border: 1px solid black;
+    /* background-color:rgba(65, 242, 255, 0.425); */
+    /* border: 1px solid black; */
     border-radius: 10px;
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
@@ -156,9 +166,11 @@ pre > code {
 }
 
 table {
-    background-color: rgb(105, 211, 141,.5);
+    background-color: rgba(101, 235, 146, 0.5);
+    background-color: rgba(52, 219, 183, 0.342);
     border: none;
     margin: 0 0px;
+    max-width: 800px;
     /* margin: 10px; */
 }
 
@@ -168,13 +180,19 @@ table, th, td {
     text-align: center;
 }
 
-td > img {
+td img {
     height: 40px
 }
 
 td {
     font-weight: 500;
     padding: 2px 7px;
+    transition: .6s ease all;
+}
+
+td:hover {
+    background-color: rgb(130, 223, 192);
+    transition: .6s ease all;
 }
 
 th {
@@ -428,7 +446,6 @@ ul {
 
 .process {
     align-items: center;
-    /* background-color: rgb(181, 232, 240); */
     border: 1.5px solid rgb(150,150,150);
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(151, 151, 151, .3);
@@ -439,8 +456,6 @@ ul {
     margin-top: 0;
     margin-bottom:0;
     padding: 0;
-    padding-bottom:5px;
-    /* margin-bottom: 15px; */
     max-width:91%;
     min-width: 200px;
     transition: .5s ease all;
@@ -449,7 +464,6 @@ ul {
 
 .process:hover {
     border-color: rgb(105, 105, 105);
-    /* border: 3px solid rgb(150,150,150); */
     transition: .5s ease all;
 }
 
@@ -460,11 +474,8 @@ ul {
     border-top-right-radius: 8px;
     font-weight: 500;
     padding: 10px 0px;
-    width: calc(100%);
-    /* transform:translate(-1px,-1px); */
     text-align: center;
-    /* width: 100%; */
-    margin:0;
+    width: calc(100%);
 }
 
 .process .cards {
@@ -480,8 +491,14 @@ ul {
     margin:3px;
 }
 
-.process > table {
-    margin: 3px;
+table {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.process table {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .row {
@@ -498,12 +515,9 @@ ul {
 }
 
 .sidenav {
-    /* width: 0; */
-    /* position: fixed; Stay in place */
     z-index: 2;
     background-color: #111; /* Black*/
     overflow-x: hidden; 
-    /* padding-top: 60px;  */
     left: 0;
     position: fixed;
     height: 100%; 
@@ -536,7 +550,6 @@ ul {
 }
 
 .skills {
-    /* background-color: rgb(150, 44, 44); */
     border-right: 1px solid rgb(133, 132, 132,.7);
     box-shadow: 0 5px 10px rgba(151, 151, 151, .3);
     /* display: flex; */
@@ -641,8 +654,6 @@ ul {
     padding:0;
     top:0;
     align-self: flex-start;
-    /* transform:translate(25px,-285px); */
-    /* position: absolute; */
     width: 100%;
 }
 
@@ -668,9 +679,8 @@ ul {
 }
 
 #hide h5 {
-    padding: 6px 8px;
     margin-top:0;
-    /* margin-bottom: 5px; */
+    padding: 6px 8px;
 }
 
 #hide p {

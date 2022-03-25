@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Greatest Common Denominator</title>
+        <link rel='icon' href='/imgs/sl-logo.PNG'>
+        <link rel='stylesheet' href='/css/styles.css'>
+        <script type=text/javascript src='/js/index.js'></script>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body onload="writeOutline('areas', 'Euclidean Algorithm (gcd)')">
+        <div include-html='/header.html' src='/js/index.js'></div>
+        <script>includeHTML();</script>
+        <div class="content-container">
+            <div class="desktop-only skills" id="skills">
+    
+                <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+            </div>
+            <!-- get the function for writing the course outline in the skills menu -->
+            <script type="text/javascript" src="/js/outlines.js"></script>
+            <div class="content">
+                <h1>Greatest Common Denominator</h1>
+                <div class="process">
+                    <div class="process-label">Greatest Common Denominator</div>
+                    <p>The greatest common denominator of integers \(a\) and \(b\) is the largest positive integer \(c\) such that \(c|a\) and \(c|b\).</p>
+                </div>
+                <div class="process">
+                    <p class="process-label">Euclid's Algorithm</p>
+                    <pre>
+gcd(int a, int b) {
+    if a &lt; b, swap(a, b)
+    while n != 0 {
+        int r = m % n
+        m = n
+        n = r 
+    }
+    return m;
+}
+                    </pre>
+                    <!-- <p>gcd(34, 21) = 1</p>
+                    <p>34 = 21*1 + 13</p>
+                    <p>21 = 13*1 + 8</p>
+                    <p>13 = 8*1 + 5</p>
+                    <p>8 = 5*1 + 3</p>
+                    <p>5 = 3*1 + 2</p>
+                    <p>3 = 2*1 + 1</p>
+                    <p>2 = <b><i>1</i></b>*2 + 0</p> -->
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

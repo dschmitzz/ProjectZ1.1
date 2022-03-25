@@ -2,10 +2,39 @@ getStylesheet();
 
 // alert(window.innerWidth);
 
+// MATH
+
+// calculate a combination nCr "n choose r" without repetition
+function combination(n, r) {
+    return factorial(n) / (factorial(r)*factorial(n-r));
+}
+
+// takes in integer n and returns n * (n - 1) * (n - 2) * ...
+function factorial(n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    } else if (n > 1) {
+        return n * factorial(n - 1);
+    }
+    return -1;
+}
+
+// calculate permutation nPr, number of r-size arrangements of n elements
+function permutation(n, r) {
+    return factorial(n) / factorial(n-r);
+}
+
+// random integer number generator between a and b
+function rand(min, max) {
+    Math.floor((Math.random() * (max - min + 1)) + max);
+}
+
+// PAGE FORMATTING
+
 // flip between light/dark mode
 function getStylesheet() {
     var currentTime = new Date().getHours();
-    if (0 <= currentTime && currentTime < 7 || 18 <= currentTime && currentTime < 24) {
+    if (0 <= currentTime && currentTime < 8 || 19 <= currentTime && currentTime < 24) {
      document.write("<link rel='stylesheet' href='/css/dark.css' type='text/css'>");
      return 'dark';
     }
@@ -99,8 +128,8 @@ function closeNav() {
     document.getElementById("sidenav").style.width = "0";
 }
 
-function closeShoutout() {
-    document.getElementById('shoutout').remove();
+function resize(id) {
+    document.getElementById(id).style.width = ((document.getElementById(id).value.length + 1) * 8 + 20) + 'px';
 }
 
 const femaleNames = ['Betty', 'Bab', 'Jan'];
@@ -133,10 +162,6 @@ function loadex(example, proc) {
     document.getElementById(proc).style.maxWidth = '91%';
 }
 
-// random integer number generator between a and b
-function rand(min, max) {
-    Math.floor((Math.random() * (max - min + 1)) + max);
-}
 
 // goddam mess
 function search() {

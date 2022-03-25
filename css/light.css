@@ -4,7 +4,7 @@ a {
 }
 
 a:hover {
-    color: rgb(35, 163, 163);
+    /* color: rgb(35, 163, 163); */
     transition: .5s ease all;
 }
 
@@ -22,13 +22,28 @@ h3:hover {
     background-color: black;
 }
 
+table, th, td {
+    border: 2px solid rgba(58, 54, 54, 0.5);
+}
+
 .card {
-    background-color:rgba(255,255,255,.2);
+    background-color:rgba(241, 237, 237, 0.253);
+    color: rgb(63, 63, 63);
 }
 
 .card:hover {
-    background-color: rgba(240, 248, 255, 0.774);
+    background-color: rgba(240, 248, 255, 0.651);
+    border: 1px solid rgb(110, 106, 106);
     color: black;
+}
+
+.k:hover {
+    background-color: rgb(235, 235, 235);
+    transition: .6s ease all;
+}
+
+.natsci {
+    background-color: rgba(50, 228, 118, 0.493);
 }
 
 .sidenav {
@@ -51,6 +66,15 @@ h3:hover {
 .tab {
     /* background-color: rgb(158, 215, 248); */
     z-index: 420;
+}
+
+#hide h3, #hide p {
+    transition: .3s ease all;
+}
+
+#hide h3:hover, #hide p:hover {
+    background-color: rgba(255, 255, 255, 0.493);
+    transition: .3s ease all;
 }
 
 #menu:hover {

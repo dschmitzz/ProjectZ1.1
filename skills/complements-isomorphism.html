@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complements & Isomorphism</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/javascript"
+        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+</head>
+<body onload="writeOutline('areas', 'Complements & Isomorphism')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        
+        <div class='content'>
+            <h1>Complements & Isomorphism</h1>
+            <div class="definition">
+                <div class="process" id="cp">
+                    <p class="process-label" onclick="loadex('cex','cp')">Complete Graphs</p>
+                    <p>Given a set of \(n\) vertices \(V\),</p>
+                    <p>The complete graph on \(V\), \(K_n\), is a loop-free undirected graph where for all \(a,b \in V, a \neq b\), there is an edge \(\{a,b\}\).</p>
+                    <p>The number of edges will be \(\begin{pmatrix} n \\ 2 \end{pmatrix}\).</p>
+                </div>
+                <div class="process example" id="cex">
+                    <p class="process-label">Example</p>
+                    <p>To make a complete graph from \(V= \{\)<input type="text" value="a, b, c" id="vertexSet" onkeyup="resize('vertexSet')">\(\}\), the set of edges must be \(E = \) <span id='edgeSet'>\(\{(a, b), (a, c), (b, c)\}\)</span>.</p>
+                    <p id="calcEdges">You need \(\begin{pmatrix} 3 \\ 2 \end{pmatrix} = {3! \over 2!(3-2)!} = 3\) edges since the graph is composed of 3 vertices.</p>
+                    <script>
+                        vertices = document.querySelector('#cex #vertexSet');
+                        edgeSet = document.querySelector('#cex #edgeSet');
+                        calcEdges = document.querySelector('#cex #calcEdges');
+                        vertices.addEventListener("keyup",  update);
+                        function update() {
+                            edgeSet.innerHTML = '';
+                            vertices = document.querySelector('#cex #vertexSet').value.split(',');
+                            vertices = vertices.filter(element => {
+                                return element.trim() !== '';
+                            });
+                            for (i = 0; i < vertices.length; i++) {
+                                vertices[i] = vertices[i].trim();
+                            }
+                            edgeSet.innerHTML += '\\(\\{\\)';
+                            for (i = 0; i < vertices.length; i++) {
+                                for (j = i; j < vertices.length; j++) {
+                                    if (j > i && i < vertices.length - 1) {
+                                        edgeSet.innerHTML += '\\((' + vertices[i] + ', ' + vertices[j] + ')';
+                                        edgeSet.innerHTML += (i == vertices.length - 2 && j == vertices.length - 1 ? '\\)' : ',\\) ');
+                                    }
+                                }
+                            }
+                            edgeSet.innerHTML += '\\(\\}\\)';
+                            calcEdges.innerHTML = '';
+                            if (vertices.length > 1) {
+                                numEdges = combination(vertices.length, 2);
+                                calcEdges.innerHTML = 'You need ' + '\\(\\begin{pmatrix} '+ vertices.length +' \\\\ 2 \\end{pmatrix} = {' + vertices.length + '! \\over 2!(' + vertices.length + '-2)!} = ' + numEdges + '\\)' + (numEdges == 1 ? ' edge' : ' edges') + ' since the graph is composed of \\(' + vertices.length + '\\)' + ' vertices.';
+                            } else {
+                                calcEdges.innerHTML = 'There are \\(0\\) edges since the graph is composed of ' + (vertices.length == 1 ? ' \\(1\\) vertex.' : ' \\(0\\) vertices.');
+                            }
+                            MathJax.Hub.Queue(function() {
+                                MathJax.Hub.Typeset('cex');
+                            });
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="process">
+                <p class="process-label">Complements</p>
+                <p>Given \(G\), a loop-free undirected graph with \(n\) vertices,</p>
+                <p>\(G\)'s complement, \(\bar G\)</p>
+            </div>
+            <div class="process">
+                <p class="process-label">Graph Isomorphism</p>
+                <p>\(P_n\): path with \(n\) edges (\(n \geq 1\)). has \(n + 1\) vertices</p>
+                <p>\(C_n\)</p>
+            </div>
+            <div class="process">
+                <p class="process-label">Handshake Lemma</p>
+                <p>In a multigraph, $$\sum_{v \in V}deg(v) = 2|E|$$</p>
+            </div>
+        </div>
+    </div>
+            
+    <div style="width:95%" include-html='/footer-nm.html' src='/js/index.js'></div>
+</body>
+</html>
