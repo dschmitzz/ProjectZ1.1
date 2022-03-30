@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body onload="writeOutline('areas', 'Binary')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">
+
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <!-- get the function for writing the course outline in the skills menu -->
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        <div class="content">
+            <h1>Binary</h1> 
+                <div class="process">
+                    <p class="process-label">Bit</p>
+                    <p>A <span class="k">bit</span> is the most basic unit of information in computing.</p>
+                    <p>One bit represents a value of either \(0\) or \(1\).</p>
+                </div>
+                <div class="process">
+                    <p class="process-label">Binary Numbers</p>
+                    <p>A binary number is represented as a string of bits, also called a <span class="k">bit vector</span>.</p>
+                    <p>While decimal numbers have a \(1\)s, \(10\)s, \(100\)s place, etc., binary numbers have a \(1\)s, \(2\)s, \(4\)s, \(8\)s place, etc.</p>
+                </div>
+        </div>
+    </div>
+    <div id="footer" include-html='/footer.html' src='/js/index.js'></div>  
+</body>
+</html>

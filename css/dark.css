@@ -36,6 +36,12 @@ table, td {
 
 th {
     background-color: rgb(35, 97, 92);
+    transition: .5s;
+}
+
+td:hover {
+    background-color: rgb(42, 148, 134);
+    transition: .5s;
 }
 
 .bitVector > div {
@@ -82,6 +88,10 @@ th {
 
 .humanities {
     background-color:rgb(121, 18, 121,.5);
+}
+
+.k {
+    background-color: rgb(89, 94, 94);
 }
 
 .k:hover {

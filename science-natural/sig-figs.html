@@ -4,12 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' href='../styles.css'>
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <title>Significant figures</title>
+    <title>Significant Figures</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type=text/javascript src='/js/sig-figs.js'></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
-<body>
-    <p>How many significant figures are there in the following value?</p>
-    <p>103.00</p>
+<body onload="writeOutline('areas', 'Significant Figures')">
+    
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">
+
+            <span class='tab natsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <!-- get the function for writing the course outline in the skills menu -->
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        <div class="content">
+            <h1>Significant Figures</h1> 
+                <div class="process">
+                    <p class="process-label">Significant Figures</p>
+                    <p>In natural science, it is necessary to evaluate the significance of measured results.</p>
+                    <p>Measured digits can be broken into five categories:
+                        <ol>
+                            <li>Non-zero measurable digits are <span class="k">significant</span>.</li>
+                            <li>\(0\)s between non-zero measurable digits are <span class="k">significant</span>.</li>
+                            <li>Trailing measurable \(0\)s are <span class="k">significant</span>. </li>
+                            <li>Leading \(0\)s are <span class="k">non-significant</span>.</li>
+                            <li>Digits beyond the precision of the instrument used to measure them are <span class="k">non-significant</span>.</li>
+                        </ol>
+                    </p>
+                </div>
+        </div>
+    </div>
+    <!-- <div class='content'>
+        <p class='cards-label'>Identifying Significant & Non-Significant Digits</p>
+        <div class='process natsci'>
+            <span><label>Smallest measurable increment:</label>
+            <input type='number' style='margin:0;width:100px' value=.0001></span>
+            <table id='digit-types'>
+                <tr><th>Digit Type</th><th style='padding-top:6px'>Try a number:<br><input style='margin-top:2px' type='number' id='test' onChange="highlight()"></th><th>Type</th></tr>
+                <tr><td>Non-zero measurable</td><td id="inputText"></td><td>Significant</td></tr>
+                <tr><td>0 between<br>non-zero measurables</td><td id="inputText"></td><td>Significant</td></tr>
+                <tr><td>Leading 0s</td><td></td><td>Non-significant</td></tr>
+                <tr><td>Non-measurable</td><td></td><td>Non-significant</td></tr>
+            </table>
+        </div>
+        </div>
+    </div> -->
+    <div id='footer' include-html='/footer.html' src='js/index.js'></div>   
 </body>
 </html>

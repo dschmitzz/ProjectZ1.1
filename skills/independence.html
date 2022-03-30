@@ -24,16 +24,21 @@
         <script type="text/javascript" src="/js/outlines.js"></script>
         <div class="content">
             <h1>Independence</h1> 
-                <div class="process">
-                    <p class="process-label">Properties of Independence</p>
-                    <p>For random variables \(X\) and \(Y\), the statement that \(X\) and \(Y\) are independent is logically equivalent to the following statements:</p>
-                    <ol>
-                        <li>\(f_{XY}(x,y) = f_X(x)f_Y(y)\) for all \(x\), \(y\)</li>
-                        <li>\(f_{Y|x}(y) = f_Y(y)\) for all \(x\), \(y\) with \(f_X(x)>0\)</li>
-                        <li>\(f_{X|y}(x) = f_X(x)\) for all \(x\), \(y\) with \(f_Y(y)>0\)</li>
-                        <li></li>
-                    </oL>
-                </div>
+            <div class="process">
+                <p class="process-label">Independence of two events</p>
+                <p>The statement that two events are independent is logically equivalent to the following statements:</p>
+                <ol>
+                    <li>\(P(A|B) = P(A)\)</li>
+                    <li>\(P(B|A) = P(B)\)</li>
+                    <li>\(P(A\cap B) = P(A)P(B)\)</li>
+                </ol>
+            </div>
+            <div class="process">
+                <p class="process-label">Circuits</p>
+                <p>Given two nodes in series, if node \(A\) has probability of success \(P(A)\) and node \(B\) has probability of success \(P(B)\), the probability of the series circuit operating is \(P(A\cap B) = P(A)P(B)\).</p>
+                <p>Given two nodes in parallel, if node \(A\) has probability of success \(P(A)\) and node \(B\) has probability of success \(P(B)\), the probability of the parallel circuit operating is \(P(A\cup B)\) \(= P(A) + P(B) - P(A\cap B)\) \(= P(A) + P(B) - P(A)P(B)\).</p>
+                <p>To calculate the total probability of success of a circuit with series and parallel components, combine pairs of nodes into single probabilities with the methods above until you end up with two nodes in series or parallel, which you can use to get the circuit's total probability of success.</p>
+            </div>
         </div>
     </div>
     <div id="footer" include-html='/footer.html' src='/js/index.js'></div>  

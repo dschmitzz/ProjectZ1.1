@@ -44,8 +44,12 @@
                     <p>mean, \(\mu = E(X) = {1 \over p}\)</p>
                     <p>variance, \(\sigma^2 = V(X) = {1 - p \over p^2}\)</p>
                 </div>
-            <!-- </div>
-            <div class="definition"> -->
+            <!-- </div> -->
+            <div class="process">
+                <p class="process-label">Lack of Memory Property</p>
+                <p>Since trials are independent, you can start at any arbitrary trial, and the probability distribution of the next success after a certain number of trials will not change!</p>
+            </div>
+            <!-- <div class="definition"> -->
                 <div class="process">
                     <p class="process-label">Negative Binomial Distribution</p>
                     <p>Conduct a series of Bernoulli trials (those resulting in either success or failure, independent of each other, with constant probability \(p\) of success, \(0 \lt p \lt 1\)).</p>
@@ -56,7 +60,7 @@
             <div class="definition"> -->
                 <div class="process bottom">
                     <p class="process-label">Negative Binomial Mean & Variance</p>
-                    <p>Given a negative binomial random variable X with probability p of success and <i>r</i> successes:</p>
+                    <p>Given a negative binomial random variable \(X\) with probability \(p\) of success and measuring until \(r\) successes:</p>
                     <p>mean, \(\mu = E(X) = {r \over p}\)</p>
                     <p>variance, \(\sigma^2 = V(X) = {r(1 - p) \over p^2}\)</p>
                     <p>Note that all geometric formulas are just negative binomial formulas but plugging in 1 for \(r\), as expected!</p>

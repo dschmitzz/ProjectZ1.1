@@ -8,6 +8,8 @@
 	<link rel='icon' href='/imgs/sl-logo.PNG'>
     <link rel='stylesheet' href='/css/styles.css'>
     <script type='text/javascript' src='/js/index.js'></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body onload="writeOutline('areas', 'IEEE-754 Floating Point')">
     <div id='header' include-html='/header.html' src='/js/index.js'></div>
@@ -21,31 +23,17 @@
 
             <div class='content'>
                 <h1>IEEE-754 Floating Point</h1>
-                <p>The IEEE-754 standard defines a 32-bit floating point number as 1 sign bit, 8 exponent bits, and a 23-bit mantissa.</p>
-                <p>The decimal number is equal to (-1)<sup>sign</sup>&times;2<sup>exponent - 127</sup>&times;1.mantissa</p>
+                <div class="process">
+                    <p class="process-label">IEEE-754 Floating Point Notation</p>
+                    <p>The IEEE-754 standard defines a 32-bit floating point number as 1 sign bit, 8 exponent bits, and a 23-bit mantissa: $$(-1)^\text{sign} \times 2^{\text{exponent} - 127} \times 1.\text{mantissa} $$</p>
+                </div>
                 <table>
-                    <caption>Edge cases</caption>
-                    <tr>
-                        <th></th>
-                        <th>E == 0</th>
-                        <th>0 &lt; 255 &lt; E</th>
-                        <th>E == 255</th>
-                    </tr>
-                    <tr>
-                        <th>M == 0</th>
-                        <td>0</td>
-                        <td>Powers<br>of 2</td>
-                        <td><span style='transform:scale(3.5);'>&infin;</span></td>
-                    </tr>
-                    <tr>
-                        <th>M != 0</th>
-                        <td>Non-normalized<br>typically underflow</td>
-                        <td>Ordinary<br>old numbers</td>
-                        <td>Nan</td>
-                    </tr>
+                    <tr><th>Edge Cases</th><th>E == 0</th><th>0 &lt; 255 &lt; E</th><th>E == 255</th></tr>
+                    <tr><th>M == 0</th><td>0</td><td>Powers<br>of 2</td><td><span style='transform:scale(3.5);'>&infin;</span></td></tr>
+                    <tr><th>M != 0</th><td>Non-normalized<br>typically underflow</td><td>Ordinary<br>old numbers</td><td>NaN</td></tr>
                 </table>
                 <p>So valid exponents can range from -126 to 127</p>
-                <p class='cards-label'>Converting decimal portion to binary</p>
+                <!-- <p class='cards-label'>Converting decimal portion to binary</p>
                 <ul class='process'>
                     <li>Keep multiplying by 2 until you reach 1 or you use up 23 bits.</li>
                     <li>If the product &lt; 1, append a 0 bit.</li>
@@ -73,7 +61,7 @@
                 </ol>
                 <ol>Converting IEEE &rightarrow; decimal
                     <li>just do it lol</li>
-                </ol>
+                </ol> -->
             </div>
         </div>
     <div id='footer' include-html='/footer.html' src='/js/index.js'></div>

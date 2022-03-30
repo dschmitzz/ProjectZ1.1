@@ -33,18 +33,18 @@
     combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum & Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ '//Binomial Theorem|binomial-thm.html~ Prime Numbers|prime-numbers.html~ '
         // + '.Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
         // + '.Set Theory~ Sets & Subsets|sets-subsets.html~ Venn Diagrams|venn-diagrams.html~ Axioms of Probability|axioms-of-probability.html~ Conditional Probability|conditional-probability.html~ Independence|independence.html~ '
-        + '.Math Induction~ Mathematical Induction|math-induction.html~ Recursion|recursion.html~ Division Algorithm|division-algo.html~ Euclidean Algorithm (gcd)|gcd.html~ Fundamental Theorem of Arithmetic~ '
-        + '.Relations & Functions~ Cartesian Products & Relations|cartesian-products-relations.html~ Plain & One-to-one Functions~ Onto Functions~ Special Functions~ Pigeonhole Principle~ '
+        + '.Math Induction~ Mathematical Induction|math-induction.html~ Recursion|recursion.html~ Division Algorithm|division-algo.html~ Euclidean Algorithm (gcd)|gcd.html~ Fundamental Theorem of Arithmetic|fta.html~ '
+        + '.Relations & Functions~ Cartesian Products & Relations|cartesian-products-relations.html~ Plain & One-to-one Functions|plain-121-functions.html~ Onto Functions|onto-functions.html~ Special Functions|special-functions.html~ Pigeonhole Principle|pigeonhole-principle.html~ '
         //+ '.Inclusion/Exclusion~ Principle of Inclusion/Exclusion~ ' //Derangements
         + '.Generating Functions~ Partitions of Integers|int-partitions.html~ Exponential Generating Functions|exp-generating-fnc.html~ '
         // + '.Recurrence Relations~ '
-        + '.Introductory Graph Theory~ Graph Basics|graph-basics.html~ Subgraphs|subgraphs.html~ Complements & Isomorphism|complements-isomorphism.html~ Vertex Degree~ Planar Graphs~ Hamilton Paths & Cycles~ Graph Coloring & Chromatic Polynomials~ '
+        + '.Introductory Graph Theory~ Graph Basics|graph-basics.html~ Subgraphs|subgraphs.html~ Complements & Isomorphism|complements-isomorphism.html~ Vertex Degree|vertex-degree.html~ Planar Graphs|planar-graphs.html~ Hamilton Paths & Cycles|hamilton-paths-cycles.html~ Graph Coloring & Chromatic Polynomials|graph-coloring.html~ '
         ;
-    compArch = 'formsci~ Computer Architecture|compArch.html~ .Fundamentals~ Binary~ Integer Data Types~ Signed Integers~ Base Conversions~ Bitwise Arithmetic Operators~ Bitwise Logic Operators|bitwise-logic-ops.html~ Masking & Shifting~ IEEE-754 Floating Point|ieee754.html~ '
-        + '.Digital Logic Structures~ MOS Transistors~ Logic Gates~ Combinational Logic Circuits~ Latches~ Flip-flops~ Sequential Logic Circuits~ One-hot FSM~ Binary Encoding FSM~ '
-        + '.Von Neumann & LC-3~ Memory~ Von Neumann Model~ LC-3 ISA~ Operate Instructions~ Data Movement Instructions~ Control Instructions~ LC-3 Datapath~ '
-        + '.LC-3 Assembly~ Instruction Syntax~ Pseudo-ops|pseudo-ops.html~ Loops & Conditionals~ '
-        + '.Subroutines~ Call/Return~ JSR & JSRR~ The Stack|the-stack.html~ Recursion~ Queue~ '
+    compArch = 'formsci~ Computer Architecture|compArch.html~ .Bit Logic~ Binary|binary.html~ Integer Data Types|int-datatypes.html~ Base Conversions|base-conversions.html~ Bitwise Arithmetic Operators|bitwise-arithmetic-ops.html~ Bitwise Logic Operators|bitwise-logic-ops.html~ Masking & Shifting|masking-shifting.html~ IEEE-754 Floating Point|ieee754.html~ '
+        + '.Digital Logic Structures~ MOS Transistors|mos-transistors.html~ Logic Gates|logic-gates.html~ Combinational Logic Circuits|comb-logic-circuits.html~ Latches|latches.html~ Flip-flops|flip-flops.html~ Sequential Logic Circuits|seq-logic-circuits.html~ One-hot FSM|1hot-fsm.html~ Binary Encoding FSM|binary-fsm.html~ '
+        + '.Von Neumann & LC-3~ Memory|comp-memory.html~ Von Neumann Model|von-neumann.html~ LC-3 ISA|lc3-isa.html~ Operate Instructions|operate-instructions.html~ Data Movement Instructions|data-mvt-instructions.html~ Control Instructions|control-instructions.html~ LC-3 Datapath|lc3-datapath.html~ '
+        + '.LC-3 Assembly~ Instruction Syntax|instruction-syntax.html~ Pseudo-ops|pseudo-ops.html~ Loops & Conditionals|loops-conditionals.html~ Call/Return|call-return.html~ JSR & JSRR|jsr-jsrr.html~ The Stack|the-stack.html~ Recursion|lc3-recursion.html~ '
+        + '.Game Boy Advance~ Graphics|gba-graphics.html~ V-Blank|gba-vblank.html~ DMA|gba-dma.html~ GBA State Machines|gba-state-machines.html~ '
         ;
     dataStrAlg = 'formsci~ Data Structures & Algorithms~ .Fundamentals~ Arrays~ Big-O~ Generics~ Recursion~ '
         + '.Simple Structures~ Stacks|stacks.html~ Queues~ Deques~ '
@@ -58,11 +58,11 @@
     discreteMath = 'formsci~ Discrete Mathematics~ .Logic~ Propositions~ Logic Operators~ Demorgan\'s Law~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
         + '.Set Theory~ Sets & Subsets~ Set Cardinality~ Set Operations~ ';
     diffeq = 'formsci~ Differential Equations~ .Fundamentals~ ';
-    emag = 'natsci~ Electricity & Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures~ Scalars & Vectors~ '
+    emag = 'natsci~ Electricity & Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars & Vectors|scalars-vectors.html~ '
         + '.Electric Field~ Electric Charge & Force|electric-charge-force.html~ '
-        + '.Electric Field of Distributed Charges~ Rods|uc-thin-rod.html~ Rings|uc-thin-ring.html~ Disks|uc-disk.html~ Spherical Shells~ Solid Spheres~ ' 
-        + '.Magnetic Force~ Moving Charge~ Current-Carrying Wire~ Electric & Magnetic Forces|electric-magnetic-forces.html~ '
-        + '.Flux & Faraday\'s Law~ Curly Electric Fields~ Faraday\'s Law|faradays-law.html~ Motional EMF~ Maxwell\'s Equations|faraday-maxwells-equations.html~ Superconductors~ '
+        + '.Electric Field of Distributed Charges~ Rods|uc-thin-rod.html~ Rings|uc-thin-ring.html~ Disks|uc-disk.html~ Spherical Shell|spherical-shell.html~ Solid Sphere|solid-sphere.html~ ' 
+        + '.Magnetic Force~ Moving Charge|mforce-moving-charge.html~ Current-Carrying Wire|mforce-wire.html~ Electric & Magnetic Forces|electric-magnetic-forces.html~ '
+        + '.Flux & Faraday\'s Law~ Curly Electric Fields|curly-efields.html~ Faraday\'s Law|faradays-law.html~ Motional EMF|motional-emf.html~ Maxwell\'s Equations|faraday-maxwells-equations.html~ Superconductors|superconductors.html~ '
         ;
     multi = 'formsci~ Multivariable Calculus~ .Fundamentals~ '
         + '.Vector Functions~ '
@@ -73,14 +73,12 @@
     precalc = 'formsci~ Precalculus|precalc.html~ .Basic Trigonometry~ Sine|sine.html~ Cosine|cosine.html~ Tangent|tangent.html~ Secant|secant.html~ Cosecant|cosecant.html~ Cotangent|cotangent.html~ '//Trig Functions|trig-functions.html~ '
     ;
     probstats = 'formsci~ Probability & Statistics|probstats.html~ '
-        + '.Probability~ Independence~ '
-        + '.Discrete Distributions~ '
-        // + 'Probability Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ '
-        + 'Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
-        + '.Continuous Distributions~ '//Probabiity Distributions~ Probability Mass Functions~ Cumulative Distribution Functions~ Mean & Variance~ Continuous Uniform Distribution~ Normal Distribution~ Normal Approximation~ 
-        + 'Exponential Distribution|exp-dist.html~ '
+        + '.Probability~ Independence|independence.html~ Bayes\' Theorem|bayes-theorem.html~ Random Variables|randvars.html~ '
+        + '.Discrete Distributions~ Discrete Probability Distributions|disc-probdists.html~ Discrete Cumulative Distribution Functions|disc-cdfs.html~ Discrete Mean & Variance|disc-mean-variance.html~ Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ Geometric & Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
+        + '.Continuous Distributions~ Continuous Probability Distributions|cont-probdists.html~ Continuous Cumulative Distribution Functions|cont-cdfs.html~ Continuous Mean & Variance|cont-mean-variance.html~ Exponential Distribution|exp-dist.html~ '
         + '.Joint Distributions~ '//Joint Probability Distributions|joint-prob-dists.html~ '
-        + 'Conditional Distributions|conditional-dists.html~ Independence|independence.html'
+        + 'Conditional Distributions|conditional-dists.html~ '
+        + '.Descriptive Statistics~ '
         ;
     webdev = 'formsci~ Web Development|webdev.html~ '
         + '.HTML~ '
@@ -210,5 +208,14 @@
             }
         }
         topic = input;
+    }
+
+    // returns a list of courses that contain a skill
+    function getRelevantCourses(skill) {
+        var relevantCourses = [];
+        // check each course in areas array
+            // in each course check each skill to find a match
+            // if match, add it to relevantCourses
+        return relevantCourses;
     }
 

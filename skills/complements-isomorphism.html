@@ -36,7 +36,7 @@
                 <div class="process example" id="cex">
                     <p class="process-label">Example</p>
                     <p>To make a complete graph from \(V= \{\)<input type="text" value="a, b, c" id="vertexSet" onkeyup="resize('vertexSet')">\(\}\), the set of edges must be \(E = \) <span id='edgeSet'>\(\{(a, b), (a, c), (b, c)\}\)</span>.</p>
-                    <p id="calcEdges">You need \(\begin{pmatrix} 3 \\ 2 \end{pmatrix} = {3! \over 2!(3-2)!} = 3\) edges since the graph is composed of 3 vertices.</p>
+                    <p id="calcEdges">You'll have \(\begin{pmatrix} 3 \\ 2 \end{pmatrix} = {3! \over 2!(3-2)!} = 3\) edges since the graph is composed of 3 vertices.</p>
                     <script>
                         vertices = document.querySelector('#cex #vertexSet');
                         edgeSet = document.querySelector('#cex #edgeSet');
@@ -64,7 +64,7 @@
                             calcEdges.innerHTML = '';
                             if (vertices.length > 1) {
                                 numEdges = combination(vertices.length, 2);
-                                calcEdges.innerHTML = 'You need ' + '\\(\\begin{pmatrix} '+ vertices.length +' \\\\ 2 \\end{pmatrix} = {' + vertices.length + '! \\over 2!(' + vertices.length + '-2)!} = ' + numEdges + '\\)' + (numEdges == 1 ? ' edge' : ' edges') + ' since the graph is composed of \\(' + vertices.length + '\\)' + ' vertices.';
+                                calcEdges.innerHTML = 'You\'ll have ' + '\\(\\begin{pmatrix} '+ vertices.length +' \\\\ 2 \\end{pmatrix} = {' + vertices.length + '! \\over 2!(' + vertices.length + '-2)!} = ' + numEdges + '\\)' + (numEdges == 1 ? ' edge' : ' edges') + ' since the graph is composed of \\(' + vertices.length + '\\)' + ' vertices.';
                             } else {
                                 calcEdges.innerHTML = 'There are \\(0\\) edges since the graph is composed of ' + (vertices.length == 1 ? ' \\(1\\) vertex.' : ' \\(0\\) vertices.');
                             }
@@ -78,13 +78,13 @@
             <div class="process">
                 <p class="process-label">Complements</p>
                 <p>Given \(G\), a loop-free undirected graph with \(n\) vertices,</p>
-                <p>\(G\)'s complement, \(\bar G\)</p>
+                <p>\(G\)'s complement is \(\bar G\)</p>
             </div>
-            <div class="process">
+            <!-- <div class="process">
                 <p class="process-label">Graph Isomorphism</p>
                 <p>\(P_n\): path with \(n\) edges (\(n \geq 1\)). has \(n + 1\) vertices</p>
                 <p>\(C_n\)</p>
-            </div>
+            </div> -->
             <div class="process">
                 <p class="process-label">Handshake Lemma</p>
                 <p>In a multigraph, $$\sum_{v \in V}deg(v) = 2|E|$$</p>

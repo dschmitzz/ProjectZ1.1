@@ -26,15 +26,21 @@
             <h1>Hypergeometric Distribution</h1>
                 <div class="process" id="p1">
                     <p class="process-label" onclick="loadExample('ex1','p1')">Hypergeometric Distribution</p>
-                    <p>Random variable \(X\): \(x_1, x_2, ..., x_n\) all have equal probability within range \(n\).</p>
+                    <p>Set \(N\) contains \(K\) successes and \(N - K\) failures. </p>
+                    <p>Random variable \(X\): Number of successes in a sample of size \(n\) (selected without replacement, \(n \leq N\)). </p>
                     <p>probability mass function: \(P(X=x) = f(x) = {\left( \begin{array}{c} K \\ x \end{array} \right)\left( \begin{array}{c} N-K \\ n-x \end{array} \right) \over \left( \begin{array}{c} N \\ n \end{array} \right)}\)</p>
-                    <p class="addendum">\(x\) = max\(\{0, n+K-N\}\) to min\(\{K, n\}\)</p>
+                    <p class="addendum">\(x = \) max\(\{0, n+K-N\}\) to min\(\{K, n\}\)</p>
                 </div>
             <div class="process">
                 <p class="process-label">Hypergeometric Mean & Variance</p>
                 <p>Given a hypergeometric random variable \(X\) for of consecutive integers \(a, a + 1, a + 2, ..., b\) on range \(a \leq b\)</p>
                 <p>mean, \(\mu = E(X) = np\)</p>
-                <p>variance, \(\sigma^2 = V(X) = np(1 - p){N - n \over N - 1}\)</p>
+                <p>variance, \(\sigma^2 = V(X) = np(1 - p)({N - n \over N - 1})\)</p>
+                <ul>
+                    <li>where \(p = {K \over N}\),</li>
+                    <li>\(({N - n \over N - 1}) \) is the finite population correction factor, </li>
+                    <li>and \(\sigma^2\) approaches the binomial variance as \({n \over N}\) approaches \(0\). </li>
+                </ul>
             </div>
         </div>
     </div>

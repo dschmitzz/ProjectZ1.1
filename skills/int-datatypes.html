@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integer Data Types</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body onload="writeOutline('areas', 'Integer Data Types')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">
+
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <!-- get the function for writing the course outline in the skills menu -->
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        <div class="content">
+            <h1>Integer Data Types</h1> 
+            <div class="process">
+                <p class="process-label">Unsigned Integers</p>
+                <p>Unsigned integers only have a magnitude; they are neither negative nor positive.</p>
+            </div>
+            <div class="process">
+                <p class="process-label">Signed Magnitude Integers</p>
+                <p>Signed magnitude integers are the same as unsigned integers, except the leftmost bit is reserved for the sign. If the leftmost bit is 0, the number is positive; if the leftmost bit is 1, the number is negative. </p>
+            </div>
+            <div class="process">
+                <p class="process-label">1's Complement Integers</p>
+                <p>A positive integer's 1's complement negative is found by flipping all the bits of its binary form. </p>
+            </div>
+            <div class="process">
+                <p class="process-label">2's Complement Integers</p>
+                <p>A positive integer's 2's complement negative is found by flipping all the bits of its binary form and adding 1.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer" include-html='/footer.html' src='/js/index.js'></div>  
+</body>
+</html>
