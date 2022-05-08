@@ -10,7 +10,7 @@
     <script type=text/javascript src='/js/index.js'></script>
     <script type="text/javascript" src="/js/outlines.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script defer id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script type="text/javascript"
         src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
@@ -87,7 +87,9 @@
             </div> -->
             <div class="process">
                 <p class="process-label">Handshake Lemma</p>
-                <p>In a multigraph, $$\sum_{v \in V}deg(v) = 2|E|$$</p>
+                <p>For any graph, $$\sum_{v \in V}deg(v) = 2|E|$$</p>
+                <p>Since you cannot have a fractional number of edges, it follows that the sum of degrees of vertices must be even.</p>
+                <p>In other words, the number of vertices with odd degrees must be even in any graph.</p>
             </div>
         </div>
     </div>

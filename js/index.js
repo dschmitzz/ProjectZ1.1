@@ -26,7 +26,7 @@ function permutation(n, r) {
 
 // random integer number generator between a and b
 function rand(min, max) {
-    Math.floor((Math.random() * (max - min + 1)) + max);
+    return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 // PAGE FORMATTING
@@ -132,13 +132,13 @@ function resize(id) {
     document.getElementById(id).style.width = ((document.getElementById(id).value.length + 1) * 8 + 20) + 'px';
 }
 
-const femaleNames = ['Betty', 'Bab', 'Jan'];
-const maleNames = ['Billy', 'Bob', 'Joe'];
+const femaleNames = ['Amelia', 'Ava', 'Betty', 'Bab', 'Charlotte', 'Emma', 'Isabella', 'Jan', 'Mia', 'Olivia', 'Sophia'];
+const maleNames = ['Billy', 'Bob', 'James', 'John', 'Joe', 'Robert'];
 function getName(gender) {
-    if (gender='m') {
-        return maleNames[rand(0,maleNames.length)];
+    if (gender == 'm') {
+        return maleNames[rand(0, maleNames.length - 1)];
     } else {
-        return femaleNames[rand(0, femaleNames.length)];
+        return femaleNames[rand(0, femaleNames.length - 1)];
     }
 }
 
@@ -147,7 +147,6 @@ function loadex(example, proc) {
     // fix the look of the opening animation so it just fades in without starting below
     if (document.getElementById(example).style.display != 'block') {
         if (screenWidth > 1000) {
-            // alert('yeah');
             document.getElementById(proc).style.maxWidth = '45%';
             document.getElementById(example).style.maxWidth = '45%';
         } else {
@@ -180,3 +179,12 @@ function search() {
         }
     }
 }
+
+const constants = new Map([['Avogadro\'s number', 6.022e23], ['pi', 3.14159], ['speed of light', 2.998]]);
+
+class Election {
+    constructor(candidates) {
+        this.candidates = candidates;
+    }
+}
+const uspe2016 = new Election([['Republican', 'Donald Trump'], ['Democrat', 'Hillary Clinton'], ['']]);

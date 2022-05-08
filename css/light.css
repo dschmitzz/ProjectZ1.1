@@ -43,7 +43,8 @@ table, th, td {
 }
 
 .natsci {
-    background-color: rgba(50, 228, 118, 0.493);
+    /* background-color: rgba(50, 228, 118, 0.493); */
+    background-color: rgb(55, 235, 196);
 }
 
 .sidenav {

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequency Distributions & Histograms</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+    <script type="text/javascript" src="/js/outlines.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body onload="writeOutline('areas', 'Frequency Distributions & Histograms')">
+    <div include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">
+
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <!-- get the function for writing the course outline in the skills menu -->
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        <div class="content">
+            <h1>Frequency Distributions & Histograms</h1> 
+                <!-- <div class="definition"> -->
+                    <div class="process" id="rp">
+                        <p class="process-label">Frequency Distribution</p>
+                        <p>A <span class="k">frequency distribution</span> divides a dataset into intervals (called <span class="k">class intervals</span>, <span class="k">cells</span>, or <span class="k">bins</span>) and counts the number of data in each interval. </p>
+                        <p>An interval's <span class="k">frequency</span> is the number of data in that interval.</p>
+                        <p>An interval's <span class="k">relative frequency</span> is its frequency divided the total number of observations.</p>
+                        <p>An interval's <span class="k">cumulative relative frequency</span> is the sum of its relative frequency and all relative frequencies of lower intervals. </p>
+                    </div>
+                    <!-- <div class="process example" id="rex">
+                        <p>The fibonacci sequence is defined as $$f(0) = f(1) = 1$$ $$f(n) = f(n-1) + f(n-2) \text{ for } n \geq 2$$</p>
+                    </div>
+                </div> -->
+                <div class="process" id="rp">
+                    <p class="process-label">Histogram</p>
+                    <p>A <span class="k">histogram</span> is just a graph of a frequency distribution. To construct a histogram, </p>
+                    <ol>
+                        <li>Label the intervals on the horizontal scale.</li>
+                        <li>Label the vertical scale with frequencies or relative frequencies.</li>
+                        <li>Draw a rectangle above each interval as tall as that interval's frequency.</li>
+                    </ol>
+                </div>
+                <div class="process" id="rp">
+                    <p class="process-label">Histograms with Unequal Interval Sizes</p>
+                    <p>In a dataset with tight clusters, it is helpful to have smaller intervals in concentrated regions. </p>
+                    <p>In these histograms, rectangle area, not height, is proportional to interval frequency: $$\text{Rectangle height} = {\text{interval frequency} \over \text{interval size} } $$ </p>
+                </div>
+                <div class="process" id="rp">
+                    <p class="process-label">Categorical Histograms</p>
+                    <p>There are two types of categorical data: </p>
+                    <ul>
+                        <li><span class="k">Ordinal</span> categories follow an ordered sequence.</li>
+                        <li><span class="k">Nominal</span> categories have no natural order, they are simply different.</li>
+                    </ul>
+                    <p>A <span class="k">Pareto chart</span> is a histogram whose categories are listed from highest frequency to lowest frequency. It looks like a downward slope.</p>
+                </div>
+        </div>
+    </div>
+    <div style="width:95%" include-html='/footer-nm.html' src='/js/index.js'></div>
+</body>
+</html>
