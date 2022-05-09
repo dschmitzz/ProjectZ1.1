@@ -181,19 +181,20 @@ table, th, td {
     text-align: center;
 }
 
-td img {
-    height: 40px
-}
-
 td {
     font-weight: 500;
     padding: 2px 7px;
     transition: .6s ease all;
 }
 
-td:hover {
-    background-color: rgb(130, 223, 192);
-    transition: .6s ease all;
+td img {
+    height: 40px
+}
+
+td input, th input {
+    font-size: 14px;
+    max-height: 16px;
+    width: 50px;
 }
 
 th {

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RICE Tables</title>
+    <link rel='icon' href='/imgs/sl-logo.PNG'>
+    <link rel='stylesheet' href='/css/styles.css'>
+    <script type=text/javascript src='/js/index.js'></script>
+</head>
+<body onload="writeOutline('areas', 'RICE Tables')">
+    <div id='header' include-html='/header.html' src='/js/index.js'></div>
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">
+            <span class='tab natsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        <div class='content'>
+            <h1>RICE (ICE) Tables</h1>
+            <div class="process">
+                <p class="process-label">RICE Table</p>
+                <p><span class="k">RICE tables</span> (Reaction-Initial-Change-Equilibrium) are useful for determining the amount of each species after a chemical reaction reaches equilibrium. </p>
+                <table id="rice-table" style="margin-bottom:10px;">
+                    <tr><td>Reaction</td><td><input type='number'> A</td><td>+ <input type="number"> B</td><td>&rlhar; <input type="number"> C</td></tr>
+                    <tr><td>Initial</td><td><input type="number">mol</td><td><input type="number">mol </td><td>0</td></tr>
+                    <tr><td>Change</td><td></td><td></td><td></td></tr>
+                    <tr><td>Equilibrium</td><td></td><td></td><td></td></tr>
+                </table>
+                <script>
+                    a = document.querySelector('#rice-table tr:first-child td:nth-child(2) input');
+                    a.addEventListener('keyup', update);
+                    b = document.querySelector('#rice-table tr:first-child td:nth-child(3) input');
+                    b.addEventListener('keyup', update);
+                    c = document.querySelector('#rice-table tr:first-child td:nth-child(4) input');
+                    c.addEventListener('keyup', update);
+                    aInit = document.querySelector('#rice-table tr:nth-child(2) td:nth-child(2) input')
+                    aInit.addEventListener('keyup', update);
+                    bInit = document.querySelector('#rice-table tr:nth-child(2) td:nth-child(3) input')
+                    bInit.addEventListener('keyup', update);     
+                    function update() {
+                        if (a.value == '' || b.value == '' || c.value == '' || aInit.value == '' || bInit.value == '') return;
+                        document.querySelector('#rice-table tr:nth-child(3) td:nth-child(2)').innerHTML = '-' + a.value + 'x';
+                        document.querySelector('#rice-table tr:nth-child(3) td:nth-child(3)').innerHTML = '-' + b.value + 'x';
+                        document.querySelector('#rice-table tr:nth-child(3) td:nth-child(4)').innerHTML = '+' + c.value + 'x';
+                        document.querySelector('#rice-table tr:nth-child(4) td:nth-child(2)').innerHTML = aInit.value + '-' + a.value + 'x';
+                        document.querySelector('#rice-table tr:nth-child(4) td:nth-child(3)').innerHTML = bInit.value + '-' + b.value + 'x';
+                        document.querySelector('#rice-table tr:nth-child(4) td:nth-child(4)').innerHTML = c.value + 'x';
+                    }
+                </script>
+            </div>
+            <!-- <div class="process">
+            <p class="process-label">Time</p>
+            <p>Time - as in tiiime 2 bomb ur dorm</p>
+        </div> -->
+        </div>
+    </div>
+    <div id="footer" include-html='/footer-nm.html' src='/js/index.js'></div>
+</body>
+</html>

@@ -34,7 +34,7 @@
     + '.Intermolecular Forces~ '
     + '.Chemical Reactions~ '
     + '.Kinetics~ '
-    + '.Equilibrium~ '
+    + '.Equilibrium~ RICE Tables|rice-tables.html~ '
     + '.Acids & Bases~ '
     + '.Thermodynamics~ '
     ;

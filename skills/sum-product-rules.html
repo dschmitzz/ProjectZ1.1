@@ -24,15 +24,21 @@
         <script type="text/javascript" src="/js/outlines.js"></script>
         <div class="content">
             <h1>Sum & Product Rules</h1> 
-                <div class="process">
-                    <p class="process-label">Sum Rule</p>
-                    <p>If there are \(m\) ways to do something and \(n\) ways of doing another thing, and you cannot do both at the same time, then there are \(m + n\) ways to choose one.</p>
-                </div>
+                <!-- <div class="definition"> -->
+                    <div class="process" id="srp">
+                        <p class="process-label" onclick="loadex('srex', 'srp')">Sum Rule</p>
+                        <p>If there are \(m\) ways to do something and \(n\) ways of doing another thing, and you cannot do both at the same time, then there are \(m + n\) ways to choose one.</p>
+                    </div>
+                    <!-- <div class="process example" id="srex">
+                        <p>If a library has <input type="number" size="5"> biographies and <input id="txt" type="number" onkeyup="this.style.width = ((this.value.length + 1) * 8 + 10) + 'px';"> novels, there are 45 + 30 = 75 ways to select a book from one of the two genres.</p>
+                    </div>
+                </div> -->
                 <div class="process">
                     <p class="process-label">Product Rule</p>
                     <p>If a procedure consists of two steps, independent of each other, with \(m\) possible results of the first step and \(n\) possible results of the second, then the total procedure can be performed in \(mn\) ways.</p>
                 </div>
         </div>
     </div>
+    <div style="width:95%" include-html='/footer-nm.html' src='/js/index.js'></div>
 </body>
 </html>

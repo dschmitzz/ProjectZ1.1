@@ -27,7 +27,7 @@ h1 {
 }
 
 input {
-    color: white;
+    color: black;
 }
 
 table, td {
@@ -39,10 +39,10 @@ th {
     transition: .5s;
 }
 
-td:hover {
+/* td:hover {
     background-color: rgb(42, 148, 134);
     transition: .5s;
-}
+} */
 
 .bitVector > div {
     color: red;
