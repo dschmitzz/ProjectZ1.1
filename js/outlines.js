@@ -16,7 +16,8 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     ;
 biology = 'natsci~ Biology|biology.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scientific Method~ '
     + '.Chemistry of Life~ Elements of Life~ Chemical Reactions~ Acids & Bases~ Carbon Compounds~ Carbohydrates~ Lipids~ Proteins~ Nucleic Acids~ '
-    + '.Cells~ '
+    + '.Cells~ Prokaryotic Cells~ Eukaryotic Cells~ Animal Cells~ Plant Cells~ Nucleus~ Endomembrane System~ Mitochondria & Chloroplasts~ Cytoskeleton~ '
+    + '.Cell Membrane~ Cell Membrane~ Passive Transport~ Active Transport~ Exocytosis & Endocytosis~ Cell Signaling~ '
     + '.Genetics~ '
     + '.Evolution~ '
     + '.Plants~ '
