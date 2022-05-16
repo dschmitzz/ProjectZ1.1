@@ -14,7 +14,7 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     + 'Biology|biology.html~ '
     + '.Humanities~ Music Theory|music-theory.html '
     ;
-biology = 'natsci~ Biology|biology.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scientific Method~ '
+biology = 'natsci~ Biology|biology.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scientific Method|scientific-method.html~ '
     + '.Chemistry of Life~ Elements of Life~ Chemical Reactions~ Acids & Bases~ Carbon Compounds~ Carbohydrates~ Lipids~ Proteins~ Nucleic Acids~ '
     + '.Cells~ Prokaryotic Cells~ Eukaryotic Cells~ Animal Cells~ Plant Cells~ Nucleus~ Endomembrane System~ Mitochondria & Chloroplasts~ Cytoskeleton~ Cell Cycle~ '
     + '.Energy Transfer~ Cell Membrane~ Passive Transport~ Active Transport~ Exocytosis & Endocytosis~ Cell Signaling~ Metabolism & ATP~ Cellular Respiration~ Fermentation~ Photosynthesis~ '
