@@ -22,7 +22,7 @@ arithmetic = '.formsci~ Arithmetic~ .Counting & Place Value~ '
     + '.Ratios & Proportions~ '
     + '.Exponents & Radicals~ Exponents~ Roots~ Logs~ '
 biology = 'natsci~ Biology|biology.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scientific Method|scientific-method.html~ '
-    + '.Chemistry of Life~ Elements of Life~ Chemical Reactions~ Acids & Bases~ Carbon Compounds~ Carbohydrates~ Lipids~ Proteins~ Nucleic Acids~ '
+    + '.Chemistry of Life~ Elements of Life|elements-of-life.html~ Chemical Reactions~ Acids & Bases~ Carbon Compounds~ Carbohydrates~ Lipids~ Proteins~ Nucleic Acids~ '
     + '.Cells~ Prokaryotic Cells~ Eukaryotic Cells~ Animal Cells~ Plant Cells~ Nucleus~ Endomembrane System~ Mitochondria & Chloroplasts~ Cytoskeleton~ Cell Cycle~ '
     + '.Energy Transfer~ Cell Membrane~ Passive Transport~ Active Transport~ Exocytosis & Endocytosis~ Cell Signaling~ Metabolism & ATP~ Cellular Respiration~ Fermentation~ Photosynthesis~ '
     + '.Genetics~ Mitosis~ Meiosis~ Mendelian Inheritance~ Post-Mendelian Inheritance~ Chromosomes~ DNA Synthesis~ Gene Expression~ Regulating Gene Expression~ Life Development~ Viruses~ Genomes~ '
@@ -51,7 +51,7 @@ calcInt = 'formsci~ Integral Calculus~ '
     + '.Applications of Integration~ Area Between Curves~ Volume by Disks~ Volume by Shells~ Arc Length~ Surface of Revolution~ Work~ Moment & Center of Mass~ Fluids~ '
     + '.Sequences & Series~ Sequences & Summations~ Series & Convergence~ Geometric Series~ Telescoping Series~ p-Series~ Alternating Series~ Integral Test~ Ratio & Root Tests~ Comparison Tests~ Power Series~ Taylor Series~ '
 ;
-chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ '
+chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ '
 + '.Atoms~ Moles &amp; Molar Mass~ Mass Spectroscopy of Elements~ Periodic Trends~ Pauli Exclusion Principle~ '
 + '.Compounds~ Ionic & Metallic Bonds~ Covalent Bonds~ Lewis Structures~ '
 + '.Intermolecular Forces~ Kinetic Molecular Theory~ Ideal Gases~ Electromagnetic Spectrum~ '
@@ -102,11 +102,18 @@ discreteMath = 'formsci~ Discrete Mathematics~ .Logic & Proofs~ Propositions|pro
     + '.Trees~ Tree Basics~ Tree Traversal~ Prim\'s MST~ Kruskal\'s MST~ '
     + '.Modeling Computation~ Languages & Grammars~ Finite-State Machines~ Language Recognition~ Turing Machines~ '
     ;
-diffeq = 'formsci~ Differential Equations~ .Fundamentals~ ';
-emag = 'natsci~ Electricity &amp; Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ '
+diffeq = 'formsci~ Differential Equations~ .First Order ODEs~ Slope Fields & Euler\'s Method~ Separable Equations~ Linear Equations~ Applications~ '
+    + '.Second Order ODEs~ 2nd Order Euler\'s Method~ Superposition Principle~ Wronskian~ Dinstinct Real Roots~ Distinct Complex-Conjugate Roots~ Repeated Roots~ Inhomogeneous ODEs~ Resonance~ Applications~ Damped Resonance~ '
+    + '.Laplace Transform~ Initial Value Problems~ Heaviside Function~ Dirac Delta Function~ Discontinuous Terms~ '
+    + '.Series Solutions~ Ordinary Points~ Distinct Real Roots~ Distinct Complex-Conjugate Roots~ Repetaed Roots~ '
+    + '.Systems of Equations~ Matrices~ Determinants~ Distinct Real Eigenvalues~ Distinct Complex-Conjugate Eigenvalues~ Repeated Eigenvalues with One Eigenvector~ Normal Modes~ '
+    + '.Nonlinear Differential Equations~ 1D Fixed Points & Stability~ 2D Fixed Points & Stability~ Saddle-node Bifurcation~ Transcritical Bifurcation~ Supercritical Pitchfork Bifurcation~ Subcritical Pitchfork Bifurcation~ Supercritical Hopf Bifurcation~ Subcritical Hopf Bifurcation~ '
+    + '.Partial Differential Equations~ Diffusion Equation~ Wave Equation~ Fourier Series~ Fourier Sine and Cosine Series~ Solution of the Diffusion~ Pipe with Closed Ends~ '
+    ;
+emag = 'natsci~ Electricity &amp; Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ '
     + '.Electric Field~ Electric Charge &amp; Force|electric-charge-force.html~ '
     + '.Electric Field of Distributed Charges~ Rods|uc-thin-rod.html~ Rings|uc-thin-ring.html~ Disks|uc-disk.html~ Spherical Shell|spherical-shell.html~ Solid Sphere|solid-sphere.html~ '
-    + '.AC Circuits~ Power in AC Circuits~' 
+    + '.AC Circuits~ Power in AC Circuits~ ' 
     + '.Magnetic Force~ Moving Charge|mforce-moving-charge.html~ Current-Carrying Wire|mforce-wire.html~ Electric &amp; Magnetic Forces|electric-magnetic-forces.html~ '
     + '.Flux &amp; Faraday\'s Law~ Curly Electric Fields|curly-efields.html~ Faraday\'s Law|faradays-law.html~ Motional EMF|motional-emf.html~ Maxwell\'s Equations|faraday-maxwells-equations.html~ Superconductors|superconductors.html~ '
     ;
@@ -138,16 +145,16 @@ multi = 'formsci~ Multivariable Calculus~ .Vectors in Space~ Scalars & Vectors|s
     ; 
 musicTheory = 'humanities~ Music Theory~ .Fundamentals~ Pitch & Intervals~ Clefs~ Circle of Fifths~ Rhythm~ '
     + '.Large Forms~ Ternary Form~ Rondo Form~ Sonata Form~ '
-physClassical = 'natsci~ Classical Mechanics~ '
+physClassical = 'natsci~ Classical Mechanics~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ '
     + '.Wave Optics~ Interference of Light~ Diffraction Grating~ Single-Slit Diffraction~ Circular-Aperture Diffraction~ Wave Model of Light~ Interferometers~ '
     + '.Ray Optics~ Ray Model of Light~ Reflection~ Refraction~ Image Formation~ Ray Tracing~ Refraction Theory~ Spherical Mirrors~ '
     + '.Optical Instruments~ Lenses~ Cameras~ Vision~ Magnifiers~ Color & Dispersion~ Resolution~ '
-physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units~ Significant Figures~ Scalars &amp; Vectors~ '
+physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ Standard Model|standard-model.html~ '
     + '.Relativity~ Galilean Relativity~ Einsteinian Relativity~ Events & Measurements~ Relativity of Simultaneity~ Time Dilation~ Length Contraction~ Lorentz Transformation~ Relativistic Momentum~ Relativistic Energy~ '
     + '.Quantization~ Photoelectric Effect~ Photons~ Matter Waves & Energy Quantization~ Bohr Atom~ Bohr Hydrogen Atom~ Hydrogen Spectrum~ '
     + '.Wave Functions~ Waves & Particles~ Wave Function~ Normalization~ Wave Packets~ Heisenberg Uncertainty Principle~ '
     + '.Quantum Mechanics~ Shr&ouml;dinger Equation~ Particle in a Rigid Box~ Correspondence Principle~ Finite Potential Wells~ Quantum Harmonic Oscillator~ Quantum Tunneling~ '
-    + '.Atomic Physics~ Quantum Numbers~ Spin~ Pauli Exclusion Principle~ Periodic Table~ Excited States~ Lasers~ '
+    + '.Atomic Physics~ Periodic Table~ Quantum Numbers~ Spin~ Pauli Exclusion Principle~ Excited States~ Lasers~ '
     + '.Nuclear Physics~ Nuclear Structure~ Nuclear Stability~ Strong Force~ Shell Model~ Radiation & Radioactivity~ Nuclear Decay~ Biological Applications~ '
     ;
 probstats = 'formsci~ Probability &amp; Statistics|probstats.html~ '
@@ -194,6 +201,7 @@ function setTopic(current) {
 function topicSelector() {
     switch (topic) {
         case 'areas': topic = areas; break;
+        case 'biology': topic = biology; break;
         case 'C': topic = c; break;
         case 'calc-diff': topic = calcDiff; break;
         case 'calc-int': topic = calcInt; break;
@@ -205,7 +213,7 @@ function topicSelector() {
         case 'diffeq': topic = diffeq; break;
         case 'discrete-math': topic = discreteMath; break;
         case 'emag': topic = emag; break;
-        case 'linear-algebra': topic = linAlg; break;
+        case 'linalg': topic = linAlg; break;
         case 'multi': topic = multi; break;
         case 'music-theory': topic = musicTheory; break;
         case 'physClassical': topic = physClassical; break;
@@ -264,9 +272,7 @@ function writeOutline(type, name='') {
             }
         }
     }
-    else {
-        menu.innerHTML += '<div id="hide"><a href="/topics/'+input+'.html"><h3 style="font-size:20px">' + title[0] + '</h3></a></div>';
-    }
+    else menu.innerHTML += '<div id="hide"><a href="/topics/'+input+'.html"><h3 style="font-size:20px">' + title[0] + '</h3></a></div>';
 
     // write the left menu for a skill page or cards for an area page
     // if (type == 'areas') document.getElementById('hide').innerHTML += '<input type="submit" style="margin:0;width:100%;padding:0;border-radius:0;border-bottom:none;height:35px;border-right:none;border-left:none;background-color:lightgreen" id="practice-btn" value="Practice this skill">';

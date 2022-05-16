@@ -407,7 +407,7 @@ ul li {
     margin:0;
     padding:0;
     /* background-color: #08c708; */
-    max-width:1000px;
+    /* max-width:1000px; */
     /* width: 300px; */
     overflow-x: auto;
     overflow-y: hidden;
@@ -490,6 +490,7 @@ ul li {
 
 .process-label {
     background-color: rgb(34, 236, 186);
+    background-color: rgba(55, 235, 196, 0.85);
     border-bottom: 1px solid rgb(99, 99, 99);
     border-start-start-radius: 8px;
     border-top-right-radius: 8px;
