@@ -34,14 +34,8 @@ function rand(min, max) {
 // flip between light/dark mode
 function getStylesheet() {
     var currentTime = new Date().getHours();
-    if (0 <= currentTime && currentTime < 8 || 19 <= currentTime && currentTime < 24) {
-     document.write("<link rel='stylesheet' href='/css/dark.css' type='text/css'>");
-     return 'dark';
-    }
-    else {
-     document.write("<link rel='stylesheet' href='/css/light.css' type='text/css'>");
-     return 'light';
-    }
+    if (7 <= currentTime && currentTime < 20) document.write("<link rel='stylesheet' href='/css/light.css' type='text/css'>");
+    else document.write("<link rel='stylesheet' href='/css/dark.css' type='text/css'>")
 }
 
 function highlight(type) {
@@ -94,13 +88,8 @@ function openNav() {
         if (screenWidth < 600) {
             document.getElementById('sidenav').style.width = '100%';
             document.getElementById('sidenav').style.height = '100%';
-        } else {
-            document.getElementById('sidenav').style.width = '200px';
-        }
-    } else {
-        // alert('nah');
-        document.getElementById('sidenav').style.width = '0';
-    }
+        } else document.getElementById('sidenav').style.width = '200px';
+    } else document.getElementById('sidenav').style.width = '0px';
 }
 
 function openOutline() {
@@ -180,11 +169,18 @@ function search() {
     }
 }
 
+
 const constants = new Map([['Avogadro\'s number', 6.022e23], ['pi', 3.14159], ['speed of light', 2.998]]);
 
+console.log(constants['pi'])
 class Election {
     constructor(candidates) {
         this.candidates = candidates;
     }
 }
 const uspe2016 = new Election([['Republican', 'Donald Trump'], ['Democrat', 'Hillary Clinton'], ['']]);
+
+// close nav menu by clicking outside of it
+document.addEventListener('click', function(element) {
+    if (element.target.nodeName != "A" && (element.target.id == 'menu' || (element.target.id != 'sidenav' && document.getElementById('sidenav').style.width != '0px' && document.getElementById('sidenav').style.width != ''))) openNav();
+})

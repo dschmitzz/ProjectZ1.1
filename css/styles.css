@@ -123,6 +123,10 @@ h5 {
     padding: 0 7px;
 }
 
+h5:hover {
+    cursor: pointer;
+}
+
 h6 {
     font-size: 18px;
 }
@@ -172,16 +176,18 @@ table {
     border: none;
     margin: 0 0px;
     max-width: 800px;
-    /* margin: 10px; */
+    margin-bottom: 10px;
 }
 
-table, th, td {
-    border: 2px solid rgb(223, 223, 223);
+table, th {
+    border: 2px solid rgba(176, 169, 169, 0.847);
     border-collapse: collapse;
     text-align: center;
 }
 
 td {
+    border-left: 2px solid rgba(176, 169, 169, 0.847);
+    border-right: 1px solid rgba(176, 169, 169, 0.847);
     font-weight: 500;
     padding: 2px 7px;
     transition: .6s ease all;
@@ -198,7 +204,8 @@ td input, th input {
 }
 
 th {
-    background-color: rgba(105, 211, 141, 1);
+    background-color: rgba(168, 239, 192, 0.799);
+    background-color: rgba(194, 223, 203, 0.799);
     font-weight: 500;
     padding: 5px 7px;
 }
@@ -400,7 +407,7 @@ ul li {
     margin:0;
     padding:0;
     /* background-color: #08c708; */
-    /* max-width:1000px; */
+    max-width:1000px;
     /* width: 300px; */
     overflow-x: auto;
     overflow-y: hidden;
@@ -408,6 +415,7 @@ ul li {
 
 .humanities {
     background-color: rgba(189, 140, 223, 0.336);
+    background-color: rgba(226, 192, 249, 0.575);
 }
 
 .k {
@@ -507,13 +515,8 @@ ul li {
     margin:3px;
     margin-bottom: 10px;
     margin-top: 0;
-    max-width: 100%;
     padding-bottom:0;
     padding-top: 0;
-}
-
-ol li {
-    max-width: 100%;
 }
 
 table {
@@ -623,6 +626,10 @@ table {
     cursor: pointer;
     opacity: .7;
     transition: .5s ease all;
+}
+
+.test, .test .card {
+    background-color:rgba(206, 93, 93, 0.502);
 }
 
 .topics {
@@ -843,5 +850,11 @@ table {
     .shoutout {
         position:absolute;
         right:20px;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    h1:hover {
+        cursor: pointer;
     }
 }
