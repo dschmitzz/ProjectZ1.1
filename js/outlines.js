@@ -2,7 +2,7 @@
 
 var topic;
 
-areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic.html~ Algebra~ Geometry|geometry.html~ Discrete Mathematics|discrete-math.html~ Differential Calculus|calc-diff.html~ Integral Calculus|calc-int.html~ Multivariable Calculus|calc-multi.html~ Differential Equations|diffeq.html~ Linear Algebra|linear-algebra.html~ '
+areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic.html~ Algebra|algebra.html~ Geometry|geometry.html~ Discrete Mathematics|discrete-math.html~ Differential Calculus|calc-diff.html~ Integral Calculus|calc-int.html~ Multivariable Calculus|calc-multi.html~ Differential Equations|diffeq.html~ Linear Algebra|linear-algebra.html~ '
     + 'Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
     + '.Computer Science~ Computer Architecture|compArch.html~ Data Structures & Algorithms|data-structures-algorithms.html~ '
     + 'C|C.html~ '//C++|c++.html~ C#|c#.html~ Java|java.html~ Python|python.html~ 
@@ -15,8 +15,8 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     + '.Humanities~ Music Theory|music-theory.html~ '
     + '.Standardized Tests~ ACE Personal Trainer|acept.html~ '
     ;
-algebra = 'formsci~ Algebra~ .Expressions & Equations~ '
-arithmetic = 'formsci~ Arithmetic~ .Counting & Place Value~ '
+algebra = 'formsci~ Algebra|algebra.html~ .Expressions & Equations~ '
+arithmetic = 'formsci~ Arithmetic|arithmetic.html~ .Counting & Place Value~ '
     + '.Basic Operations~ Addition~ Subtraction~ Multiplication~ Division~ ' 
     + '.Decimals, Fractions, Percents~ '
     + '.Ratios & Proportions~ '
@@ -29,7 +29,7 @@ biology = 'natsci~ Biology|biology.html~ .Fundamentals~ SI Units|si-units.html~ 
     + '.Evolution~ Origin of Life~ Evolution of Prokaryotes~ Evolution of Eukaryotes~ Evolution of Plants & Fungi~ Evolution of Animals~ Diversification of Species~ Darwinian Evolution~ Phylogeny~ Evolution of Populations~ '
     + '.Plants~ Plant Structure~ Plant Growth~ Plant Nutrition~ Transpiration~ Flowers & Reproduction~ Plant Hormones~ Plant Stimuli~ '
     + '.Animals~ Organ Systems~ Skeletal System~ Muscular System~ Circulatory System~ Respiratory System~ Endocrine System~ Immune System~ Animal Reproduction~ Animal Nutrition~ Animal Development~ Neural Signaling~ Nervous System~ Sensory Receptors~ Motor Functions~ '
-    + '.Ecology~ Organismal Ecology~ Populations~ Communities~ Ecosystems~ Landscapes~ Global Ecology~ '
+    + '.Ecology~ Ecology of Organisms~ Populations~ Communities~ Ecosystems~ Landscapes~ Global Ecology~ '
 c = 'formsci~ C|C.html~ .Fundamentals~ Hello World|c-hello-world.html~ '
     //+ '.Operators &amp; Expressions'
         // maybe condense these types into one page or at least group a few similar ones together
@@ -58,8 +58,8 @@ chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ Significa
 + '.Chemical Reactions~ '
 + '.Kinetics~ Rate Law|rate-law.html~ '
 + '.Equilibrium~ RICE Tables|rice-tables.html~ '
-+ '.Acids &amp; Bases~ '
-+ '.Thermodynamics~ Gibb\'s Free Energy~ '
++ '.Acids &amp; Bases~ Neutralization Reactions~ Buffers~ Titration~ '
++ '.Thermodynamics~ Free Energy Change~ Galvanic Cells~ Electrolytic Cells~ Gibb\'s Free Energy~ '
 ;
 combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum &amp; Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ //Binomial Theorem|binomial-thm.html~ Prime Numbers|prime-numbers.html~ '
     + '.Logic~ Propositions|propositions.html~ Logic Operators|logic-ops.html~ Demorgan\'s Law|demorgan.html~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
@@ -111,11 +111,17 @@ diffeq = 'formsci~ Differential Equations~ .First Order ODEs~ Slope Fields & Eul
     + '.Partial Differential Equations~ Diffusion Equation~ Wave Equation~ Fourier Series~ Fourier Sine and Cosine Series~ Solution of the Diffusion~ Pipe with Closed Ends~ '
     ;
 emag = 'natsci~ Electricity &amp; Magnetism|emag.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ '
-    + '.Electric Field~ Electric Charge &amp; Force|electric-charge-force.html~ '
-    + '.Electric Field of Distributed Charges~ Rods|uc-thin-rod.html~ Rings|uc-thin-ring.html~ Disks|uc-disk.html~ Spherical Shell|spherical-shell.html~ Solid Sphere|solid-sphere.html~ '
-    + '.AC Circuits~ Power in AC Circuits~ ' 
-    + '.Magnetic Force~ Moving Charge|mforce-moving-charge.html~ Current-Carrying Wire|mforce-wire.html~ Electric &amp; Magnetic Forces|electric-magnetic-forces.html~ '
-    + '.Flux &amp; Faraday\'s Law~ Curly Electric Fields|curly-efields.html~ Faraday\'s Law|faradays-law.html~ Motional EMF|motional-emf.html~ Maxwell\'s Equations|faraday-maxwells-equations.html~ Superconductors|superconductors.html~ '
+    + '.Electric Field~ Charge~ Insulators & Conductors~ Coulomb\'s Law~ Electric Fields~ Point Charges~ Electric Dipoles~ Parallel-Plate Capacitors~ '
+    + '.Electric Field of Distributed Charges~ Continuous Charge Distributions~ Rods|uc-thin-rod.html~ Rings|uc-thin-ring.html~ Disks|uc-disk.html~ Spherical Shell|spherical-shell.html~ Solid Sphere|solid-sphere.html~ '
+    + '.Gauss\'s Law~ Flux~ Symmetry~ Electric Flux~ Gauss\'s Law~ Conductors in Electrostatic Equilibrium~ '
+    + '.Electric Potential~ Electric Potential Energy~ Electric Potential~ Potential of Charges~ Potential & Field~ Electrostatic Equilibrium~ Capacitance & Capacitors~ Dielectrics~ '
+    + '.Current & Resistance~ Current~ Conductivity & Resistivity~ Ohm\'s Law~ '
+    + '.Magnetic Field~ Magnetism~ Magnetic Dipoles~ Magnetic Properties of Matter~ Moving Charge|mforce-moving-charge.html~ Current-Carrying Wire|mforce-wire.html~ Electric &amp; Magnetic Forces|electric-magnetic-forces.html~ Solenoids~ '
+    + '.Electromagnetic Fields & Waves~ Electromagnetic Waves~ Polarization~ '
+    + '.Circuits~ Circuit Notation~ Kirchhoff\'s Laws~ Energy & Power~ Series Resistors~ Batteries~ Parallel Resistors~ Resistor Circuits~ RC Circuits~ '
+    + '.Electromagnetic Induction~ Induced Currents~ Magnetic Flux~ Lenz\'s Law~ Induced Fields~ Induced Currents~ Inductors~ LC Circuits~ LR Circuits~ '
+    + '.AC Circuits~ AC Sources & Phasors~ Capacitor Circuits~ RC Filter Circuits~ Inductor Circuits~ Series RLC Circuits~ Power in AC Circuits~ ' 
+    + '.Flux &amp; Faraday\'s Law~ Curly Electric Fields|curly-efields.html~ Faraday\'s Law|faradays-law.html~ Motional emf|motional-emf.html~ Maxwell\'s Equations|faraday-maxwells-equations.html~ Superconductors|superconductors.html~ '
     ;
 geometry = 'formsci~ Geometry~ .Shapes~ '
     + '.Points, Lines, Angles~ '
@@ -145,7 +151,19 @@ multi = 'formsci~ Multivariable Calculus~ .Vectors in Space~ Scalars & Vectors|s
     ; 
 musicTheory = 'humanities~ Music Theory~ .Fundamentals~ Pitch & Intervals~ Clefs~ Circle of Fifths~ Rhythm~ '
     + '.Large Forms~ Ternary Form~ Rondo Form~ Sonata Form~ '
-physClassical = 'natsci~ Classical Mechanics~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ '
+physClassical = 'natsci~ Classical Physics~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ '
+    + '.Kinematics~ Concepts of Motion~ 1D Motion~ Uniform Motion~ Free Fall~ Inclined Planes~ Projectile Motion~ Relative Motion~ Uniform Circular Motion~ Centripetal Acceleration~ Nonuniform Circular Motion~ '
+    + '.Force~ Forces~ Newton\'s Laws~ Free-Body Diagrams~ Interacting Objects~ Ropes & Pulleys~ '
+    + '.Dynamics~ Mechanical Equilibrium~ Gravitation~ Friction~ Drag~ Projectile Motion~ Uniform Circular Motion~ Circular Orbits~ Nonuniform Circular Motion~ '
+    + '.Energy~ Energy Principle~ Kinetic Energy~ Work~ Springs~ Thermal Energy~ Dissipative Forces~ Power~ Potential Energy~ Gravitational Potential Energy~ Elastic Potential Energy~ Conservation of Energy~ Energy Diagrams~ Conservative & Nonconservative Forces~ '
+    + '.Momentum~ Momentum~ Conservation of Momentum~ Collisions~ Explosions~ '
+    + '.Rotational Motion~ Rotational Motion~ Rotation About CoM~ Rotational Energy~ Moment of Inertia~ Torque~ Rotational Dynamics~ Fixed Axis Rotation~ Static Equilibrium~ Rolling Motion~ Angular Velocity~ Angular Momentum~ '
+    + '.Newtonian Gravity~ Newton\'s Law of Gravity~ Gravitational Potential Energy~ Satellite Orbits~ Kepler\'s Laws~ '
+    + '.Fluids & Elasticity~ Fluids~ Pressure~ Measuring Pressure~ Buoyancy~ Fluid Dynamics~ Elasticity~ '
+    + '.Oscillations~ Simple Harmonic Motion~ Energy in SHM~ Dynamics of SHM~ Vertical Oscillations~ Pendulums~ Damped Oscillations~ Driven Oscillations~ '
+    + '.Waves~ Waves~ Sinusoidal Waves~ Sound Waves~ Electromagnetic Waves~ Intensity~ Doppler Effect~ Superposition~ Standing Waves~ Musical Instruments~ Interference~ Beats~ '
+    + '.Phases of Matter~ Phases of Matter~ Moles & Molar Mass~ Thermal Expansion~ Phase Changes~ Ideal Gases~ Ideal-Gas Processes~ '
+    + '.Thermodynamics~ Laws of Thermodynamics~ Calorimetry~ Specific Heat~ Heat Transfer~ Molecular Collisions~ Pressure in a Gas~ Temperature~ Thermal Energy~ Heat~ Ideal-Gas Heat Engines~ Ideal-Gas Refrigerators~ Thermal Efficiency~ Carnot Cycle~ '
     + '.Wave Optics~ Interference of Light~ Diffraction Grating~ Single-Slit Diffraction~ Circular-Aperture Diffraction~ Wave Model of Light~ Interferometers~ '
     + '.Ray Optics~ Ray Model of Light~ Reflection~ Refraction~ Image Formation~ Ray Tracing~ Refraction Theory~ Spherical Mirrors~ '
     + '.Optical Instruments~ Lenses~ Cameras~ Vision~ Magnifiers~ Color & Dispersion~ Resolution~ '
