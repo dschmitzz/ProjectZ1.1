@@ -2,7 +2,7 @@
 
 var topic;
 
-areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic.html~ Algebra~ Geometry|geometry.html~ Discrete Mathematics|discrete-math.html~ Differential Calculus|calc-diff.html~ Integral Calculus|calc-int.html~ Multivariable Calculus|calc-multi.html~ Differential Equations|diffeq.html~ Linear Algebra|linear-algebra.html~ '
+areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic.html~ Algebra|algebra.html~ Geometry|geometry.html~ Discrete Mathematics|discrete-math.html~ Differential Calculus|calc-diff.html~ Integral Calculus|calc-int.html~ Multivariable Calculus|calc-multi.html~ Differential Equations|diffeq.html~ Linear Algebra|linear-algebra.html~ '
     + 'Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
     + '.Computer Science~ Computer Architecture|compArch.html~ Data Structures & Algorithms|data-structures-algorithms.html~ '
     + 'C|C.html~ '//C++|c++.html~ C#|c#.html~ Java|java.html~ Python|python.html~ 
@@ -15,8 +15,8 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     + '.Humanities~ Music Theory|music-theory.html~ '
     + '.Standardized Tests~ ACE Personal Trainer|acept.html~ '
     ;
-algebra = 'formsci~ Algebra~ .Expressions & Equations~ '
-arithmetic = 'formsci~ Arithmetic~ .Counting & Place Value~ '
+algebra = 'formsci~ Algebra|algebra.html~ .Expressions & Equations~ '
+arithmetic = 'formsci~ Arithmetic|arithmetic.html~ .Counting & Place Value~ '
     + '.Basic Operations~ Addition~ Subtraction~ Multiplication~ Division~ ' 
     + '.Decimals, Fractions, Percents~ '
     + '.Ratios & Proportions~ '
@@ -200,7 +200,7 @@ function setTopic(current) {
 
 function topicSelector() {
     switch (topic) {
-        case 'algebra': topic = algrebra; break;
+        case 'algebra': topic = algebra; break;
         case 'areas': topic = areas; break;
         case 'arithmetic': topic = arithmetic; break;
         case 'biology': topic = biology; break;
