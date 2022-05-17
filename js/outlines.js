@@ -15,8 +15,8 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     + '.Humanities~ Music Theory|music-theory.html~ '
     + '.Standardized Tests~ ACE Personal Trainer|acept.html~ '
     ;
-algebra = '.formsci~ Algebra~ .Expressions & Equations~ '
-arithmetic = '.formsci~ Arithmetic~ .Counting & Place Value~ '
+algebra = 'formsci~ Algebra~ .Expressions & Equations~ '
+arithmetic = 'formsci~ Arithmetic~ .Counting & Place Value~ '
     + '.Basic Operations~ Addition~ Subtraction~ Multiplication~ Division~ ' 
     + '.Decimals, Fractions, Percents~ '
     + '.Ratios & Proportions~ '
@@ -200,7 +200,9 @@ function setTopic(current) {
 
 function topicSelector() {
     switch (topic) {
+        case 'algebra': topic = algebra; break;
         case 'areas': topic = areas; break;
+        case 'arithmetic': topic = arithmetic; break;
         case 'biology': topic = biology; break;
         case 'C': topic = c; break;
         case 'calc-diff': topic = calcDiff; break;
@@ -209,6 +211,7 @@ function topicSelector() {
         case 'chemistry': topic = chemistry; break;
         case 'combinatorics': topic = combinatorics; break;
         case 'compArch': topic = compArch; break;
+        case 'geometry': topic = geometry; break;
         case 'dataStrAlg': topic = dataStrAlg; break;
         case 'diffeq': topic = diffeq; break;
         case 'discrete-math': topic = discreteMath; break;
