@@ -2,7 +2,7 @@
 
 var topic;
 
-areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic.html~ Algebra~ Geometry|geometry.html~ Discrete Mathematics|discrete-math.html~ Precalculus|precalc.html~ Differential Calculus|calc-diff.html~ Integral Calculus|calc-int.html~ Multivariable Calculus|calc-multi.html~ Differential Equations|diffeq.html~ Linear Algebra|linear-algebra.html~ '
+areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic.html~ Algebra~ Geometry|geometry.html~ Discrete Mathematics|discrete-math.html~ Differential Calculus|calc-diff.html~ Integral Calculus|calc-int.html~ Multivariable Calculus|calc-multi.html~ Differential Equations|diffeq.html~ Linear Algebra|linear-algebra.html~ '
     + 'Combinatorics|combinatorics.html~ Probability & Statistics|probstats.html~ '
     + '.Computer Science~ Computer Architecture|compArch.html~ Data Structures & Algorithms|data-structures-algorithms.html~ '
     + 'C|C.html~ '//C++|c++.html~ C#|c#.html~ Java|java.html~ Python|python.html~ 
@@ -97,7 +97,7 @@ discreteMath = 'formsci~ Discrete Mathematics~ .Logic & Proofs~ Propositions|pro
     + '.Relations & Functions~ Functions~ Relations~ n-ary Relations~ Representing Relations~ Closures of Relations~ Equivalence Relations~ Partial Orderings~ '
     + '.Boolean Algebra~ Boolean Functions~ Logic Gates|logic-gates.html~ Combinational Logic Circuits|comb-logic-circuits.html~ '
     + '.Induction & Recursion~ Mathematical Induction~ Strong Induction~ Recursion~ Program Correctness~ '
-    + '.Counting~ Sum & Product Rule|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ Binomial Theorem|binomial-thm.html~ Pigeonhole Principle|pigeonhole-principle.html~ Linear Recurrence Relations~ Generating Functions~ Principle of Inclusion-Exclusion~ '
+    + '.Counting~ Sum & Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ Binomial Theorem|binomial-thm.html~ Pigeonhole Principle|pigeonhole-principle.html~ Linear Recurrence Relations~ Generating Functions~ Principle of Inclusion-Exclusion~ '
     + '.Graphs~ Graph Basics|graph-basics.html~ Subgraphs|subgraphs.html~ Vertex Degree|vertex-degree.html~ Complements &amp; Isomorphism|complements-isomorphism.html~ Planar Graphs|planar-graphs.html~ Hamilton Paths &amp; Cycles|hamilton-paths-cycles.html~ Graph Coloring|graph-coloring.html~ Dijkstra\'s Shortest Path~ '
     + '.Trees~ Tree Basics~ Tree Traversal~ Prim\'s MST~ Kruskal\'s MST~ '
     + '.Modeling Computation~ Languages & Grammars~ Finite-State Machines~ Language Recognition~ Turing Machines~ '
@@ -216,6 +216,7 @@ function topicSelector() {
         case 'diffeq': topic = diffeq; break;
         case 'discrete-math': topic = discreteMath; break;
         case 'emag': topic = emag; break;
+        case 'geometry': topic = geometry; break;
         case 'linalg': topic = linAlg; break;
         case 'multi': topic = multi; break;
         case 'music-theory': topic = musicTheory; break;
