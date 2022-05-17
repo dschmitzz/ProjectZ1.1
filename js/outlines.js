@@ -58,8 +58,8 @@ chemistry = 'natsci~ Chemistry~ .Fundamentals~ SI Units|si-units.html~ Significa
 + '.Chemical Reactions~ '
 + '.Kinetics~ Rate Law|rate-law.html~ '
 + '.Equilibrium~ RICE Tables|rice-tables.html~ '
-+ '.Acids &amp; Bases~ '
-+ '.Thermodynamics~ Gibb\'s Free Energy~ '
++ '.Acids &amp; Bases~ Neutralization Reactions~ Buffers~ Titration~ '
++ '.Thermodynamics~ Free Energy Change~ Galvanic Cells~ Electrolytic Cells~ Gibb\'s Free Energy~ '
 ;
 combinatorics = 'formsci~ Combinatorics|combinatorics.html~ .Fundamentals~ Sum &amp; Product Rules|sum-product-rules.html~ Permutations|permutations.html~ Combinations|combinations.html~ //Binomial Theorem|binomial-thm.html~ Prime Numbers|prime-numbers.html~ '
     + '.Logic~ Propositions|propositions.html~ Logic Operators|logic-ops.html~ Demorgan\'s Law|demorgan.html~ Logical  Equivalence~ Rules of Inference~ Quantifiers~ '
@@ -151,7 +151,7 @@ multi = 'formsci~ Multivariable Calculus~ .Vectors in Space~ Scalars & Vectors|s
     ; 
 musicTheory = 'humanities~ Music Theory~ .Fundamentals~ Pitch & Intervals~ Clefs~ Circle of Fifths~ Rhythm~ '
     + '.Large Forms~ Ternary Form~ Rondo Form~ Sonata Form~ '
-physClassical = 'natsci~ Classical Mechanics~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ '
+physClassical = 'natsci~ Classical Physics~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scalars &amp; Vectors|scalars-vectors.html~ Scientific Method|scientific-method.html~ '
     + '.Kinematics~ Concepts of Motion~ 1D Motion~ Uniform Motion~ Free Fall~ Inclined Planes~ Projectile Motion~ Relative Motion~ Uniform Circular Motion~ Centripetal Acceleration~ Nonuniform Circular Motion~ '
     + '.Force~ Forces~ Newton\'s Laws~ Free-Body Diagrams~ Interacting Objects~ Ropes & Pulleys~ '
     + '.Dynamics~ Mechanical Equilibrium~ Gravitation~ Friction~ Drag~ Projectile Motion~ Uniform Circular Motion~ Circular Orbits~ Nonuniform Circular Motion~ '
