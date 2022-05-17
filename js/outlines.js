@@ -13,7 +13,6 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     //+ '.Social Science~ '
     + 'Biology|biology.html~ '
     + '.Humanities~ Music Theory|music-theory.html~ '
-    + '.Standardized Tests~ ACE Personal Trainer|acept.html~ '
     ;
 algebra = 'formsci~ Algebra|algebra.html~ .Expressions & Equations~ '
 arithmetic = 'formsci~ Arithmetic|arithmetic.html~ .Counting & Place Value~ '
