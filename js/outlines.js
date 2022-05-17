@@ -15,8 +15,8 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     + '.Humanities~ Music Theory|music-theory.html~ '
     + '.Standardized Tests~ ACE Personal Trainer|acept.html~ '
     ;
-algebra = '.formsci~ Algebra~ .Expressions & Equations~ '
-arithmetic = '.formsci~ Arithmetic~ .Counting & Place Value~ '
+algebra = 'formsci~ Algebra~ .Expressions & Equations~ '
+arithmetic = 'formsci~ Arithmetic~ .Counting & Place Value~ '
     + '.Basic Operations~ Addition~ Subtraction~ Multiplication~ Division~ ' 
     + '.Decimals, Fractions, Percents~ '
     + '.Ratios & Proportions~ '
