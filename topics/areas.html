@@ -9,12 +9,22 @@
   <link rel='icon' href='/imgs/sl-logo.PNG'>
   <link rel='stylesheet' href='/css/styles.css'>
   <script type=text/javascript src='/js/index.js'></script>
+  <script type="text/javascript" src="/js/outlines.js"></script>
 </head>
-<body>
+<body onload="setTopic('areas'); writeOutline('area', 'Areas of Study')">
   <div id='header' include-html='/header.html' src='/js/index.js'></div>
-  <script>includeHTML();</script>
-  <h1>Areas of Study</h1>
-  <div class='content' style="margin-top:20px;display:flex;flex-flow: rcolumn wrap;align-items:flex-start">
+    <script>includeHTML();</script>
+    <div class="content-container">
+        <div class="desktop-only skills" id="skills">
+            <span class='tab formsci' id="tab" onclick="openOutline()">&#x25c0;</span>
+        </div>
+        <script type="text/javascript" src="/js/outlines.js"></script>
+        
+        <div class="content" id="content">
+
+        </div>
+    </div>
+  <!-- <div class='content' style="margin-top:20px;display:flex;flex-flow: rcolumn wrap;align-items:flex-start">
     <style>
       .card {
         padding-top:0;
@@ -97,7 +107,7 @@
           <a class="card" href="acept.html" >ACE Personal Trainer</a>
         </div>
       </div>
-  </div>
+  </div> -->
   <div id='footer' include-html='/footer.html' src='js/index.js'></div>
 </body>
 </html>

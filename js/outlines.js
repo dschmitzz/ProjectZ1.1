@@ -8,7 +8,7 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     + 'Web Development|webdev.html~ '
     + '.Natural Science~ '//Classical Mechanics|class-mech.html~ 
     + 'Classical Physics|physClassical.html~ Electricity & Magnetism|emag.html~ Modern Physics|physModern.html~ '//Quantum Mechanics|quantum-mech.html~ Cosmology|cosmology.html~ 
-    + 'General Chemistry|chemistry.html~ '//Organic Chemistry|org-chem.html~ Biology|biology.html~ Earth Science|earth-sci.html~ '
+    + 'Chemistry|chemistry.html~ '//Organic Chemistry|org-chem.html~ Biology|biology.html~ Earth Science|earth-sci.html~ '
     //+ '.Social Science~ '
     + 'Biology|biology.html~ '
     + '.Humanities~ Music Theory|music-theory.html~ '
