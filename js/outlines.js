@@ -15,13 +15,13 @@ areas = 'formsci~ Areas of Study|areas.html~ .Mathematics~ Arithmetic|arithmetic
     + '.Humanities~ Music Theory|music-theory.html~ '
     ;
 algebra = 'formsci~ Algebra|algebra.html~ .Expressions & Equations~ '
-arithmetic = 'formsci~ Arithmetic|arithmetic.html~ .Counting & Place Value~ '
+arithmetic = 'formsci~ Arithmetic|arithmetic.html~ .Counting & Place Value~ Counting~ Place Value~ Comparing Numbers~ '
     + '.Basic Operations~ Addition~ Subtraction~ Multiplication~ Division~ ' 
     + '.Decimals, Fractions, Percents~ '
     + '.Ratios & Proportions~ '
     + '.Exponents & Radicals~ Exponents~ Roots~ Logs~ '
 biology = 'natsci~ Biology|biology.html~ .Fundamentals~ SI Units|si-units.html~ Significant Figures|sig-figs.html~ Scientific Method|scientific-method.html~ '
-    + '.Chemistry of Life~ Elements of Life|elements-of-life.html~ Chemical Reactions~ Acids & Bases~ Carbon Compounds~ Carbohydrates~ Lipids~ Proteins~ Nucleic Acids~ '
+    + '.Chemistry of Life~ Elements of Life|elements-of-life.html~ Chemical Reactions|chem-rxns.html~ Acids & Bases~ Carbon Compounds~ Carbohydrates~ Lipids~ Proteins~ Nucleic Acids~ '
     + '.Cells~ Prokaryotic Cells~ Eukaryotic Cells~ Animal Cells~ Plant Cells~ Nucleus~ Endomembrane System~ Mitochondria & Chloroplasts~ Cytoskeleton~ Cell Cycle~ '
     + '.Energy Transfer~ Cell Membrane~ Passive Transport~ Active Transport~ Exocytosis & Endocytosis~ Cell Signaling~ Metabolism & ATP~ Cellular Respiration~ Fermentation~ Photosynthesis~ '
     + '.Genetics~ Mitosis~ Meiosis~ Mendelian Inheritance~ Post-Mendelian Inheritance~ Chromosomes~ DNA Synthesis~ Gene Expression~ Regulating Gene Expression~ Life Development~ Viruses~ Genomes~ '
@@ -122,7 +122,7 @@ emag = 'natsci~ Electricity &amp; Magnetism|emag.html~ .Fundamentals~ SI Units|s
     + '.AC Circuits~ AC Sources & Phasors~ Capacitor Circuits~ RC Filter Circuits~ Inductor Circuits~ Series RLC Circuits~ Power in AC Circuits~ ' 
     + '.Flux &amp; Faraday\'s Law~ Curly Electric Fields|curly-efields.html~ Faraday\'s Law|faradays-law.html~ Motional emf|motional-emf.html~ Maxwell\'s Equations|faraday-maxwells-equations.html~ Superconductors|superconductors.html~ '
     ;
-geometry = 'formsci~ Geometry~ .Shapes~ '
+geometry = 'formsci~ Geometry~ .Shapes~ Circles~ Polygons~ Comparing Size~ Comparing Position~ Fractions of Shapes~ '
     + '.Points, Lines, Angles~ '
     + '.Coordinate Planes~ '
     + '.Perimeter, Area, Volume~ '
@@ -175,6 +175,7 @@ physModern = 'natsci~ Modern Physics~ .Fundamentals~ SI Units|si-units.html~ Sig
     + '.Nuclear Physics~ Nuclear Structure~ Nuclear Stability~ Strong Force~ Shell Model~ Radiation & Radioactivity~ Nuclear Decay~ Biological Applications~ '
     ;
 probstats = 'formsci~ Probability &amp; Statistics|probstats.html~ '
+    + '.Measurement & Data~ Length~ Time~ Money~ Bar Graphs~ Line Plots~ '
     + '.Probability~ Intro to Probability~ Independence|independence.html~ Bayes\' Theorem|bayes-theorem.html~ Random Variables|randvars.html~ '
     + '.Discrete Distributions~ Discrete Probability Distributions|disc-probdists.html~ Discrete Cumulative Distribution Functions|disc-cdfs.html~ Discrete Mean &amp; Variance|disc-mean-variance.html~ Discrete Uniform Distribution|discrete-uniform-dist.html~ Binomial Distribution|binomial-dist.html~ Geometric &amp; Negative Binomial Distributions|geometric-negbin-dist.html~ Hypergeometric Distribution|hypergeometric-dist.html~ Poisson Distribution|poisson-dist.html~ '
     + '.Continuous Distributions~ Continuous Probability Distributions|cont-probdists.html~ Continuous Cumulative Distribution Functions|cont-cdfs.html~ Continuous Mean &amp; Variance|cont-mean-variance.html~ Exponential Distribution|exp-dist.html~ '
